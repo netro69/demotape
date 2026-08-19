@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+.env
+.venv/
+db.sqlite3
+db.sqlite3-journal
+migrations/
+
+# Django
+/static/
+/media/
+local_settings.py
+*.log
+
+# Node
+node_modules/
+.next/
+dist/
+
+# OS
+.DS_Store
+Thumbs.db
