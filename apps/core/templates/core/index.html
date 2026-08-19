@@ -1,0 +1,27 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Demotape</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://unpkg.com/htmx.org@2.0.8"></script>
+  <link rel="stylesheet" href="{% static 'core.css' %}">
+</head>
+<body>
+  <main class="container">
+    <h1>Demotape</h1>
+    <p>Django 5 + HTMX + PostgreSQL + local storage</p>
+    <section>
+      <h2>Latest items</h2>
+      <ul>
+        {% for item in items %}
+          <li>{{ item.title }} — <small>{{ item.created_at|date:'Y-m-d' }}</small></li>
+        {% empty %}
+          <li>No items yet.</li>
+        {% endfor %}
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

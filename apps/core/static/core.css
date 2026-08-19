@@ -1,0 +1,4 @@
+:root{font-family:system-ui,Segoe UI,Roboto,Ubuntu,Arial,sans-serif}
+.container{max-width:860px;margin:4rem auto;padding:0 1.5rem}
+h1{font-weight:700;letter-spacing:-0.02em}
+ul{line-height:1.7}
