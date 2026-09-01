@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %}Demotape - {{ band.name }}{% endblock %}
+
+{% block content %}
+<div class="band-detail-page">
+  <div class="band-header">
+    <div class="band-header-info">
+      <h1>{{ band.name }}</h1>
+      {% if band.city %}<p class="band-city">{{ band.city }}</p>{% endif %}
+      {% if band.active_years %}<p class="band-years">{{ band.active_years }}</p>{% endif %}
+      <div class="band-genres">
+        {% for tag in band.genre_tags.all %}
+        <span class="genre-tag">{{ tag.name }}</span>
+        {% endfor %}
+      </div>
+      {% if band.website %}<a href="{{ band.website }}" target="_blank" class="btn btn-secondary">Website</a>{% endif %}
+    </div>
+    {% with cover=band.images.first %}
+    {% if cover %}
+    <div class="band-header-image">
+      <img src="{{ cover.image_file.url }}" alt="{{ band.name }}">
+    </div>
+    {% endif %}
+    {% endwith %}
+  </div>
+
+  {% if band.bio %}
+  <section class="band-bio">
+    <h2>Biography</h2>
+    <p>{{ band.bio|linebreaks }}</p>
+  </section>
+  {% endif %}
+
+  <section class="band-discography">
+    <h2>Discography</h2>
+    {% if releases %}
+    <div class="release-list">
+      {% for release in releases %}
+      <a href="{% url 'release_detail' release.slug %}" class="release-card">
+        {% if release.cover_image %}
+        <img src="{{ release.cover_image.url }}" alt="{{ release.title }}" class="release-cover">
+        {% else %}
+        <div class="placeholder-cover">{{ release.title|first }}</div>
+        {% endif %}
+        <div class="release-info">
+          <h3>{{ release.title }}</h3>
+          <p class="release-meta">{{ release.year }} &middot; {{ release.get_format_display }}</p>
+          {% if release.label %}<p class="release-label">{{ release.label }}</p>{% endif %}
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p>No releases yet.</p>
+    {% endif %}
+  </section>
+
+  {% if images %}
+  <section class="band-images">
+    <h2>Photos</h2>
+    <div class="image-grid">
+      {% for image in images %}
+      <figure class="image-item">
+        <img src="{{ image.image_file.url }}" alt="{{ image.caption }}">
+        {% if image.caption %}<figcaption>{{ image.caption }}</figcaption>{% endif %}
+      </figure>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+</div>
+{% endblock %}

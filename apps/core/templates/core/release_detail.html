@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block title %}Demotape - {{ release.title }}{% endblock %}
+
+{% block content %}
+<div class="release-detail-page">
+  <div class="release-header">
+    {% if release.cover_image %}
+    <img src="{{ release.cover_image.url }}" alt="{{ release.title }}" class="release-cover-large">
+    {% else %}
+    <div class="placeholder-cover-large">{{ release.title|first }}</div>
+    {% endif %}
+    <div class="release-header-info">
+      <h1>{{ release.title }}</h1>
+      <p class="release-band"><a href="{% url 'band_detail' release.band.slug %}">{{ release.band.name }}</a></p>
+      <p class="release-meta">{{ release.year }} &middot; {{ release.get_format_display }}</p>
+      {% if release.label %}<p class="release-label">{{ release.label }}{% if release.catalog_number %} &middot; {{ release.catalog_number }}{% endif %}</p>{% endif %}
+    </div>
+  </div>
+
+  {% if release.description %}
+  <section class="release-description">
+    <h2>About</h2>
+    <p>{{ release.description|linebreaks }}</p>
+  </section>
+  {% endif %}
+
+  <section class="release-tracklist">
+    <h2>Tracklist</h2>
+    {% if tracks %}
+    <ol class="track-list">
+      {% for track in tracks %}
+      <li class="track-item">
+        <div class="track-info">
+          <span class="track-number">{{ track.track_number }}</span>
+          <span class="track-title">{{ track.title }}</span>
+          {% if track.duration %}<span class="track-duration">{{ track.duration }}</span>{% endif %}
+        </div>
+        {% if track.audio_file %}
+        <audio controls preload="none" class="audio-player">
+          <source src="{{ track.audio_file.url }}" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        {% endif %}
+        {% if track.lyrics %}
+        <div class="track-lyrics">
+          <button class="btn btn-secondary toggle-lyrics" onclick="toggleLyrics(this)">Show Lyrics</button>
+          <div class="lyrics-content" style="display: none;">
+            <pre>{{ track.lyrics }}</pre>
+          </div>
+        </div>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ol>
+    {% else %}
+    <p>No tracks available.</p>
+    {% endif %}
+  </section>
+
+  {% if images %}
+  <section class="release-images">
+    <h2>Images</h2>
+    <div class="image-grid">
+      {% for image in images %}
+      <figure class="image-item">
+        <img src="{{ image.image_file.url }}" alt="{{ image.caption }}">
+        {% if image.caption %}<figcaption>{{ image.caption }}</figcaption>{% endif %}
+      </figure>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+</div>
+
+<script>
+function toggleLyrics(btn) {
+  const content = btn.nextElementSibling;
+  if (content.style.display === 'none') {
+    content.style.display = 'block';
+    btn.textContent = 'Hide Lyrics';
+  } else {
+    content.style.display = 'none';
+    btn.textContent = 'Show Lyrics';
+  }
+}
+</script>
+{% endblock %}
