@@ -5,66 +5,40 @@
 {% block content %}
 <div class="search-page">
   <h1>Search</h1>
-  <form class="search-form-large" action="{% url 'search' %}" method="get">
-    <input type="text" name="q" placeholder="Search bands, releases, tracks..." value="{{ query }}" autofocus>
+
+  <form method="get" action="{% url 'search' %}" class="search-form">
+    <input type="text" name="q" value="{{ query }}" placeholder="Search bands, releases, tracks..." class="search-input">
     <button type="submit" class="btn btn-primary">Search</button>
   </form>
 
   {% if query %}
-  <div class="search-results">
-    <h2>Results for "{{ query }}"</h2>
-
-    {% if results.bands %}
-    <section class="result-section">
-      <h3>Bands</h3>
-      <ul class="result-list">
-        {% for band in results.bands %}
+    {% if results %}
+      <p class="results-count">{{ results|length }} result{{ results|length|pluralize }} for "{{ query }}"</p>
+      <ul class="results-list">
+        {% for result in results %}
         <li class="result-item">
-          <span class="result-type-badge badge-band">Band</span>
-          <a href="{% url 'band_detail' band.slug %}">{{ band.name }}</a>
-          {% if band.city %}<span class="result-meta">{{ band.city }}</span>{% endif %}
+          <span class="result-type result-type-{{ result.type|lower }}">{{ result.type }}</span>
+          {% if result.type == 'Band' %}
+            <a href="{% url 'band_detail' result.object.slug %}" class="result-title">{{ result.object.name }}</a>
+            {% if result.object.city %}<span class="result-meta">{{ result.object.city }}</span>{% endif %}
+          {% elif result.type == 'Release' %}
+            <a href="{% url 'release_detail' result.object.slug %}" class="result-title">{{ result.object.title }}</a>
+            <span class="result-meta">{{ result.object.band.name }} &middot; {{ result.object.year }}</span>
+          {% elif result.type == 'Track' %}
+            <span class="result-title">{{ result.object.title }}</span>
+            <span class="result-meta">
+              <a href="{% url 'release_detail' result.object.release.slug %}">{{ result.object.release.title }}</a>
+              &middot; {{ result.object.release.band.name }}
+            </span>
+          {% endif %}
         </li>
         {% endfor %}
       </ul>
-    </section>
+    {% else %}
+      <p class="no-results">No results found for "{{ query }}".</p>
     {% endif %}
-
-    {% if results.releases %}
-    <section class="result-section">
-      <h3>Releases</h3>
-      <ul class="result-list">
-        {% for release in results.releases %}
-        <li class="result-item">
-          <span class="result-type-badge badge-release">Release</span>
-          <a href="{% url 'release_detail' release.slug %}">{{ release.title }}</a>
-          <span class="result-meta">{{ release.band.name }} &middot; {{ release.year }}</span>
-        </li>
-        {% endfor %}
-      </ul>
-    </section>
-    {% endif %}
-
-    {% if results.tracks %}
-    <section class="result-section">
-      <h3>Tracks</h3>
-      <ul class="result-list">
-        {% for track in results.tracks %}
-        <li class="result-item">
-          <span class="result-type-badge badge-track">Track</span>
-          <a href="{% url 'release_detail' track.release.slug %}">{{ track.title }}</a>
-          <span class="result-meta">{{ track.release.band.name }} &middot; {{ track.release.title }}</span>
-        </li>
-        {% endfor %}
-      </ul>
-    </section>
-    {% endif %}
-
-    {% if not results.bands and not results.releases and not results.tracks %}
-    <div class="empty-state">
-      <p>No results found for "{{ query }}".</p>
-    </div>
-    {% endif %}
-  </div>
+  {% else %}
+    <p class="search-prompt">Enter a search term above to find bands, releases, and tracks.</p>
   {% endif %}
 </div>
 {% endblock %}

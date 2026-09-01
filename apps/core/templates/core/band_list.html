@@ -4,44 +4,37 @@
 
 {% block content %}
 <div class="band-list-page">
-  <div class="page-header">
-    <h1>Bands</h1>
-    <form class="search-form" action="{% url 'search' %}" method="get">
-      <input type="text" name="q" placeholder="Search bands, releases, tracks..." value="{{ request.GET.q }}">
-      <button type="submit" class="btn btn-primary">Search</button>
-    </form>
-  </div>
+  <h1>Bands</h1>
 
-  <div class="content-layout">
+  <div class="layout">
     <aside class="filter-sidebar">
-      <h3>Filters</h3>
-      <form method="get" id="filter-form">
-        {% if request.GET.q %}<input type="hidden" name="q" value="{{ request.GET.q }}">{% endif %}
+      <form method="get" action="{% url 'band_list' %}">
+        <h3>Filters</h3>
 
         <div class="filter-group">
           <label for="genre">Genre</label>
-          <select name="genre" id="genre" onchange="this.form.submit()">
-            <option value="">All Genres</option>
-            {% for g in genres %}
-            <option value="{{ g.slug }}" {% if selected_genre == g.slug %}selected{% endif %}>{{ g.name }}</option>
+          <select name="genre" id="genre">
+            <option value="">All genres</option>
+            {% for g in genre_list %}
+              <option value="{{ g.slug }}" {% if selected_genre == g.slug %}selected{% endif %}>{{ g.name }}</option>
             {% endfor %}
           </select>
         </div>
 
         <div class="filter-group">
           <label for="city">City</label>
-          <select name="city" id="city" onchange="this.form.submit()">
-            <option value="">All Cities</option>
-            {% for c in cities %}
-            <option value="{{ c }}" {% if selected_city == c %}selected{% endif %}>{{ c }}</option>
+          <select name="city" id="city">
+            <option value="">All cities</option>
+            {% for c in city_list %}
+              <option value="{{ c }}" {% if selected_city == c %}selected{% endif %}>{{ c }}</option>
             {% endfor %}
           </select>
         </div>
 
         <div class="filter-group">
           <label for="format">Format</label>
-          <select name="format" id="format" onchange="this.form.submit()">
-            <option value="">All Formats</option>
+          <select name="format" id="format">
+            <option value="">All formats</option>
             <option value="vinyl" {% if selected_format == 'vinyl' %}selected{% endif %}>Vinyl</option>
             <option value="cd" {% if selected_format == 'cd' %}selected{% endif %}>CD</option>
             <option value="demotape" {% if selected_format == 'demotape' %}selected{% endif %}>Demotape</option>
@@ -52,58 +45,50 @@
 
         <div class="filter-group">
           <label for="decade">Decade</label>
-          <select name="decade" id="decade" onchange="this.form.submit()">
-            <option value="">All Decades</option>
-            {% for d in decades %}
-            <option value="{{ d }}" {% if selected_decade == d|stringformat:'d' %}selected{% endif %}>{{ d }}s</option>
-            {% endfor %}
+          <select name="decade" id="decade">
+            <option value="">All decades</option>
+            <option value="1970" {% if selected_decade == '1970' %}selected{% endif %}>1970s</option>
+            <option value="1980" {% if selected_decade == '1980' %}selected{% endif %}>1980s</option>
+            <option value="1990" {% if selected_decade == '1990' %}selected{% endif %}>1990s</option>
+            <option value="2000" {% if selected_decade == '2000' %}selected{% endif %}>2000s</option>
+            <option value="2010" {% if selected_decade == '2010' %}selected{% endif %}>2010s</option>
+            <option value="2020" {% if selected_decade == '2020' %}selected{% endif %}>2020s</option>
           </select>
         </div>
 
-        <a href="{% url 'band_list' %}" class="btn btn-secondary">Clear Filters</a>
+        <button type="submit" class="btn btn-primary">Apply filters</button>
+        <a href="{% url 'band_list' %}" class="btn btn-secondary">Clear</a>
       </form>
     </aside>
 
-    <div class="band-grid">
+    <main class="band-grid">
       {% for band in page_obj %}
-      <a href="{% url 'band_detail' band.slug %}" class="band-card">
-        <div class="band-card-image">
-          {% with cover=band.images.first %}
-          {% if cover %}
-          <img src="{{ cover.image_file.url }}" alt="{{ band.name }}">
-          {% else %}
-          <div class="placeholder-image">{{ band.name|first }}</div>
-          {% endif %}
-          {% endwith %}
-        </div>
-        <div class="band-card-info">
-          <h3>{{ band.name }}</h3>
-          {% if band.city %}<p class="band-city">{{ band.city }}</p>{% endif %}
-          <div class="band-genres">
-            {% for tag in band.genre_tags.all %}
-            <span class="genre-tag">{{ tag.name }}</span>
-            {% endfor %}
+        <div class="card band-card">
+          <div class="card-body">
+            <h3><a href="{% url 'band_detail' band.slug %}">{{ band.name }}</a></h3>
+            {% if band.city %}<p class="card-meta">{{ band.city }}</p>{% endif %}
+            {% if band.active_years %}<p class="card-meta">{{ band.active_years }}</p>{% endif %}
+            <div class="genre-badges">
+              {% for tag in band.genre_tags.all %}
+                <span class="badge">{{ tag.name }}</span>
+              {% endfor %}
+            </div>
           </div>
         </div>
-      </a>
       {% empty %}
-      <div class="empty-state">
-        <p>No bands found matching your criteria.</p>
-      </div>
+        <p>No bands found.</p>
       {% endfor %}
-    </div>
+    </main>
   </div>
 
   {% if page_obj.has_other_pages %}
   <nav class="pagination">
     {% if page_obj.has_previous %}
-    <a href="?page={{ page_obj.previous_page_number }}{% if selected_genre %}&genre={{ selected_genre }}{% endif %}{% if selected_city %}&city={{ selected_city }}{% endif %}{% if selected_format %}&format={{ selected_format }}{% endif %}{% if selected_decade %}&decade={{ selected_decade }}{% endif %}" class="btn btn-secondary">&laquo; Previous</a>
+      <a href="?page={{ page_obj.previous_page_number }}{% if selected_genre %}&genre={{ selected_genre }}{% endif %}{% if selected_city %}&city={{ selected_city }}{% endif %}{% if selected_format %}&format={{ selected_format }}{% endif %}{% if selected_decade %}&decade={{ selected_decade }}{% endif %}" class="btn btn-secondary">&laquo; Previous</a>
     {% endif %}
-
     <span class="page-info">Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</span>
-
     {% if page_obj.has_next %}
-    <a href="?page={{ page_obj.next_page_number }}{% if selected_genre %}&genre={{ selected_genre }}{% endif %}{% if selected_city %}&city={{ selected_city }}{% endif %}{% if selected_format %}&format={{ selected_format }}{% endif %}{% if selected_decade %}&decade={{ selected_decade }}{% endif %}" class="btn btn-secondary">Next &raquo;</a>
+      <a href="?page={{ page_obj.next_page_number }}{% if selected_genre %}&genre={{ selected_genre }}{% endif %}{% if selected_city %}&city={{ selected_city }}{% endif %}{% if selected_format %}&format={{ selected_format }}{% endif %}{% if selected_decade %}&decade={{ selected_decade }}{% endif %}" class="btn btn-secondary">Next &raquo;</a>
     {% endif %}
   </nav>
   {% endif %}

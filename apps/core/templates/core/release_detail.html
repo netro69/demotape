@@ -6,15 +6,16 @@
 <div class="release-detail-page">
   <div class="release-header">
     {% if release.cover_image %}
-    <img src="{{ release.cover_image.url }}" alt="{{ release.title }}" class="release-cover-large">
-    {% else %}
-    <div class="placeholder-cover-large">{{ release.title|first }}</div>
+    <div class="release-cover">
+      <img src="{{ release.cover_image.url }}" alt="{{ release.title }}">
+    </div>
     {% endif %}
-    <div class="release-header-info">
+    <div class="release-info">
       <h1>{{ release.title }}</h1>
-      <p class="release-band"><a href="{% url 'band_detail' release.band.slug %}">{{ release.band.name }}</a></p>
+      <p class="release-band"><a href="{% url 'band_detail' band.slug %}">{{ band.name }}</a></p>
       <p class="release-meta">{{ release.year }} &middot; {{ release.get_format_display }}</p>
-      {% if release.label %}<p class="release-label">{{ release.label }}{% if release.catalog_number %} &middot; {{ release.catalog_number }}{% endif %}</p>{% endif %}
+      {% if release.label %}<p class="release-label">{{ release.label }}</p>{% endif %}
+      {% if release.catalog_number %}<p class="release-catalog">Catalog: {{ release.catalog_number }}</p>{% endif %}
     </div>
   </div>
 
@@ -28,33 +29,31 @@
   <section class="release-tracklist">
     <h2>Tracklist</h2>
     {% if tracks %}
-    <ol class="track-list">
+    <ol class="tracklist">
       {% for track in tracks %}
       <li class="track-item">
         <div class="track-info">
-          <span class="track-number">{{ track.track_number }}</span>
+          <span class="track-number">{{ track.track_number }}.</span>
           <span class="track-title">{{ track.title }}</span>
           {% if track.duration %}<span class="track-duration">{{ track.duration }}</span>{% endif %}
         </div>
         {% if track.audio_file %}
-        <audio controls preload="none" class="audio-player">
+        <audio controls preload="none">
           <source src="{{ track.audio_file.url }}" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
         {% endif %}
         {% if track.lyrics %}
-        <div class="track-lyrics">
-          <button class="btn btn-secondary toggle-lyrics" onclick="toggleLyrics(this)">Show Lyrics</button>
-          <div class="lyrics-content" style="display: none;">
-            <pre>{{ track.lyrics }}</pre>
-          </div>
+        <button class="btn btn-secondary toggle-lyrics" onclick="toggleLyrics(this)">Show lyrics</button>
+        <div class="lyrics" style="display:none;">
+          {{ track.lyrics|linebreaks }}
         </div>
         {% endif %}
       </li>
       {% endfor %}
     </ol>
     {% else %}
-    <p>No tracks available.</p>
+    <p>No tracks yet.</p>
     {% endif %}
   </section>
 
@@ -75,13 +74,13 @@
 
 <script>
 function toggleLyrics(btn) {
-  const content = btn.nextElementSibling;
-  if (content.style.display === 'none') {
-    content.style.display = 'block';
-    btn.textContent = 'Hide Lyrics';
+  var lyrics = btn.nextElementSibling;
+  if (lyrics.style.display === 'none') {
+    lyrics.style.display = 'block';
+    btn.textContent = 'Hide lyrics';
   } else {
-    content.style.display = 'none';
-    btn.textContent = 'Show Lyrics';
+    lyrics.style.display = 'none';
+    btn.textContent = 'Show lyrics';
   }
 }
 </script>
