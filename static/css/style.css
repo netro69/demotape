@@ -1,0 +1,265 @@
+/* Demotape — CRT/Retro Aesthetic: Amber on Black */
+
+:root {
+    --amber: #ffb000;
+    --amber-dim: #cc8a00;
+    --amber-glow: #ffc040;
+    --black: #0a0a0a;
+    --dark: #111111;
+    --gray: #1a1a1a;
+    --light-gray: #333333;
+    --text: #e0e0e0;
+    --text-dim: #888888;
+    --font-mono: 'Courier New', 'Lucida Console', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--text);
+    font-family: var(--font-mono);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header */
+.site-header {
+    background: var(--dark);
+    border-bottom: 2px solid var(--amber);
+    padding: 1rem 0;
+    box-shadow: 0 0 10px rgba(255, 176, 0, 0.3);
+}
+
+.site-title a {
+    color: var(--amber);
+    text-decoration: none;
+    font-size: 1.8rem;
+    letter-spacing: 0.2em;
+    text-shadow: 0 0 5px var(--amber);
+}
+
+.main-nav {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    color: var(--amber);
+    text-decoration: none;
+    padding: 0.25rem 0;
+    border-bottom: 1px solid transparent;
+}
+
+.main-nav a:hover {
+    border-bottom-color: var(--amber);
+    text-shadow: 0 0 3px var(--amber);
+}
+
+.user-greeting {
+    color: var(--text-dim);
+    margin-left: auto;
+}
+
+/* Main */
+main {
+    padding: 2rem 0;
+    min-height: calc(100vh - 200px);
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 3rem 0;
+    border: 1px solid var(--light-gray);
+    margin-bottom: 2rem;
+    background: var(--dark);
+}
+
+.hero h2 {
+    color: var(--amber);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 5px var(--amber);
+}
+
+.tagline {
+    color: var(--text-dim);
+    margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid var(--amber);
+    color: var(--amber);
+    text-decoration: none;
+    font-family: var(--font-mono);
+    cursor: pointer;
+    background: transparent;
+}
+
+.btn:hover {
+    background: var(--amber);
+    color: var(--black);
+}
+
+/* Features */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.feature {
+    border: 1px solid var(--light-gray);
+    padding: 1.5rem;
+    background: var(--dark);
+}
+
+.feature h3 {
+    color: var(--amber);
+    margin-bottom: 0.5rem;
+}
+
+/* Band list */
+.band-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.band-card {
+    border: 1px solid var(--light-gray);
+    padding: 1rem;
+    background: var(--dark);
+}
+
+.band-card h3 a {
+    color: var(--amber);
+    text-decoration: none;
+}
+
+.band-card h3 a:hover {
+    text-shadow: 0 0 3px var(--amber);
+}
+
+.band-location, .band-years {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+}
+
+/* Band detail */
+.band-detail {
+    max-width: 800px;
+}
+
+.band-detail h2 {
+    color: var(--amber);
+    margin-bottom: 1rem;
+}
+
+.band-bio {
+    margin: 1rem 0;
+    white-space: pre-line;
+}
+
+.release-list {
+    list-style: none;
+    padding: 0;
+}
+
+.release-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+/* Footer */
+.site-footer {
+    background: var(--dark);
+    border-top: 1px solid var(--light-gray);
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 0.85rem;
+}
+
+/* Empty state */
+.empty-state {
+    color: var(--text-dim);
+    text-align: center;
+    padding: 2rem;
+    border: 1px dashed var(--light-gray);
+}
+
+/* Forms (for allauth) */
+form {
+    max-width: 400px;
+}
+
+form p {
+    margin-bottom: 1rem;
+}
+
+form label {
+    display: block;
+    color: var(--amber);
+    margin-bottom: 0.25rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    background: var(--dark);
+    border: 1px solid var(--light-gray);
+    color: var(--text);
+    font-family: var(--font-mono);
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus,
+form textarea:focus {
+    outline: none;
+    border-color: var(--amber);
+    box-shadow: 0 0 5px rgba(255, 176, 0, 0.3);
+}
+
+/* Error messages */
+.errorlist {
+    color: #ff4444;
+    list-style: none;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Messages */
+.messages {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.messages li {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--amber);
+    margin-bottom: 0.5rem;
+    background: var(--dark);
+}

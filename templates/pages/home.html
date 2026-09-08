@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Demotape — Underground Music Archive{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <h2>Underground Music Archive</h2>
+    <p class="tagline">Cataloging demos, tapes, vinyl &amp; digital releases from the underground.</p>
+    <a href="{% url 'music:band_list' %}" class="btn btn-primary">Explore Bands</a>
+</div>
+
+<div class="features">
+    <div class="feature">
+        <h3>Bands</h3>
+        <p>Discover bands from the underground scene.</p>
+    </div>
+    <div class="feature">
+        <h3>Releases</h3>
+        <p>Demotapes, cassettes, vinyl, CDs, and digital.</p>
+    </div>
+    <div class="feature">
+        <h3>Labels</h3>
+        <p>Independent and self-released labels.</p>
+    </div>
+</div>
+{% endblock %}

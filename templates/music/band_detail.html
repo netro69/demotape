@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ band.name }} — Demotape{% endblock %}
+
+{% block content %}
+<div class="band-detail">
+    <h2>{{ band.name }}</h2>
+    {% if band.city %}<p><strong>City:</strong> {{ band.city }}</p>{% endif %}
+    {% if band.province %}<p><strong>Province:</strong> {{ band.province }}</p>{% endif %}
+    {% if band.active_years %}<p><strong>Active:</strong> {{ band.active_years }}</p>{% endif %}
+    {% if band.genres.all %}
+        <p><strong>Genres:</strong>
+            {% for genre in band.genres.all %}{{ genre.name }}{% if not forloop.last %}, {% endif %}{% endfor %}
+        </p>
+    {% endif %}
+    {% if band.bio %}<div class="band-bio">{{ band.bio|linebreaks }}</div>{% endif %}
+    {% if band.website %}<p><a href="{{ band.website }}" target="_blank">Website</a></p>{% endif %}
+
+    <h3>Releases</h3>
+    {% if band.releases.all %}
+        <ul class="release-list">
+            {% for release in band.releases.all %}
+            <li>{{ release.title }} ({{ release.get_format_display }}, {{ release.year|default:"N/A" }})</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No releases cataloged yet.</p>
+    {% endif %}
+</div>
+{% endblock %}

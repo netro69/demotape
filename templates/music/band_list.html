@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Bands — Demotape{% endblock %}
+
+{% block content %}
+<div class="band-list-page">
+    <h2>Bands</h2>
+    {% if bands %}
+        <div class="band-grid">
+            {% for band in bands %}
+            <div class="band-card">
+                <h3><a href="{{ band.get_absolute_url }}">{{ band.name }}</a></h3>
+                {% if band.city %}<p class="band-location">{{ band.city }}</p>{% endif %}
+                {% if band.active_years %}<p class="band-years">{{ band.active_years }}</p>{% endif %}
+            </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p class="empty-state">No bands yet. Check back soon.</p>
+    {% endif %}
+</div>
+{% endblock %}
