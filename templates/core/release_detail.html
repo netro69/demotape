@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}{{ release.title }} — {{ release.band.name }} — Demotape{% endblock %}
+
+{% block content %}
+<section class="release-detail">
+  <div class="release-header">
+    <h1>{{ release.title }}</h1>
+    <a href="{% url 'band_detail' release.band.slug %}" class="band-link">{{ release.band.name }}</a>
+  </div>
+  
+  <div class="release-info">
+    <p><strong>Year:</strong> {{ release.year }}</p>
+    <p><strong>Format:</strong> {{ release.get_format_display }}</p>
+    {% if release.label %}
+    <p><strong>Label:</strong> {{ release.label.name }} ({{ release.label.city }})</p>
+    {% endif %}
+    {% if release.catalog_number %}
+    <p><strong>Catalog #:</strong> {{ release.catalog_number }}</p>
+    {% endif %}
+    {% if release.description %}
+    <p><strong>Description:</strong> {{ release.description }}</p>
+    {% endif %}
+  </div>
+  
+  {% if tracks %}
+  <div class="release-tracks">
+    <h2>Tracks</h2>
+    <ol>
+      {% for track in tracks %}
+      <li>
+        <span class="track-number">{{ track.track_number }}.</span>
+        <span class="track-title">{{ track.title }}</span>
+        {% if track.duration %}
+        <span class="track-duration">{{ track.duration }}</span>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+  {% endif %}
+  
+  {% if images %}
+  <div class="release-images">
+    <h2>Images</h2>
+    {% for image in images %}
+    <div class="image-item">
+      <img src="{{ image.image_file.url }}" alt="{{ image.caption }}">
+      <p>{{ image.caption }}</p>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+</section>
+{% endblock %}

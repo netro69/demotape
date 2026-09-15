@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}Search{% if query %} — {{ query }}{% endif %} — Demotape{% endblock %}
+
+{% block content %}
+<section class="search-results">
+  <h1>Search{% if query %} results for "{{ query }}"{% endif %}</h1>
+  
+  <form method="get" style="margin-bottom: 2rem;">
+    <input type="text" name="q" value="{{ query }}" placeholder="Search bands, releases, tracks..." 
+           style="width: 100%; padding: 0.75rem 1rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; color: var(--text); font-size: 1rem;">
+  </form>
+  
+  {% if results %}
+    {% for result in results %}
+    <div class="search-result">
+      <span class="result-type">{{ result.type }}</span>
+      {% if result.type == 'Band' %}
+      <a href="{% url 'band_detail' result.object.slug %}">{{ result.object.name }}</a>
+      <p>{{ result.object.city }} — {{ result.object.active_years }}</p>
+      {% elif result.type == 'Release' %}
+      <a href="{% url 'release_detail' result.object.slug %}">{{ result.object.title }}</a>
+      <p>{{ result.object.band.name }} ({{ result.object.year }})</p>
+      {% elif result.type == 'Track' %}
+      <a href="{% url 'band_detail' result.object.release.band.slug %}">{{ result.object.title }}</a>
+      <p>{{ result.object.release.band.name }} — {{ result.object.release.title }} ({{ result.object.release.year }})</p>
+      {% endif %}
+    </div>
+    {% endfor %}
+  {% elif query %}
+    <p>No results found.</p>
+  {% endif %}
+</section>
+{% endblock %}

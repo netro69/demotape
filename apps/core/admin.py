@@ -2,7 +2,45 @@ from django.contrib import admin
 from .models import (
     Band, GenreTag, Release, Track, Image,
     Playlist, PlaylistTrack, Flag, UserProfile, PlayLog,
+    Link, Label, BandConnection,
 )
+
+
+class LinkInline(admin.TabularInline):
+    model = Link
+    extra = 1
+
+
+class BandConnectionInline(admin.TabularInline):
+    model = BandConnection
+    extra = 1
+    fk_name = 'from_band'
+
+
+class TrackInline(admin.TabularInline):
+    model = Track
+    extra = 1
+
+
+class ImageInline(admin.TabularInline):
+    model = Image
+    extra = 1
+
+
+@admin.register(Link)
+class LinkAdmin(admin.ModelAdmin):
+    list_display = ['band', 'link_type', 'title', 'url', 'is_primary']
+
+
+@admin.register(Label)
+class LabelAdmin(admin.ModelAdmin):
+    list_display = ['name', 'city', 'status', 'founded_year']
+    search_fields = ['name']
+
+
+@admin.register(BandConnection)
+class BandConnectionAdmin(admin.ModelAdmin):
+    list_display = ['from_band', 'to_band', 'connection_type']
 
 
 @admin.register(Band)
@@ -11,6 +49,7 @@ class BandAdmin(admin.ModelAdmin):
     list_filter = ['status', 'genre_tags']
     search_fields = ['name', 'city']
     prepopulated_fields = {'slug': ('name',)}
+    inlines = [LinkInline, BandConnectionInline, ImageInline]
 
 
 @admin.register(GenreTag)

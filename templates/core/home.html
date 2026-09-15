@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Demotape — Italian Underground Music Archive{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <h1>Demotape</h1>
+  <p class="tagline">Preserving the lost catalogs of Italian underground music</p>
+  <p class="sub-tagline">A living archive of independent productions — vinyl, CD, demotape — pressed by bands on their own labels, catalogued before they disappear forever.</p>
+</section>
+
+<section class="latest">
+  <h2>Latest Entries</h2>
+  <div class="card-grid">
+    {% for band in latest_bands %}
+    <a href="{% url 'band_detail' band.slug %}" class="card band-card">
+      <div class="card-header">
+        <h3>{{ band.name }}</h3>
+        <span class="badge">{{ band.city }}</span>
+      </div>
+      <p class="card-meta">{{ band.active_years }}</p>
+      <p class="card-genres">
+        {% for genre in band.genre_tags.all %}
+        <span class="genre-tag">{{ genre.name }}</span>
+        {% endfor %}
+      </p>
+      <p class="card-releases">{{ band.releases.count }} release{{ band.releases.count|pluralize }}</p>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="stats">
+  <div class="stat">
+    <span class="stat-number">{{ total_bands }}</span>
+    <span class="stat-label">Bands</span>
+  </div>
+  <div class="stat">
+    <span class="stat-number">{{ total_releases }}</span>
+    <span class="stat-label">Releases</span>
+  </div>
+  <div class="stat">
+    <span class="stat-number">{{ total_labels }}</span>
+    <span class="stat-label">Labels</span>
+  </div>
+  <div class="stat">
+    <span class="stat-number">{{ lost_count }}</span>
+    <span class="stat-label">Lost Materials</span>
+  </div>
+</section>
+
+<section class="recent-releases">
+  <h2>Recent Releases</h2>
+  <div class="release-list">
+    {% for release in recent_releases %}
+    <a href="{% url 'release_detail' release.slug %}" class="release-item">
+      <span class="release-title">{{ release.title }}</span>
+      <span class="release-band">{{ release.band.name }}</span>
+      <span class="release-year">{{ release.year }}</span>
+      <span class="release-format">{{ release.get_format_display }}</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

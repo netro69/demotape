@@ -12,9 +12,11 @@ class Status(models.TextChoices):
 
 class ImageType(models.TextChoices):
     BAND_PHOTO = 'band_photo', 'Band Photo'
-    COVER = 'cover', 'Cover'
-    FLYER = 'flyer', 'Flyer'
-    INSERT = 'insert', 'Insert'
+    COVER = 'cover', 'Cover Art'
+    FLYER = 'flyer', 'Gig Flyer'
+    POSTER = 'poster', 'Concert Poster'
+    INSERT = 'insert', 'Insert/Booklet'
+    PROMO = 'promo', 'Promo Photo'
     OTHER = 'other', 'Other'
 
 
@@ -195,3 +197,75 @@ class PlayLog(models.Model):
 
     def __str__(self):
         return f'{self.track} played at {self.played_at}'
+
+
+class Link(models.Model):
+    """External links related to a band — videos, websites, purchase, social media."""
+    LINK_TYPES = [
+        ('video', 'Video (YouTube, Vimeo, etc.)'),
+        ('website', 'Official Website'),
+        ('social', 'Social Media'),
+        ('purchase', 'Where to Buy'),
+        ('streaming', 'Streaming'),
+        ('archive', 'Archive / Reference'),
+        ('other', 'Other'),
+    ]
+    band = models.ForeignKey(Band, on_delete=models.CASCADE, related_name='links')
+    link_type = models.CharField(max_length=20, choices=LINK_TYPES)
+    title = models.CharField(max_length=255, blank=True)
+    url = models.URLField()
+    description = models.TextField(blank=True)
+    is_primary = models.BooleanField(default=False, help_text='Main/official link')
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering=['link_type', '-is_primary', 'title']
+
+    def __str__(self):
+        return f'{self.get_link_type_display()}: {self.title or self.url}'
+
+
+class Label(models.Model):
+    name = models.CharField(max_length=255)
+    slug = models.SlugField(unique=True)
+    city = models.CharField(max_length=255, blank=True)
+    website = models.URLField(blank=True)
+    description = models.TextField(blank=True)
+    founded_year = models.PositiveIntegerField(null=True, blank=True)
+    status = models.CharField(max_length=20, choices=[
+        ('active', 'Active'),
+        ('defunct', 'Defunct'),
+        ('unknown', 'Unknown'),
+    ], default='unknown')
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['name']
+
+    def __str__(self):
+        return self.name
+
+
+class BandConnection(models.Model):
+    from_band = models.ForeignKey(Band, on_delete=models.CASCADE, related_name='connections_from')
+    to_band = models.ForeignKey(Band, on_delete=models.CASCADE, related_name='connections_to')
+    connection_type = models.CharField(max_length=50, choices=[
+        ('shared_member', 'Shared Member'),
+        ('scene_peer', 'Scene Peer'),
+        ('influence', 'Influence'),
+        ('label_mate', 'Label Mate'),
+        ('venue_regular', 'Venue Regular'),
+        ('successor', 'Successor Band'),
+        ('collaboration', 'Collaboration'),
+    ])
+    source = models.URLField(blank=True)
+    notes = models.TextField(blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        unique_together = ['from_band', 'to_band', 'connection_type']
+        ordering = ['-created_at']
+
+    def __str__(self):
+        return f'{self.from_band.name} → {self.to_band.name} ({self.connection_type})'
