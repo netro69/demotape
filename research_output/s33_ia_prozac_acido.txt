@@ -1,0 +1,1 @@
+{"responseHeader":{"status":0,"QTime":39,"params":{"query":"text:&quot;prozac acido&quot; OR text:&quot;prozac acido&quot; OR text__reviews:&quot;prozac acido&quot;","qin":"&quot;prozac acido&quot;","fields":"identifier,title","wt":"json","rows":20,"start":0}},"response":{"numFound":0,"start":0,"docs":[]}}

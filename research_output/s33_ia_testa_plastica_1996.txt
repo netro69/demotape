@@ -1,0 +1,1 @@
+{"responseHeader":{"status":0,"QTime":63,"params":{"query":"text:&quot;testa plastica 1996&quot; OR text:&quot;testa plastica 1996&quot; OR text__reviews:&quot;testa plastica 1996&quot;","qin":"&quot;testa plastica 1996&quot;","fields":"identifier,title","wt":"json","rows":20,"start":0}},"response":{"numFound":0,"start":0,"docs":[]}}

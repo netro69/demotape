@@ -1,0 +1,1 @@
+{"responseHeader":{"status":0,"QTime":112,"params":{"query":"text:&quot;vox pop pordenone&quot; OR text:&quot;vox pop pordenone&quot; OR text__reviews:&quot;vox pop pordenone&quot;","qin":"&quot;vox pop pordenone&quot;","fields":"identifier,title","wt":"json","rows":20,"start":0}},"response":{"numFound":0,"start":0,"docs":[]}}

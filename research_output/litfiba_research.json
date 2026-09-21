@@ -1,0 +1,385 @@
+{
+  "band": {
+    "name": "Litfiba",
+    "formed": "October 1980",
+    "origin": "Florence (Firenze), Italy",
+    "disbanded": "December 2022",
+    "years_active": "1980-2022",
+    "name_origin": "Acronym for Località, Italia, Firenze, Via dei Bardi (L-IT-FI-BA). Via dei Bardi 32 was the street address of the band's first rehearsal space in Florence.",
+    "genres": [
+      "New Wave",
+      "Post-Punk",
+      "Dark Wave",
+      "Hard Rock",
+      "Alternative Rock",
+      "Latin Rock",
+      "Worldbeat"
+    ],
+    "total_albums_sold": "~10 million",
+    "musicbrainz_id": "e68a900e-4fae-493a-84a8-f76ab62d23e4",
+    "wikipedia_urls": {
+      "english": "https://en.wikipedia.org/wiki/Litfiba",
+      "italian": "https://it.wikipedia.org/wiki/Litfiba"
+    },
+    "official_website": "https://www.litfiba.net/",
+    "history": {
+      "early_days": "Formed in October 1980 in a basement in Via dei Bardi 32, Florence. The band was born in the Florentine underground scene of new wave, post-punk and dark wave. Early influences were British punk and new wave. First live performance was on December 6, 1980 at Rokkoteca Brighton in Florence.",
+      "first_era": "1980-1989: The 'Trilogy of Power' era. Released Eneide di Krypton (1983), Desaparecido (1985), 17 Re (1986), Litfiba 3 (1988). Lyrics were political and socially conscious. Sound evolved from new wave to more personal rock with Mediterranean influences.",
+      "second_era": "1989-1999: The 'Tetralogy of Elements' era. Released Pirata (1989), El Diablo (1990), Terremoto (1993), Spirito (1994), Mondi Sommersi (1997), plus live albums Colpo di Coda (1994), Lacio Drom (1995), Croce e Delizia (1998). This was their commercial peak period.",
+      "third_era": "1999-2009: Piero Pelù left in 1999 due to frictions with Ghigo Renzulli. Gianluigi 'Cabo' Cavallo became new vocalist. Released Infinito (1999), Elettromacumba (2000), Insidia (2001), Essere o Sembrare (2005). Cavallo left in 2006.",
+      "fourth_era": "2009-2022: Piero Pelù returned. Released Stato Libero di Litfiba (2010), Grande Nazione (2012), Trilogia 1983-1989 (Live 2013), Eutòpia (2016). The 'Trilogy of States' era. Final tour 'Ultimo Girone' in 2022 marked the band's end."
+    }
+  },
+  "members": {
+    "core_members": [
+      {
+        "name": "Federico 'Ghigo' Renzulli",
+        "role": "Guitar",
+        "years": "1980-2022",
+        "notes": "Co-founder and only constant member throughout entire career. Primary composer."
+      },
+      {
+        "name": "Piero Pelù",
+        "role": "Lead Vocals",
+        "years": "1980-1999, 2009-2022",
+        "notes": "Co-founder. Charismatic frontman. Left in 1999 for solo career, returned in 2009."
+      }
+    ],
+    "past_members": [
+      {
+        "name": "Gianni Maroccolo",
+        "role": "Bass",
+        "years": "1980-1989",
+        "notes": "Original bassist."
+      },
+      {
+        "name": "Antonio Aiazzi",
+        "role": "Keyboards",
+        "years": "1980-1989",
+        "notes": "Original keyboardist. Left in 1989 when Roberto Terzani switched to bass/keyboards."
+      },
+      {
+        "name": "Francesco Calamai",
+        "role": "Drums",
+        "years": "1980-198?",
+        "notes": "Original drummer."
+      },
+      {
+        "name": "Sandro Dotto",
+        "role": "Vocals",
+        "years": "1980",
+        "notes": "Original vocalist, very briefly, before Pelù joined."
+      },
+      {
+        "name": "Roberto Terzani",
+        "role": "Bass, Guitar (2nd)",
+        "years": "1989-1999, 2009-2022",
+        "notes": "Replaced Maroccolo on bass. Also played keyboards (replacing Aiazzi) and second guitar."
+      },
+      {
+        "name": "Daniele Trambusti",
+        "role": "Drums",
+        "years": "1989-1992",
+        "notes": "Drummer during El Diablo era."
+      },
+      {
+        "name": "Federico Poggipollini",
+        "role": "Guitar",
+        "years": "1989-1994",
+        "notes": "Second guitarist during El Diablo and Terremoto tours."
+      },
+      {
+        "name": "Candelo Cabezas",
+        "role": "Percussion",
+        "years": "1989-1992",
+        "notes": "Electronic percussionist. Contributed to Pirata and El Diablo albums."
+      },
+      {
+        "name": "Franco Caforio",
+        "role": "Drums",
+        "years": "1992-1999",
+        "notes": "Drummer during Spirito and Mondi Sommersi era."
+      },
+      {
+        "name": "Daniele Bagni",
+        "role": "Bass",
+        "years": "1994-1999",
+        "notes": "Bassist in the later EMI era."
+      },
+      {
+        "name": "Gianluigi 'Cabo' Cavallo",
+        "role": "Lead Vocals, Guitar",
+        "years": "1999-2006",
+        "notes": "Replaced Piero Pelù. Sang on Elettromacumba, Insidia, Essere o Sembrare. Won 4 gold records."
+      },
+      {
+        "name": "Gianluca Venier",
+        "role": "Bass",
+        "years": "1999-2000",
+        "notes": "From Malfunk. Played on Elettromacumba."
+      },
+      {
+        "name": "Ugo Nativi",
+        "role": "Drums",
+        "years": "1999-2001",
+        "notes": "Drummer on Elettromacumba and Insidia."
+      },
+      {
+        "name": "Gianmarco Colzi",
+        "role": "Drums",
+        "years": "2001-2006",
+        "notes": "Drummer on Essere o Sembrare."
+      },
+      {
+        "name": "Luca Martelli",
+        "role": "Keyboards",
+        "years": "2009-2022",
+        "notes": "Keyboardist during reunion era."
+      }
+    ]
+  },
+  "discography": {
+    "studio_albums": [
+      {
+        "title": "Eneide di Krypton",
+        "year": 1983,
+        "label": "CGD / Warner Music",
+        "notes": "Soundtrack for theater production. First album. Features instrumental new wave/post-punk."
+      },
+      {
+        "title": "Desaparecido",
+        "year": 1985,
+        "label": "WEA (Warner)",
+        "notes": "First part of 'Trilogy of Power'. Breakthrough album. Themes of political oppression and Latin American struggles."
+      },
+      {
+        "title": "17 Re",
+        "year": 1986,
+        "label": "WEA (Warner)",
+        "notes": "Second part of 'Trilogy of Power'. Most iconic album. Critique of power and corruption. Includes 'Paname', 'Tex', 'Louisiana'."
+      },
+      {
+        "title": "Litfiba 3",
+        "year": 1988,
+        "label": "WEA (Warner)",
+        "notes": "Third part of 'Trilogy of Power'. Darker, more experimental. Includes 'Dimmi il nome', 'Cangaceiro'."
+      },
+      {
+        "title": "Pirata",
+        "year": 1989,
+        "label": "WEA (Warner)",
+        "notes": "First part of 'Tetralogy of Elements'. Recorded live then reworked in studio. Marked shift toward harder rock."
+      },
+      {
+        "title": "El Diablo",
+        "year": 1990,
+        "label": "CGD / East West",
+        "notes": "Second part of 'Tetralogy of Elements' (Fire). Commercial breakthrough. Hard rock sound. Includes 'El Diablo', 'Tex', 'Proibito'."
+      },
+      {
+        "title": "Terremoto",
+        "year": 1993,
+        "label": "EMI",
+        "notes": "Third part of 'Tetralogy of Elements' (Earth). Hard rock with social commentary. Includes 'Soldi', 'Dinosauro', 'Il mistero di Giulia'."
+      },
+      {
+        "title": "Spirito",
+        "year": 1994,
+        "label": "EMI",
+        "notes": "Fourth part of 'Tetralogy of Elements' (Air). Lighter, more positive sound. Includes 'Spirito', 'Lacio Drom', 'Lo Spettacolo'."
+      },
+      {
+        "title": "Mondi Sommersi",
+        "year": 1997,
+        "label": "EMI",
+        "notes": "Fifth part of 'Tetralogy of Elements' (Water). More experimental. Includes 'Maudit', 'Fata Morgana'."
+      },
+      {
+        "title": "Croce e Delizia",
+        "year": 1998,
+        "label": "EMI",
+        "notes": "Last studio album with Piero Pelù (1st era). Pop-rock direction. Includes 'Croce e delizia'."
+      },
+      {
+        "title": "Infinito",
+        "year": 1999,
+        "label": "EMI",
+        "notes": "Final album of the Pelù 1st era. Pop-oriented. Includes 'Il mio corpo che cambia', 'Vivere il mio tempo', 'Mascherina'."
+      },
+      {
+        "title": "Elettromacumba",
+        "year": 2000,
+        "label": "EMI",
+        "notes": "First album with Gianluigi Cavallo. Latin/worldbeat influences. Includes 'Elettromacumba', 'Suona fratello'."
+      },
+      {
+        "title": "Insidia",
+        "year": 2001,
+        "label": "EMI",
+        "notes": "Second album with Cavallo. Darker, more introspective. Includes 'Insidia', 'Re del silenzio'."
+      },
+      {
+        "title": "Essere o Sembrare",
+        "year": 2005,
+        "label": "Edel",
+        "notes": "Third album with Cavallo. Mixed reception. Pop-rock sound. Includes 'Essere o sembrare'."
+      },
+      {
+        "title": "Grande Nazione",
+        "year": 2012,
+        "label": "Rhino Records / Warner Music",
+        "notes": "Second part of 'Trilogy of States'. Return to harder rock sound after reunion."
+      },
+      {
+        "title": "Eutòpia",
+        "year": 2016,
+        "label": "T.E.G. / Warner Music",
+        "notes": "Third part of 'Trilogy of States'. Final studio album. Includes 'Eutopia', 'La mia valigia'."
+      }
+    ],
+    "live_albums": [
+      {"title": "Live in Berlin", "year": 1984, "label": "CGD", "notes": "Rare live album from 1984, later reissued."},
+      {"title": "12/5/87 (Aprite i vostri occhi)", "year": 1987, "label": "WEA", "notes": "Live during Trilogy of Power tour."},
+      {"title": "Colpo di Coda", "year": 1994, "label": "EMI", "notes": "Live double album, EMI debut. Recorded during Terremoto tour."},
+      {"title": "Lacio Drom (Buon viaggio)", "year": 1995, "label": "EMI", "notes": "Live from Spirito tour."},
+      {"title": "Croce e Delizia (Live)", "year": 1998, "label": "EMI", "notes": "Live version of studio album."},
+      {"title": "Litfiba 99 Live", "year": 1999, "label": "EMI", "notes": "Final live with Pelù and Renzulli before breakup."},
+      {"title": "Stato Libero di Litfiba", "year": 2010, "label": "Sony Music / BMG", "notes": "Live album marking reunion. Recorded in Florence, April 2010."},
+      {"title": "Trilogia 1983-1989: Live 2013", "year": 2013, "label": "Rhino / Warner", "notes": "Live recordings of Trilogy of Power albums."},
+      {"title": "Yassassin - Rare Live", "year": 2016, "label": "Self-released", "notes": "Limited edition live recordings."},
+      {"title": "Litfiba Rare & Live (Box Set)", "year": 2011, "label": "Self-released", "notes": "Limited 1000-piece box with 10 picture discs and USB."}
+    ],
+    "compilations": [
+      {"title": "Sogno Ribelle", "year": 1992, "label": "WEA", "notes": "Best-of compilation 1983-1992."},
+      {"title": "The Platinum Collection", "year": 2003, "label": "EMI", "notes": "Compilation."},
+      {"title": "Lacio Drom (compilation)", "year": 1996, "label": "EMI", "notes": "Compilation of rarities and live tracks."},
+      {"title": "Le Più Belle Canzoni dei Litfiba", "year": 2005, "label": "EMI", "notes": "Best-of compilation."},
+      {"title": "Tutto Litfiba: Eroi nel vento 1984-1993", "year": 2010, "label": "WEA", "notes": "Compilation of Warner era."}
+    ],
+    "eps": [
+      {"title": "Litfiba", "year": 1982, "label": "Urgent Records", "notes": "12\" EP with 'Guerra'. First official release."},
+      {"title": "Guerra", "year": 1995, "label": "EMI", "notes": "Remix EP."},
+      {"title": "Yassassin", "year": 2016, "label": "Self-released", "notes": "Limited 12\" vinyl EP, Record Store Day."},
+      {"title": "Luna / La Preda", "year": 2014, "label": "Self-released", "notes": "Limited vinyl single."}
+    ],
+    "notable_tracks": [
+      "El Diablo",
+      "Tex",
+      "Paname",
+      "Louisiana",
+      "Dimmi il nome",
+      "Proibito",
+      "Soldi",
+      "Dinosauro",
+      "Cangaceiro",
+      "Il mistero di Giulia",
+      "Lacio Drom (Buon viaggio)",
+      "Lo Spettacolo",
+      "Fata Morgana",
+      "Maudit",
+      "Il mio corpo che cambia",
+      "Vivere il mio tempo",
+      "Mascherina",
+      "Amore immaginato",
+      "Spirito",
+      "Eroi nel vento",
+      "Istanbul (Remix)"
+    ]
+  },
+  "record_labels": [
+    {"name": "CGD (Compagnia Generale del Disco)", "years": "1982-1983, 1990", "notes": "First label partnership, later became part of East West/Warner."},
+    {"name": "WEA (Warner Elektra Atlantic)", "years": "1984-1992", "notes": "Most productive era. Released Trilogy of Power and Pirata."},
+    {"name": "East West (Warner subsidiary)", "years": "1990", "notes": "Released El Diablo."},
+    {"name": "EMI", "years": "1993-2001", "notes": "Released Terremoto through Elettromacumba. Major commercial success."},
+    {"name": "Edel", "years": "2005", "notes": "Released Essere o Sembrare."},
+    {"name": "Sony Music / BMG", "years": "2010", "notes": "Released Stato Libero di Litfiba (live)."},
+    {"name": "Rhino Records / Warner Music", "years": "2012-2013", "notes": "Released Grande Nazione and Trilogia live album."},
+    {"name": "T.E.G. (Terrificante Etica Globale)", "years": "2016", "notes": "Released Eutòpia."},
+    {"name": "Urgent Records", "years": "1982", "notes": "First EP release."},
+    {"name": "Self-released / LFC (Litfiba Fans Club)", "years": "2011-2016", "notes": "Limited editions, rare live recordings."}
+  ],
+  "connections": {
+    "florence_scene": {
+      "description": "Litfiba emerged from the Florentine underground music scene of the 1980s, centered around clubs like Rokkoteca Brighton, Manila, Faro, Casablanca. They were pioneers of Italian post-punk/new wave alongside other local acts.",
+      "related_bands": [
+        "Diaframma",
+        "Café Caracas",
+        "Neon",
+        "Rinf",
+        "Magazzini Criminali (theater company)"
+      ]
+    },
+    "italian_underground_network": {
+      "description": "Part of the broader Italian alternative rock/punk movement of the 1980s. Shared stages and audiences with punk and post-punk bands across Italy.",
+      "related_bands": [
+        "CCCP Fedeli alla linea",
+        "Nirvana (Italian band)",
+        "Negazione",
+        "Wretched",
+        "Indigesti",
+        "Declino",
+        "Kina"
+      ]
+    },
+    "connections_detail": [
+      {
+        "band": "Diaframma",
+        "type": "Shared scene",
+        "description": "Both Florence-based new wave/post-punk bands. Litfiba and Diaframma shared stages and audiences. Tour dates in France were shared between the two bands. Miro Sassolini (Diaframma) and Piero Pelù performed 'Amsterdam' as a duet."
+      },
+      {
+        "band": "CCCP Fedeli alla linea",
+        "type": "Shared scene",
+        "description": "Both key bands of Italian 1980s alternative rock. CCCP was punk, Litfiba was new wave, but they shared the same underground ethos and audiences."
+      },
+      {
+        "band": "Café Caracas",
+        "type": "Local scene",
+        "description": "Florence band from the same underground scene. Ghigo Renzulli was briefly in Café Caracas before founding Litfiba."
+      }
+    ]
+  },
+  "themes_and_trilogies": {
+    "trilogy_of_power": {
+      "name": "Trilogia del Potere",
+      "albums": ["Desaparecido (1985)", "17 Re (1986)", "Litfiba 3 (1988)"],
+      "theme": "Critique of power, oppression, political corruption, and social injustice."
+    },
+    "tetralogy_of_elements": {
+      "name": "Tetralogia degli Elementi",
+      "albums": ["Pirata (1989) - undefined", "El Diablo (1990) - Fire", "Terremoto (1993) - Earth", "Spirito (1994) - Air", "Mondi Sommersi (1997) - Water"],
+      "theme": "Symbolic journey representing the four classical elements."
+    },
+    "trilogy_of_states": {
+      "name": "Trilogia degli Stati",
+      "albums": ["Stato Libero di Litfiba (2010)", "Grande Nazione (2012)", "Eutòpia (2016)"],
+      "theme": "Exploration of states of being, society, and utopia."
+    }
+  },
+  "legacy": {
+    "significance": "One of the most important and influential Italian rock bands. Sold approximately 10 million records. Pioneered Italian-language rock music. Bridged underground/alternative scene with mainstream success.",
+    "achievements": [
+      "First Italian rock band to sell out major stadiums",
+      "Pioneered Italian-language rock in a market dominated by English-language acts",
+      "Influenced generations of Italian musicians",
+      "Successfully transitioned from underground to mainstream without losing artistic credibility",
+      "One of few Italian bands to tour extensively in Europe"
+    ],
+    "final_show": "December 2022 - 'Ultimo Girone' farewell tour concluded with final concerts. Piero Pelù and Ghigo Renzulli announced the end of the band.",
+    "post_band": "Ghigo Renzulli continues solo career. Piero Pelù continues with solo projects and occasional collaborations."
+  },
+  "sources": [
+    "https://it.wikipedia.org/wiki/Litfiba",
+    "https://en.wikipedia.org/wiki/Litfiba",
+    "https://it.wikipedia.org/wiki/Discografia_dei_Litfiba",
+    "https://www.litfiba.net/sito/discography/",
+    "https://musicbrainz.org/artist/e68a900e-4fae-493a-84a8-f76ab62d23e4",
+    "https://www.allmusic.com/artist/litfiba-mn0000303552",
+    "https://www.scaruffi.com/vol4/litfiba.html",
+    "https://www.litfibaunofficial.it/",
+    "https://grokipedia.com/page/Litfiba",
+    "https://www.ondarock.it/monografie/litfiba/",
+    "https://www.discogs.com/artist/618504-Litfiba",
+    "https://www.estatica.it/en/musica/litfiba/discografia"
+  ]
+}
