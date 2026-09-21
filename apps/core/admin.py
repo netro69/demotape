@@ -4,7 +4,7 @@ from django.utils import timezone
 from .models import (
     Band, GenreTag, Release, Track, Image,
     Playlist, PlaylistTrack, Flag, UserProfile, PlayLog,
-    Link, Label, BandConnection,
+    Link, Label, BandConnection, ContributorSubmission,
 )
 
 
@@ -144,3 +144,24 @@ class UserProfileAdmin(admin.ModelAdmin):
 class PlayLogAdmin(admin.ModelAdmin):
     list_display = ['track', 'user', 'session_key', 'played_at']
     search_fields = ['track__title', 'user__username']
+
+
+@admin.register(ContributorSubmission)
+class ContributorSubmissionAdmin(admin.ModelAdmin):
+    list_display = ['band', 'submission_type', 'suggested_url', 'status', 'created_at', 'reviewed_by']
+    list_filter = ['status', 'submission_type']
+    search_fields = ['band__name', 'suggested_url', 'comment', 'submitter_name']
+    readonly_fields = ['created_at', 'math_captcha_answer', 'honeypot']
+    actions = ['approve_submissions', 'reject_submissions']
+
+    def approve_submissions(self, request, queryset):
+        """Mark selected submissions as approved (applied)."""
+        count = queryset.update(status='applied', reviewed_by='admin')
+        self.message_user(request, f'{count} submissions approved and marked as applied.')
+    approve_submissions.short_description = 'Approve selected (mark as applied)'
+
+    def reject_submissions(self, request, queryset):
+        """Reject selected submissions."""
+        count = queryset.update(status='rejected', reviewed_by='admin')
+        self.message_user(request, f'{count} submissions rejected.')
+    reject_submissions.short_description = 'Reject selected'

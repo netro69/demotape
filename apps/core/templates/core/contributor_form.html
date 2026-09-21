@@ -1,0 +1,52 @@
+{% load i18n %}
+
+<form id="contributor-form"
+      hx-post="{% url 'contributor_submit' band.slug %}"
+      hx-target="#contributor-modal-content"
+      hx-swap="innerHTML"
+      class="contributor-form">
+  {% csrf_token %}
+  <h3>{% if link_id %}Report issue / Suggest fix{% else %}Suggest an update{% endif %}</h3>
+  <p class="contributor-form-help">
+    Help us keep Demotape accurate. Your submission will be reviewed by an admin — never auto-published.
+  </p>
+
+  <!-- Honeypot (hidden from real users) -->
+  <div style="position:absolute;left:-9999px;top:-9999px;" aria-hidden="true">
+    <input type="text" name="company" tabindex="-1" autocomplete="off" value="">
+  </div>
+
+  <input type="hidden" name="link_id" value="{{ link_id|default:'' }}">
+  <input type="hidden" name="submission_type" value="{{ submission_type|default:'band_update' }}">
+
+  <div class="form-row">
+    <label for="id_suggested_url">Suggested URL (optional)</label>
+    <input type="url" name="suggested_url" id="id_suggested_url"
+           placeholder="https://example.com" maxlength="500">
+  </div>
+
+  <div class="form-row">
+    <label for="id_comment">Description / Notes *</label>
+    <textarea name="comment" id="id_comment" rows="3"
+              placeholder="Tell us what you found or want to correct..." required></textarea>
+  </div>
+
+  <div class="form-row">
+    <label for="id_submitter_name">Your name (optional)</label>
+    <input type="text" name="submitter_name" id="id_submitter_name" maxlength="100">
+  </div>
+
+  <div class="form-row">
+    <label for="id_submitter_email">Your email (optional — for follow-up)</label>
+    <input type="email" name="submitter_email" id="id_submitter_email" maxlength="254">
+  </div>
+
+  <!-- Math captcha -->
+  <div class="form-row captcha-row">
+    <label for="id_captcha">Are you human? What is {{ captcha_a }} + {{ captcha_b }}?</label>
+    <input type="number" name="captcha_answer" id="id_captcha" required>
+    <input type="hidden" name="captcha_expected" value="{{ captcha_answer }}">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Send submission</button>
+</form>

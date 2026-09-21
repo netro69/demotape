@@ -8,6 +8,13 @@ load_dotenv(BASE_DIR / '.env')
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-CHANGE-ME')
 DEBUG = os.environ.get('DJANGO_DEBUG', '1') == '1'
 
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+        'LOCATION': 'demotape-cache',
+    }
+}
+
 ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [

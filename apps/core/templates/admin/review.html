@@ -51,4 +51,56 @@
         {% endfor %}
     </tbody>
 </table>
+
+<h1>Community Submissions</h1>
+<p>Submissions from the public — link fixes, band updates, new link suggestions.</p>
+
+<table id="submissions-table">
+    <thead>
+        <tr>
+            <th>Band</th>
+            <th>Type</th>
+            <th>Suggested URL</th>
+            <th>Comment</th>
+            <th>Submitter</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for sub in submissions %}
+        <tr id="sub-{{ sub.id }}">
+            <td>{{ sub.band.name }}</td>
+            <td>{{ sub.get_submission_type_display }}</td>
+            <td>
+                {% if sub.suggested_url %}
+                <a href="{{ sub.suggested_url }}" target="_blank">{{ sub.suggested_url|truncatechars:50 }}</a>
+                {% else %}—{% endif %}
+            </td>
+            <td>{{ sub.comment|truncatechars:80 }}</td>
+            <td>
+                {% if sub.submitter_name %}{{ sub.submitter_name }}{% else %}—{% endif %}
+                {% if sub.submitter_email %}<br><small>{{ sub.submitter_email }}</small>{% endif %}
+            </td>
+            <td>{{ sub.created_at|date:"Y-m-d H:i" }}</td>
+            <td>{{ sub.get_status_display }}</td>
+            <td>
+                <button hx-post="{% url 'review_queue' %}"
+                        hx-vals='{"sub_id": "{{ sub.id }}", "sub_action": "approve", "link_id": "{{ sub.link.id }}"}'
+                        hx-target="#sub-{{ sub.id }}"
+                        hx-swap="outerHTML"
+                        class="button confirm-btn">Approve</button>
+                <button hx-post="{% url 'review_queue' %}"
+                        hx-vals='{"sub_id": "{{ sub.id }}", "sub_action": "reject"}'
+                        hx-target="#sub-{{ sub.id }}"
+                        hx-swap="outerHTML"
+                        class="button reject-btn">Reject</button>
+            </td>
+        </tr>
+        {% empty %}
+        <tr><td colspan="8">No community submissions pending.</td></tr>
+        {% endfor %}
+    </tbody>
+</table>
 {% endblock %}

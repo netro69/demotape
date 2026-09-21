@@ -271,7 +271,42 @@ class Link(models.Model):
         ordering = ['-verification_level', 'link_type', '-is_primary', 'title']
 
     def __str__(self):
-        return f'{self.get_link_type_display()}: {self.title or self.url}'
+        return f'{self.link_type}: {self.title or self.url}'
+
+
+class ContributorSubmission(models.Model):
+    """External community submissions — link fixes, band updates."""
+
+    class SubmissionType(models.TextChoices):
+        LINK_FIX = 'link_fix', 'Link Fix / Report Issue'
+        BAND_UPDATE = 'band_update', 'Band Update / Missing Links'
+
+    class MetaStatus(models.TextChoices):
+        PENDING = 'pending', 'Pending Review'
+        REVIEWED = 'reviewed', 'Reviewed'
+        APPLIED = 'applied', 'Applied'
+        REJECTED = 'rejected', 'Rejected'
+
+    band = models.ForeignKey(Band, on_delete=models.CASCADE, related_name='contributor_submissions')
+    link = models.ForeignKey(Link, on_delete=models.SET_NULL, null=True, blank=True, related_name='contributor_submissions')
+    submission_type = models.CharField(max_length=20, choices=SubmissionType.choices)
+    suggested_url = models.URLField(blank=True)
+    comment = models.TextField(blank=True)
+    submitter_name = models.CharField(max_length=100, blank=True)
+    submitter_email = models.EmailField(blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    status = models.CharField(max_length=20, choices=MetaStatus.choices, default=MetaStatus.PENDING)
+    reviewed_by = models.CharField(max_length=50, blank=True)
+    review_notes = models.TextField(blank=True)
+    # Spam protection fields
+    math_captcha_answer = models.CharField(max_length=10, blank=True)
+    honeypot = models.CharField(max_length=255, blank=True)
+
+    class Meta:
+        ordering = ['-created_at']
+
+    def __str__(self):
+        return f'{self.get_submission_type_display()} for {self.band.name}'
 
 
 class Label(models.Model):

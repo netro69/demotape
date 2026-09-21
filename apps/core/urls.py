@@ -11,4 +11,5 @@ urlpatterns = [
     path('labels/<slug:slug>/', views.label_detail, name='label_detail'),
     path('search/', views.search, name='search'),
     path('admin/core/link/review/', views.review_queue, name='review_queue'),
+    path('bands/<slug:slug>/contribute/', views.contributor_submit, name='contributor_submit'),
 ]

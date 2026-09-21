@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 
+{% load core_tags %}
+
 {% block title %}Demotape - {{ band.name }}{% endblock %}
 
 {% block content %}
@@ -64,13 +66,29 @@
       <h3>{{ display }}</h3>
       {% for link in type_links %}
       <div class="link-item">
+        <!-- Verification badge -->
+        <span class="link-badge {% if link.verification_level == 4 %}badge-verified{% elif link.verification_level == 0 %}badge-flagged{% else %}badge-pending{% endif %}"
+              title="{{ link.get_verification_level_display }}"
+              aria-label="Verification: {{ link.get_verification_level_display }}">
+          {% if link.verification_level == 4 %}✓{% elif link.verification_level == 0 %}✗{% else %}◐{% endif %}
+        </span>
         <!-- Original source link -->
         <div class="source-link">
           <a href="{{ link.url }}" target="_blank" rel="noopener">
             {{ link.title|default:link.url }}
           </a>
           {% if link.description %}<p class="link-desc">{{ link.description }}</p>{% endif %}
+          <span class="visually-hidden">— {{ link.get_verification_level_display }}</span>
+          <!-- Per-link report button -->
+          <button class="link-report-btn"
+                  hx-get="{% url 'contributor_submit' band.slug %}?link_id={{ link.id }}"
+                  hx-target="#contributor-modal-content"
+                  hx-swap="innerHTML"
+                  aria-label="Report issue or suggest fix for this link">
+            Report issue
+          </button>
         </div>
+
         
         <!-- Local audio player (if available) -->
         {% if link.local_audio %}
@@ -206,5 +224,38 @@
     </div>
   </section>
   {% endif %}
+
+  <!-- Contributor submission section -->
+  <section class="contributor-section">
+    <h2>Help improve this page</h2>
+    <p class="contributor-text">Spotted a broken link? Know a better source? Send us a tip.</p>
+    <button class="btn btn-contributor"
+            hx-get="{% url 'contributor_submit' band.slug %}"
+            hx-target="#contributor-modal-content"
+            hx-swap="innerHTML">
+      Suggest an update
+    </button>
+  </section>
 </div>
+
+<!-- Modal container for contributor submissions -->
+<div id="contributor-modal" class="contributor-modal" style="display:none;">
+  <div class="contributor-modal-overlay" onclick="document.getElementById('contributor-modal').style.display='none'"></div>
+  <div class="contributor-modal-body">
+    <button class="contributor-modal-close"
+            onclick="document.getElementById('contributor-modal').style.display='none'">×</button>
+    <div id="contributor-modal-content">
+      <!-- HTMX loads content here -->
+    </div>
+  </div>
+</div>
+
+<script>
+  document.body.addEventListener('htmx:afterSwap', function(evt) {
+    if (evt.detail.target.id === 'contributor-modal-content') {
+      document.getElementById('contributor-modal').style.display = 'flex';
+    }
+  });
+</script>
+
 {% endblock %}
