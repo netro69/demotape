@@ -208,6 +208,24 @@ class Link(models.Model):
         ('purchase', 'Where to Buy'),
         ('streaming', 'Streaming'),
         ('archive', 'Archive / Reference'),
+        # Extended types — added 2026-09-21 (PUR-1221): research scripts
+        # introduced these values before the model was updated. Values match
+        # the DB exactly; existing rows are NOT modified.
+        ('article', 'Article / Press'),
+        ('interview', 'Interview'),
+        ('music', 'Music (Bandcamp, SoundCloud)'),
+        ('review', 'Review'),
+        ('news', 'News'),
+        ('database', 'Database Entry'),
+        ('official', 'Official Page'),
+        ('festival', 'Festival / Event'),
+        ('image', 'Image / Photo'),
+        ('shop', 'Shop / Merch'),
+        ('live', 'Live Recording'),
+        ('radio', 'Radio / Podcast'),
+        ('directory', 'Directory Listing'),
+        ('fanzine', 'Fanzine'),
+        ('profile', 'Profile Page'),
         ('other', 'Other'),
     ]
     band = models.ForeignKey(Band, on_delete=models.CASCADE, related_name='links')
@@ -269,3 +287,47 @@ class BandConnection(models.Model):
 
     def __str__(self):
         return f'{self.from_band.name} → {self.to_band.name} ({self.connection_type})'
+
+
+class Fanzine(models.Model):
+    """Italian underground fanzines — independent magazines that reviewed bands."""
+    name = models.CharField(max_length=255)
+    slug = models.SlugField(unique=True)
+    city = models.CharField(max_length=255, blank=True)
+    active_years = models.CharField(max_length=50, blank=True)
+    description = models.TextField(blank=True)
+    website = models.URLField(blank=True)
+    cover_image = models.ImageField(upload_to='fanzines/', blank=True)
+    status = models.CharField(max_length=20, choices=[
+        ('active', 'Active'),
+        ('defunct', 'Defunct'),
+        ('unknown', 'Unknown'),
+    ], default='unknown')
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['name']
+
+    def __str__(self):
+        return str(self.name)
+
+
+class FanzineReview(models.Model):
+    """Reviews of bands published in fanzines."""
+    band = models.ForeignKey(Band, on_delete=models.CASCADE, related_name='fanzine_reviews')
+    fanzine = models.ForeignKey(Fanzine, on_delete=models.CASCADE, related_name='reviews')
+    issue_number = models.CharField(max_length=50, blank=True)
+    review_text = models.TextField(blank=True)
+    page_number = models.CharField(max_length=20, blank=True)
+    year = models.PositiveIntegerField(null=True, blank=True)
+    digitized_url = models.URLField(blank=True, help_text='Link to digitized version if available online')
+    notes = models.TextField(blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['-year', 'fanzine__name', 'issue_number']
+        unique_together = ['band', 'fanzine', 'issue_number']
+
+    def __str__(self):
+        return f'{self.band.name} in {self.fanzine.name} #{self.issue_number}'
