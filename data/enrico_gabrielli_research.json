@@ -1,0 +1,333 @@
+{
+  "band_name": "Enrico Gabrielli",
+  "alt_names": ["Der Maurer", "Enro Winston"],
+  "formation_year": 2000,
+  "formation_location": "Milan, Italy",
+  "status": "active (as of 2025)",
+  "genres": [
+    "Cinematic funk",
+    "Psychedelic funk",
+    "Library music",
+    "Progressive rock",
+    "Canterbury scene",
+    "Contemporary classical",
+    "Chamber music",
+    "Experimental"
+  ],
+  "description": "Enrico Gabrielli (born 24 October 1976, Montevarchi, Arezzo, Italy) is an Italian multi-instrumentalist, composer, arranger, producer, and writer. Also known by his pseudonym Der Maurer, he is a central node in Italy's experimental/library/psychedelic underground. A graduate of the Conservatorio G. Verdi di Milano (clarinet), he has contributed to over 250 recordings in a 25+ year career. He is best known as a founding member of Calibro 35 (cinematic funk), The Winstons (progressive rock), and as the creator of the 19'40\" recording series. His work spans psychedelic funk, chamber composition, film/TV scoring, and children's music (Le Canzonine, 2023). He is also a novelist, debuting with the mystery novel Virginia (Wudz Edizioni, 2024).",
+  "key_members": {
+    "current": [
+      {"name": "Enrico Gabrielli", "role": "multi-instrumentalist, composer, arranger, producer", "years": "2000-present", "alias": "Der Maurer / Enro Winston"}
+    ],
+    "associated": [
+      {"name": "Tommaso Colliva", "role": "Calibro 35 bandmate, engineer", "years": "2007-present"},
+      {"name": "Massimo Martellotta", "role": "Calibro 35 bandmate", "years": "2007-present"},
+      {"name": "Fabio Rondanini", "role": "Calibro 35 bandmate", "years": "2007-present"},
+      {"name": "Sebastiano De Gennaro", "role": "19'40\" co-founder, Esecutori di Metallo su Carta collaborator", "years": "2016-present"},
+      {"name": "Francesco Fusaro", "role": "19'40\" co-founder", "years": "2016-present"},
+      {"name": "Roberto Dell'Era", "role": "The Winstons bandmate (Rob Winston)", "years": "2015-present"},
+      {"name": "Lino Gitto", "role": "The Winstons bandmate (Linnon Winston)", "years": "2015-present"}
+    ]
+  },
+  "discography": {
+    "studio_albums": [
+      {"year": 2000, "title": "Mariposa – The Ol' Dirt Road", "format": "CD", "notes": "Early Italian psychedelic funk project"},
+      {"year": 2008, "title": "Calibro 35 – Calibro 35", "label": "Cinedelic Records", "format": "CD/vinyl", "notes": "Debut cinematic funk album; features reinterpretations of Morricone, Trovajoli, Micalizzi, Bacalov"},
+      {"year": 2010, "title": "Der Maurer Vol. 1", "format": "CD", "notes": "Solo chamber compositions; clarinet, bass clarinet, double bass, piano"},
+      {"year": 2010, "title": "4 Fiori per Zoe – Musiche per film mai visti", "format": "CD", "notes": "Film music compilation; collaborator alongside Matteo Romagnoli, Nicola Manzanelli"},
+      {"year": 2010, "title": "Calibro 35 – Ritornano quelli di... Calibro 35", "label": "Cinedelic Records", "format": "CD/vinyl"},
+      {"year": 2013, "title": "Calibro 35 – Traditori di tutti", "label": "Record Kicks", "format": "CD/vinyl", "notes": "Features Manuel Agnelli (Afterhours) on single 'Ragazzo di strada'"},
+      {"year": 2015, "title": "Calibro 35 – S.P.A.C.E.", "label": "Record Kicks", "format": "CD/vinyl"},
+      {"year": 2016, "title": "Junkfood + Enrico Gabrielli – Italian Masters", "label": "Cinedelic CNLP53", "format": "Vinyl (300 copies)", "notes": "Reinterpretations of Piero Umiliani, recorded at Vacuum Studio Bologna"},
+      {"year": 2016, "title": "The Winstons – The Winstons", "label": "AMS Records", "format": "CD/vinyl", "notes": "Canterbury/prog debut; 'Van der Graaf Generator meets The Zombies'"},
+      {"year": 2017, "title": "The Winstons / Esecutori di Metallo su Carta – Pictures at an Exhibition", "label": "19'40\"", "format": "CD", "notes": "Mussorgsky prog reinterpretation"},
+      {"year": 2018, "title": "Calibro 35 – Decade", "label": "Record Kicks", "format": "CD/vinyl"},
+      {"year": 2019, "title": "19'40\" – Mother Earth's Plantasia", "label": "19'40\"", "format": "CD", "notes": "Mort Garson cover tribute; recorded at Laboratori Testone, Milan"},
+      {"year": 2019, "title": "The Winstons – Smith", "label": "AMS Records", "format": "CD/vinyl", "notes": "Canterbury/prog second album"},
+      {"year": 2020, "title": "Winstons Enrico Gabrielli – Montagnola Republic", "format": "Digital (Internet Archive)", "notes": "Live recording from Bologna"},
+      {"year": 2021, "title": "Calibro 35 – Blanca (Colonna Sonora Originale)", "label": "Rai Com", "format": "CD/digital", "notes": "RAI TV series soundtrack"},
+      {"year": 2021, "title": "Calibro 35 – Sandokan (Music from the Original TV Series)", "label": "Rai Com", "format": "CD/digital", "notes": "TV series soundtrack"},
+      {"year": 2023, "title": "Calibro 35 – Nouvelles Aventures", "label": "Record Kicks", "format": "CD/vinyl"},
+      {"year": 2023, "title": "Le Canzonine", "label": "42 Records", "format": "CD/vinyl/digital", "notes": "Children's music album, 18 tracks; arrangements of Anne Sylvestre, Gianni Rodari"},
+      {"year": 2024, "title": "The Winstons – Third", "label": "AMS Records", "format": "CD/vinyl", "notes": "Latest prog studio album"},
+      {"year": 2025, "title": "Der Maurer Vol. 2", "label": "19'40\"", "format": "CD", "notes": "Compositions written 1999–2025; miniature clarinet concertos, horn/violin/piano trios"},
+      {"year": 2025, "title": "Calibro 35 – Exploration", "label": "Record Kicks", "format": "CD/vinyl"},
+      {"year": 2025, "title": "Calibro 35 – Ellroy vs L.A. (OST)", "label": "Record Kicks", "format": "CD/vinyl", "notes": "Original soundtrack inspired by James Ellroy novels"}
+    ],
+    "compilations_and_series": [
+      {"year": 2016, "title": "19'40\" subscription series", "format": "Ongoing CD series", "notes": "Anti-classical recording series; 14+ releases including tributes to Herrmann, Mort Garson, arcade games"}
+    ],
+    "soundtracks": [
+      {"year": 2021, "title": "Blanca (RAI series)", "type": "TV soundtrack", "with": "Calibro 35"},
+      {"year": 2021, "title": "Sandokan (TV series)", "type": "TV soundtrack", "with": "Calibro 35"},
+      {"year": 2021, "title": "Sandokan (2025 remake)", "type": "TV soundtrack", "with": "Calibro 35"},
+      {"year": 2025, "title": "Ellroy vs L.A.", "type": "Original soundtrack", "with": "Calibro 35"},
+      {"year": 2025, "title": "Diabolik (third chapter, Manetti Bros)", "type": "Film", "role": "Composer"},
+      {"year": 2025, "title": "Onoda — 10,000 Nights in the Jungle", "type": "Film", "role": "Contributor"}
+    ]
+  },
+  "labels": [
+    {"name": "Cinedelic Records", "country": "Italy", "years": "2008-2016"},
+    {"name": "Record Kicks", "country": "Italy", "years": "2013-present"},
+    {"name": "AMS Records", "country": "Italy", "years": "2016-2024"},
+    {"name": "19'40\"", "country": "Italy", "years": "2016-present"},
+    {"name": "42 Records", "country": "Italy", "years": "2023"},
+    {"name": "Rai Com", "country": "Italy", "years": "2021"},
+    {"name": "Wudz Edizioni", "country": "Italy", "years": "2024", "role": "Literary publisher"}
+  ],
+  "related_bands_and_collaborations": [
+    {
+      "band": "Calibro 35",
+      "connection": "Founding member, multi-instrumentalist (sax, bass clarinet, flute, keyboards)",
+      "connection_type": "core_member",
+      "in_database": true,
+      "notes": "Formed 2007 in Milan. Cinematic funk/jazz-rock. Music sampled by Dr. Dre, Jay Z, Damon Albarn. Performed at Milano-Cortina 2026 Winter Olympics closing ceremony."
+    },
+    {
+      "band": "The Winstons",
+      "connection": "Founding member as 'Enro Winston' (keyboards, woodwinds, vocals)",
+      "connection_type": "core_member",
+      "in_database": true,
+      "band_id": 106,
+      "notes": "Progressive rock/Canterbury scene trio formed 2015/2016. Members: Lino Gitto, Roberto Dell'Era (Afterhours, Le Vibrazioni), Enrico Gabrielli. 3 studio albums. NOTE: Band formed 2016 — outside project's 1985-2000 core scope."
+    },
+    {
+      "band": "Julie's Haircut",
+      "connection": "Esecutori di Metallo su Carta reworked Julie's Haircut on Progetto Generativo (2016)",
+      "connection_type": "collaboration",
+      "in_database": true,
+      "notes": "Julie's Haircut is an Italian psychedelic pop/experimental band. Gabrielli's ensemble Esecutori di Metallo su Carta covered their work alongside Zu, Aucan, Morkobot, Hobocombo."
+    },
+    {
+      "band": "Junkfood",
+      "connection": "Collaborative project 'Junkfood + Enrico Gabrielli – Italian Masters' (2016)",
+      "connection_type": "collaboration",
+      "in_database": false,
+      "notes": "Library music reissue project reinterpreting Piero Umiliani and other Italian film composers. Recorded at Vacuum Studio (Bruno Germano/Iosonouncane) in Bologna. Limited 300-copy vinyl."
+    },
+    {
+      "band": "Mariposa",
+      "connection": "Founding member of Italian psychedelic funk project",
+      "connection_type": "core_member",
+      "in_database": false,
+      "notes": "Early project; debut album 'The Ol' Dirt Road' (2000). Gabrielli's first major band before Calibro 35."
+    },
+    {
+      "band": "Esecutori di Metallo su Carta",
+      "connection": "Co-founder with Sebastiano De Gennaro (2016)",
+      "connection_type": "core_member",
+      "in_database": false,
+      "notes": "Contemporary/experimental ensemble. Released 'Progetto Generativo' — reworkings of Italian underground artists: Zu, Aucan, Morkobot, Julie's Haircut, Hobocombo."
+    },
+    {
+      "band": "19'40\"",
+      "connection": "Co-founder (2016) with Sebastiano De Gennaro, Francesco Fusaro",
+      "connection_type": "core_member",
+      "in_database": false,
+      "notes": "Recording series/label: subscription CD series, one release every 3 months. 14+ releases. 'Anti-classical' concept bridging composed music and underground aesthetics."
+    },
+    {
+      "band": "Zu",
+      "connection": "Esecutori di Metallo su Carta covered Zu on Progetto Generativo",
+      "connection_type": "collaboration",
+      "in_database": false,
+      "notes": "Italian experimental rock band from Rome."
+    },
+    {
+      "band": "Hobocombo",
+      "connection": "Esecutori di Metallo su Carta covered Hobocombo on Progetto Generativo",
+      "connection_type": "collaboration",
+      "in_database": false,
+      "notes": "Italian experimental/psychedelic band."
+    },
+    {
+      "band": "Morkobot",
+      "connection": "Esecutori di Metallo su Carta covered Morkobot on Progetto Generativo",
+      "connection_type": "collaboration",
+      "in_database": false,
+      "notes": "Italian experimental artist."
+    },
+    {
+      "band": "Aucan",
+      "connection": "Esecutori di Metallo su Carta covered Aucan on Progetto Generativo",
+      "connection_type": "collaboration",
+      "in_database": false,
+      "notes": "Italian experimental artist."
+    },
+    {
+      "band": "PJ Harvey",
+      "connection": "Live performance/tour collaboration",
+      "connection_type": "session_musician",
+      "in_database": false,
+      "notes": "International collaboration as session musician."
+    },
+    {
+      "band": "Mike Patton",
+      "connection": "Live performance/tour collaboration",
+      "connection_type": "session_musician",
+      "in_database": false,
+      "notes": "Faith No More / Mr. Bungle frontman."
+    },
+    {
+      "band": "Afterhours",
+      "connection": "Live performance/tour collaboration",
+      "connection_type": "session_musician",
+      "in_database": false,
+      "notes": "Major Italian rock band. Manuel Agnelli (vocals) also featured on Calibro 35 single."
+    },
+    {
+      "band": "Muse",
+      "connection": "Live performance/tour collaboration",
+      "connection_type": "session_musician",
+      "in_database": false,
+      "notes": "International collaboration as session musician."
+    },
+    {
+      "band": "Iggy Pop",
+      "connection": "Arranged music for Iggy Pop's 2023 live performance at Palazzo Te, Mantua",
+      "connection_type": "collaboration",
+      "in_database": false,
+      "notes": "Arranged for Orchestra da Camera di Mantova during Iggy Pop's August 2023 concert."
+    }
+  ],
+  "youtube_videos": [
+    {"title": "Junkfood + Enrico Gabrielli — Italian Masters Vol.1 (Piero Umiliani)", "url": "https://www.youtube.com/watch?v=rVfW8CmKG4k", "description": "Full album video with tracklist and personnel"},
+    {"title": "Mother Earth's Plantasia (Mort Garson cover)", "url": "https://www.youtube.com/watch?v=7hJkCooa5V8", "description": "19'40\" recording with Gabrielli on keyboards, flute, clarinets, sax, voice"},
+    {"title": "Enrico Gabrielli — musica colta per tutti (CINITALIA)", "url": "https://www.youtube.com/watch?v=mZvRdgQOjIM", "description": "CINITALIA talk on accessible composed music"},
+    {"title": "Enrico Gabrielli su Der Maurer vol.2", "url": "https://www.youtube.com/watch?v=p_6Z-ArRu6E", "description": "Promo video for solo album"},
+    {"title": "Talking With Enrico Gabrielli (Unità di Produzione Musicale)", "url": "https://www.youtube.com/watch?v=dGNequz_-aA", "description": "In-depth interview"},
+    {"title": "Julie's Haircut e Enrico Gabrielli @ #Suo.Na - Gemini", "url": "https://www.youtube.com/watch?v=I4-VwhU_x4o", "description": "Live performance together"},
+    {"title": "Enrico Gabrielli / Der Maurer interpreta Igor Stravinskij", "url": "https://www.youtube.com/watch?v=yD-jhQa2-aQ", "description": "Stravinsky interpretation by Der Maurer"}
+  ],
+  "official_links": {
+    "official_website": "http://www.enricogabrielli.com/",
+    "bandcamp": "https://enricogabrielli.bandcamp.com/",
+    "19m40s_website": "https://www.19m40s.com/",
+    "19m40s_bandcamp": "https://19m40s.bandcamp.com/",
+    "calibro35_website": "https://www.calibro35.com/",
+    "winstons_official": "https://www.ver1musica.it/project/the-winstons/?lang=en",
+    "discogs": "https://www.discogs.com/artist/1079953-Enrico-Gabrielli",
+    "spotify": "https://open.spotify.com/artist/4hIkZdejfFu3WtYEkBBjuQ",
+    "apple_music": "https://music.apple.com/it/artist/enrico-gabrielli/279711297",
+    "wikipedia_it": "https://it.wikipedia.org/wiki/Enrico_Gabrielli_(musicista)"
+  },
+  "discogs_id": "1079953",
+  "historical_significance": [
+    "Founding member of Calibro 35 — pioneering cinematic funk band whose music was sampled by Dr. Dre (Compton), Jay Z, Damon Albarn",
+    "Calibro 35 performed at the closing ceremony of the Milano-Cortina 2026 Winter Olympics",
+    "Created 19'40\" recording series — a subscription-based, small-run CD series mirroring demotape ethos",
+    "Bridge figure between Italian contemporary classical, psychedelic funk, progressive rock, and library music revival",
+    "Contributed to 250+ recordings over 25+ years as session musician and collaborator",
+    "Film/TV scoring includes RAI series Blanca and Sandokan, Diabolik (Manetti Bros), collaborations with Arthur Harari (Oscar winner)",
+    "Arranged music for Iggy Pop's 2023 Mantua performance with Orchestra da Camera di Mantova",
+    "Children's music album 'Le Canzonine' (2023) praised for artistic depth beyond genre expectations",
+    "Debut mystery novel 'Virginia' (2024) expands his artistic profile beyond music",
+    "Central node connecting Italian underground artists: Zu, Aucan, Morkobot, Julie's Haircut, Hobocombo via Esecutori di Metallo su Carta"
+  ],
+  "milan_scene_context": "Enrico Gabrielli is a central figure in Milan's experimental music scene, operating at the intersection of conservatory-trained composition, psychedelic funk, and underground experimentalism. Based in Milan, he works from Laboratori Testone (engineered by Tommaso Colliva) and collaborates with the Bologna axis (Vacuum Studio/Bruno Germano). His 19'40\" label operates on a subscription model that mirrors demotape culture — small runs, direct-to-listener, curatorially driven. While not part of the 1985-2000 Florentine/Milanese underground timeline that defines the project's core scope, his work exists in the same genealogical space: obscure Italian library music, analog synthesis, small-batch physical releases, and the bridging of high-concept composition with underground aesthetics.",
+  "current_activity": "As of 2025, Enrico Gabrielli is highly active: releasing Der Maurer Vol. 2 (April 2025), touring with Calibro 35 (Ellroy vs L.A. OST, Exploration album), continuing 19'40\" series (14th release Ghosts Goblins Ghouls), and working on the third season of Blanca (RAI series) and the 2025 Sandokan remake.",
+  "literary_work": {
+    "title": "Virginia",
+    "year": 2024,
+    "publisher": "Wudz Edizioni",
+    "genre": "Mystery / noir",
+    "description": "Debut mystery novel set in an old fascist-era villa turned nursing home in the Valdarno area (Tuscany). Gothic-tinged mystery with eccentric characters.",
+    "significance": "Reflects Gabrielli's broader artistic range — a multiform talent operating across music, composition, and literature."
+  },
+  "training_and_background": {
+    "education": "Diploma in clarinet, Conservatorio G. Verdi di Milano; studied composition",
+    "teachers": ["Richard Stoltzman", "Antony Pay", "Ciro Scarponi"],
+    "classical_credits": [
+      "Orchestra del Teatro alla Scala",
+      "Fontana Mix ensemble",
+      "Arena di Verona orchestra"
+    ]
+  },
+  "instruments": [
+    "Clarinet",
+    "Bass clarinet",
+    "Saxophone",
+    "Flute",
+    "Keyboards",
+    "Vintage analog synthesizers",
+    "Voice"
+  ],
+  "database_id": 103,
+  "database_fields_to_update": {
+    "city": "Milan",
+    "active_years": "2000-present",
+    "discogs_id": "1079953",
+    "bio": "Enrico Gabrielli (born 24 October 1976, Montevarchi, Italy) is an Italian multi-instrumentalist, composer, and producer. Also known as Der Maurer. Founding member of Calibro 35, The Winstons, and 19'40\" recording series. Conservatory-trained clarinetist with 250+ recordings across 25+ years. Key figure bridging Italian psychedelic funk, progressive rock, contemporary classical, and library music revival. Film/TV composer for Blanca, Sandokan, Diabolik. Also a novelist (Virginia, 2024).",
+    "website": "http://www.enricogabrielli.com/",
+    "status": "published"
+  },
+  "links_to_add": [
+    {"link_type": "website", "title": "Official Website", "url": "http://www.enricogabrielli.com/", "is_primary": true},
+    {"link_type": "streaming", "title": "Bandcamp", "url": "https://enricogabrielli.bandcamp.com/"},
+    {"link_type": "website", "title": "19'40\" Website", "url": "https://www.19m40s.com/"},
+    {"link_type": "streaming", "title": "19'40\" Bandcamp", "url": "https://19m40s.bandcamp.com/"},
+    {"link_type": "website", "title": "Calibro 35 Official", "url": "https://www.calibro35.com/"},
+    {"link_type": "archive", "title": "Discogs Artist Page", "url": "https://www.discogs.com/artist/1079953-Enrico-Gabrielli"},
+    {"link_type": "archive", "title": "Italian Wikipedia", "url": "https://it.wikipedia.org/wiki/Enrico_Gabrielli_(musicista)"},
+    {"link_type": "streaming", "title": "Spotify", "url": "https://open.spotify.com/artist/4hIkZdejfFu3WtYEkBBjuQ"},
+    {"link_type": "streaming", "title": "Apple Music", "url": "https://music.apple.com/it/artist/enrico-gabrielli/279711297"},
+    {"link_type": "video", "title": "Italian Masters Vol.1 (YouTube)", "url": "https://www.youtube.com/watch?v=rVfW8CmKG4k"},
+    {"link_type": "video", "title": "Mother Earth's Plantasia cover (YouTube)", "url": "https://www.youtube.com/watch?v=7hJkCooa5V8"},
+    {"link_type": "video", "title": "CINITALIA Talk (YouTube)", "url": "https://www.youtube.com/watch?v=mZvRdgQOjIM"},
+    {"link_type": "video", "title": "Talking With Enrico Gabrielli (YouTube)", "url": "https://www.youtube.com/watch?v=dGNequz_-aA"},
+    {"link_type": "social", "title": "Instagram (@enricogap)", "url": "https://www.instagram.com/enricogap/"},
+    {"link_type": "social", "title": "Twitter/X", "url": "https://twitter.com/enricogabrielli"},
+    {"link_type": "social", "title": "Facebook Fans", "url": "https://www.facebook.com/enricogabriellifans/"},
+    {"link_type": "archive", "title": "Wikidata", "url": "https://www.wikidata.org/wiki/Q3725777"},
+    {"link_type": "archive", "title": "AllMusic", "url": "https://www.allmusic.com/artist/enrico-gabrielli-mn0001517650"},
+    {"link_type": "streaming", "title": "YouTube Music", "url": "https://music.youtube.com/channel/UCNn3tF1_EC-OQeoMpY2niIg"},
+    {"link_type": "archive", "title": "RateYourMusic", "url": "https://rateyourmusic.com/artist/enrico_gabrielli/"},
+    {"link_type": "archive", "title": "Prog Archives (The Winstons)", "url": "https://www.progarchives.com/artist.asp?id=9870"},
+    {"link_type": "streaming", "title": "NTS Radio", "url": "https://www.nts.live/artists/128401-enrico-gabrielli"},
+    {"link_type": "review", "title": "Set The Tape — 19'40\" review", "url": "https://setthetape.com/2020/08/12/1940-at-the-gates-of-the-twilight-zone-music-review/"},
+    {"link_type": "interview", "title": "Planet Hugill — 19'40\" interview", "url": "https://www.planethugill.com/2020/08/at-gates-of-twighlight-zone-1940.html"},
+    {"link_type": "interview", "title": "Meet The Artist — 19'40\" interview", "url": "https://meettheartist.online/2020/08/10/recording-series-1940/"},
+    {"link_type": "interview", "title": "Il Giornale della Musica — 19'40\" feature", "url": "https://www.giornaledellamusica.it/articoli/1940-ovvero-lanti-classica"},
+    {"link_type": "interview", "title": "Off Topic Magazine — Batti 5 interview", "url": "https://offtopicmagazine.net/2017/06/04/batti-5-5-domande-in-5-minuti-enrico-gabrielli/"},
+    {"link_type": "review", "title": "OndaRock — Le Canzonine review", "url": "https://www.ondarock.it/recensioni/2023-enricogabrielli-lecanzonine/"},
+    {"link_type": "interview", "title": "Rolling Stone Italia — Angelo Trabace & Enrico Gabrielli", "url": "https://www.rollingstone.it/musica/interviste-musica/angelo-trabace-ed-enrico-gabrielli-comporre-suonare-suonarsi/996740/"},
+    {"link_type": "interview", "title": "Nonsense Magazine — Le Canzonine interview", "url": "https://www.nonsensemag.it/le-canzonine-di-enrico-gabrielli-hanno-fatto-tornare-tutti-bambini-intervista/"},
+    {"link_type": "article", "title": "FUL Magazine — From Calibro 35 to crime novel", "url": "https://firenzeurbanlifestyle.com/enrico-gabrielli-dai-calibro-35-al-romanzo-giallo/"},
+    {"link_type": "interview", "title": "Radio Raheem — Morricone spaghetti thrilling", "url": "https://www.radioraheem.it/enrico-gabrielli/morricone-spaghetti-thrilling-w-enrico-gabrielli/"},
+    {"link_type": "interview", "title": "Rumore Magazine — Carlo Zollo & Enrico Gabrielli", "url": "https://rumoremag.com/2021/05/22/intervista-carlo-zollo-enrico-gabrielli-calibro-35-spermatozollo-album/"},
+    {"link_type": "article", "title": "SLAM Festival 2026 — Biography", "url": "https://www.slamfestival.it/en/guests/enrico-gabrielli"},
+    {"link_type": "article", "title": "Todays Festival — Biography", "url": "https://www.todaysfestival.com/speaker/enrico-gabrielli/"},
+    {"link_type": "news", "title": "Controradio — Ghosts Goblins Ghouls interview", "url": "https://www.controradio.it/enrico-gabrielli-calibro-35-presenta-ghosts-goblins-ghouls/"},
+    {"link_type": "news", "title": "Controradio — L'intervista con Enrico Gabrielli", "url": "https://www.controradio.it/🎧-a-noi-piace-il-liscio-lintervista-con-enrico-gabrielli/"},
+    {"link_type": "news", "title": "VareseNews — Materia interview", "url": "https://www.varesenews.it/2025/11/spiegami-a-materia-gli-incontri-con-enrico-gabrielli-e-alessandro-baronciani/2390470/"},
+    {"link_type": "interview", "title": "TuttoRock Magazine interview", "url": "https://www.tuttorock.com/interviste/enrico-gabrielli-intervista-allartista/"},
+    {"link_type": "article", "title": "Rolling Stone Italia — Virginia novel excerpt", "url": "https://www.rollingstone.it/cultura/libri/verso-titano-e-oltre-leggi-il-primo-capitolo-del-romanzo-a-puntate-di-enrico-gabrielli/507652/"},
+    {"link_type": "review", "title": "L'Eclisse — Virginia: l'esordio narrativo", "url": "https://rivistaeclisse.com/2024/06/18/virginia-lesordio-narrativo-di-enrico-gabrielli/"},
+    {"link_type": "review", "title": "Off Topic Magazine — Virginia review", "url": "https://offtopicmagazine.net/2024/07/24/enrico-gabrielli-virginia/"},
+    {"link_type": "review", "title": "OndaRock — Der Maurer Vol. 1 review", "url": "https://www.ondarock.it/recensioni/2011_dermaurer/"},
+    {"link_type": "review", "title": "Off Topic — Le Canzonine review", "url": "https://offtopicmagazine.net/2023/09/29/enrico-gabrielli-le-canzonine/"},
+    {"link_type": "news", "title": "RockOn — Acid Mothers Temple tour with The Winstons", "url": "https://www.rockon.it/concerti/acid-mothers-temple-al-via-il-tour-italiano-con-the-winstons-di-enrico-gabrielli-lino-gitto-e-roberto-dellera/"},
+    {"link_type": "festival", "title": "Cannes Film Festival", "url": "https://www.festival-cannes.com/en/p/enrico-gabrielli/"},
+    {"link_type": "news", "title": "La Tempesta Dischi — Onoda OST", "url": "https://www.latempesta.org/record/onoda/"},
+    {"link_type": "streaming", "title": "SoundCloud (Der Maurer)", "url": "https://soundcloud.com/dermaurer"},
+    {"link_type": "streaming", "title": "SoundCloud (Enrico Gabrielli)", "url": "https://soundcloud.com/enricogabrielli"},
+    {"link_type": "streaming", "title": "Genius", "url": "https://genius.com/artists/Enrico-gabrielli"},
+    {"link_type": "streaming", "title": "Beatport", "url": "https://www.beatport.com/de/artist/enrico-gabrielli/335370"},
+    {"link_type": "streaming", "title": "Juno Records", "url": "https://www.juno.co.uk/artists/Enrico+Gabrielli/"},
+    {"link_type": "social", "title": "LinkedIn", "url": "https://it.linkedin.com/in/enricogabrielli"},
+    {"link_type": "festival", "title": "Baumhaus Bologna — Le Canzonine live", "url": "https://baumhaus.bo.it/evento/le-canzonine-di-enrico-gabrielli/"},
+    {"link_type": "interview", "title": "42 Records — Le Canzonine release", "url": "https://www.42records.it/enrico-gabrielli-e-uscito-le-canzonine/"},
+    {"link_type": "social", "title": "TikTok (Calibro 35)", "url": "https://www.tiktok.com/@calibro_35"}
+  ],
+  "connections_to_add": [
+    {"to_band": "Calibro 35", "connection_type": "core_member", "source": "Calibro35.com / Wikipedia", "notes": "Founding member (2007-present). Multi-instrumentalist: sax, bass clarinet, flute, keyboards. 11 studio albums, film/TV scores. Music sampled by Dr. Dre, Jay Z."},
+    {"to_band": "The Winstons", "connection_type": "core_member", "source": "AMS Records / Prog Archives", "notes": "Founding member as 'Enro Winston' (2015-present). Keyboards, woodwinds, vocals. 3 studio albums (2016, 2020, 2024). Canterbury/prog scene."},
+    {"to_band": "Julie's Haircut", "connection_type": "collaboration", "source": "Bandcamp / 19'40\"", "notes": "Esecutori di Metallo su Carta covered Julie's Haircut on Progetto Generativo (2016). Also live performance together (Gemini)."},
+    {"to_band": "Junkfood", "connection_type": "collaboration", "source": "YouTube / Discogs", "notes": "Italian Masters (2016): Library music reissue project reinterpreting Piero Umiliani. Recorded at Vacuum Studio Bologna."}
+  ],
+  "research_date": "2026-09-17",
+  "researcher": "hermes-agent subagent",
+  "notes": "Enrico Gabrielli is a hub figure in Italy's experimental music network. While his active career (2000-present) falls partly outside the project's 1985-2000 core scope, his aesthetic universe (vintage synths, analog recording, Italian library music, obscure composition) and connections to underground artists make him highly relevant. His 19'40\" label is a direct parallel to demotape culture. 4 key connections documented: Calibro 35 (core), The Winstons (core), Julie's Haircut (collaboration via Esecutori di Metallo su Carta), Junkfood (collaboration). Additional session work with PJ Harvey, Mike Patton, Muse, Iggy Pop, Afterhours documented.",
+  "connections_found": 4,
+  "discography_items": 21
+}

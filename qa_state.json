@@ -1,0 +1,83 @@
+{
+  "checked_urls": {
+    "https://www.discogs.com/artist/2923899-Rockgalileo": {
+      "status": 403,
+      "checked_at": "2026-09-16T06:58:24.284456",
+      "link_id": 472
+    },
+    "https://saveriolanza.it/": {
+      "status": 200,
+      "checked_at": "2026-09-16T06:58:26.617230",
+      "link_id": 471
+    },
+    "https://www.ideasuono.it/prova/": {
+      "status": 200,
+      "checked_at": "2026-09-16T06:58:27.144648",
+      "link_id": 470
+    },
+    "https://www.ideasuono.it/rock-galileo/": {
+      "status": 200,
+      "checked_at": "2026-09-16T06:58:27.428928",
+      "link_id": 469
+    },
+    "https://www.carlocasale.it/rockgalileo-oggi-solo-galileo.php": {
+      "status": 403,
+      "checked_at": "2026-09-16T06:58:27.482874",
+      "link_id": 468
+    },
+    "https://www.mdr.de/kultur/wgt/electronic-body-music-ebm-songs-klassiker-achtziger-112.html": {
+      "status": 200,
+      "checked_at": "2026-09-21T12:00:18.535439",
+      "link_id": 2831
+    },
+    "https://archive.org/details/spot-pankow-3-giugno": {
+      "status": 200,
+      "checked_at": "2026-09-21T12:00:19.821311",
+      "link_id": 2830
+    },
+    "https://yodestroy.com/tienda/pankow-touch-1988/": {
+      "status": 200,
+      "checked_at": "2026-09-21T12:00:20.218190",
+      "link_id": 2829
+    },
+    "https://vk.ru/wall-57059158_448": {
+      "status": 418,
+      "checked_at": "2026-09-21T12:00:20.369680",
+      "link_id": 2828
+    },
+    "https://vk.ru/pankowband": {
+      "status": 418,
+      "checked_at": "2026-09-21T12:00:20.527372",
+      "link_id": 2827
+    },
+    "https://lomoband.bandcamp.com/": {
+      "status": 200,
+      "checked_at": "2026-09-21T14:00:36.669362",
+      "link_id": 2893
+    },
+    "https://www.panicoconcerti.com/artisti/julies-haircut/": {
+      "status": 200,
+      "checked_at": "2026-09-21T14:00:38.335487",
+      "link_id": 2892
+    },
+    "https://www.antiwarsongs.org/artista.php?id=13302&lang=en&rif=1": {
+      "status": 200,
+      "checked_at": "2026-09-21T14:00:38.408267",
+      "link_id": 2891
+    },
+    "https://www.ilmitte.com/2016/05/intervista-ai-julies-haircut/": {
+      "status": 200,
+      "checked_at": "2026-09-21T14:00:38.974261",
+      "link_id": 2890
+    },
+    "https://backinrock.it/2024/10/julies-haircut-fever-in-the-funk-house-special-25th-anniversary-edition-42-records-2024/": {
+      "status": null,
+      "checked_at": "2026-09-21T14:00:49.013656",
+      "link_id": 2889
+    }
+  },
+  "reported_issues": {
+    "cluster:invalid_link_type": "ab4e4123-e809-4093-a23f-beb37da99231",
+    "cluster:invalid_connection_type": "ca40c1ba-d523-4841-bb7b-4730a261fcf6"
+  }
+}

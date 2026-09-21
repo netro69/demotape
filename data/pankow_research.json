@@ -1,0 +1,188 @@
+{
+  "band_name": "Pankow",
+  "alt_names": ["ПANCOВ", "Панков"],
+  "formation_year": 1979,
+  "formation_location": "Firenze (Florence), Tuscany, Italy",
+  "status": "active (as of 2024)",
+  "genres": [
+    "Post-industrial",
+    "EBM (Electronic Body Music)",
+    "Electro-industrial",
+    "Darkwave (early)",
+    "Industrial"
+  ],
+  "description": "I Pankow, often written with Cyrillic characters ПANCOВ, are a pioneering Italian post-industrial/EBM band formed in Florence in 1979. They are considered pioneers of Italian EBM/industrial and were the first Italian electronic band to gain wide success in Europe and the USA. In early days songs were sung in German. They performed a 30-date US tour in the early 1990s. The band was originally darkwave-influenced before evolving into rhythmic mechanical EBM sounds.",
+  "key_members": {
+    "current": [
+      {"name": "Maurizio Fasolo", "role": "synthesizer, tape echo", "years": "1979-present", "alias": "fm"},
+      {"name": "Alex Spalck", "role": "vocals", "years": "1982-present"},
+      {"name": "Bram Declercq", "role": "vocals", "years": "2009-present"},
+      {"name": "Enzo Regi", "role": "sampling", "years": "1995-present"}
+    ],
+    "former": [
+      {"name": "Mario Massa", "role": "synthesizers, bass", "years": "early"},
+      {"name": "Valerio Viti", "role": "vocals", "years": "early"},
+      {"name": "Mauro Fasolo", "role": "drums", "years": "early"},
+      {"name": "Massimo Michelotti", "role": "synthesizers", "years": "early"},
+      {"name": "Sergio Pani", "role": "saxophone", "years": "early"},
+      {"name": "Paolo Favati", "role": "live mixing, samplers", "years": "early"},
+      {"name": "Alessandro Gimignani", "role": "percussion", "years": "early"},
+      {"name": "Nardo Lunardi", "role": "guitar", "years": "mid-period"},
+      {"name": "Davide Ragonesi", "role": "guitar, cello", "years": "1992-"},
+      {"name": "Alessandro Cellai", "role": "synthesizers"},
+      {"name": "Sebi Koch", "role": "varispeed"},
+      {"name": "Gianluca Becuzzi (G-L B)", "role": "vocals (1996 album)", "note": "Also of Limbo"}
+    ]
+  },
+  "discography": {
+    "studio_albums": [
+      {"year": 1983, "title": "Throw Out Rite", "label": "Electric Eye", "format": "cassette, CD (reissue 2016)", "reissued_by": "Artoffact Records"},
+      {"year": 1987, "title": "Freiheit fuer die Sklaven", "label": "Contempo Records, Zyx records", "format": "LP/CD", "producer": "Pankow & Adrian Sherwood"},
+      {"year": 1989, "title": "Gisela", "label": "Contempo Records (ITA), Wax Trax! (USA), Play It Again Sam (Belgium), Cashbeat (Germany)", "format": "LP/CD", "producer": "Pankow & Rico Conning"},
+      {"year": 1990, "title": "Omne Animal Triste Post Coitum", "label": "Contempo Records, Cashbeat (Germany), ROIR (USA)", "format": "LP/CD/cassette"},
+      {"year": 1992, "title": "Treue Hunde", "label": "Contempo Records, Cargo (USA)", "format": "LP/CD"},
+      {"year": 1996, "title": "Pankow", "label": "Iptarro, BIM (Germany)", "format": "CD", "note": "Only album sung in Italian"},
+      {"year": 2003, "title": "Life is Offensive and Refuses to Apologise", "label": "Minus Habens Records", "format": "CD"},
+      {"year": 2007, "title": "Great Minds Against Themselves Conspire", "label": "Wheesht", "format": "CD"},
+      {"year": 2013, "title": "And Shun The Cure They Most Desire", "label": "Out of Line", "format": "2xCD"}
+    ],
+    "compilations": [
+      {"year": 1989, "title": "Gisela / Freiheit Fuer Die Sklaven"},
+      {"year": 1991, "title": "Svobody!", "label": "Contempo Records/Gennex"},
+      {"year": 1997, "title": "Wodka, Erdbeeren und weitere Katastrophen", "label": "Iptarro/BIM"},
+      {"year": 2005, "title": "The Art of Gentle Revolution", "label": "Iptarro", "format": "5CD box"},
+      {"year": 2011, "title": "Kunst Und Wahnsinn"}
+    ],
+    "eps_and_singles": [
+      {"year": 1982, "title": "Circuito chiuso/Wither (split 7\" with Diaframma)", "label": "Industrie Discografiche Lacerba"},
+      {"year": 1984, "title": "Pankow E.P.", "label": "Kindergarten Records / Polygram", "format": "12\""},
+      {"year": 1987, "title": "Gimme More [Much More] / Touch", "label": "Contempo Records", "format": "7\""},
+      {"year": 1988, "title": "Sex mins of a Thumping, Pumping, Dubbing Version of Touch", "label": "Contempo Records", "format": "12\""},
+      {"year": 1988, "title": "Pankow plays the hits of the Nineties", "label": "Contempo Records, Zyx records", "format": "12\""},
+      {"year": 1988, "title": "Kunst und Wahnsinn", "label": "Contempo Records, Cashbeat, ABC (UK), KK Records (Belgium)", "format": "12\""},
+      {"year": 1988, "title": "Wet", "label": "Swiss Magazine New Life", "format": "one-sided 7\""},
+      {"year": 1989, "title": "Texas and Paraguay", "label": "Contempo Records", "format": "one-sided 7\""},
+      {"year": 1989, "title": "Freedom for the Slaves", "label": "Wax Trax!", "format": "mini-LP", "country": "USA"},
+      {"year": 1990, "title": "Pankow Show Their Dongs", "label": "Contempo Records, Wax Trax!", "format": "12\""},
+      {"year": 1990, "title": "Walpurgisnacht", "label": "Minus Habens Records/Contempo Records", "format": "12\" MCD"},
+      {"year": 1992, "title": "Rememberme / Heads Will Roll", "label": "Contempo Records", "format": "12\""},
+      {"year": 1992, "title": "Stupidity / Remembermeremix", "label": "Contempo Records", "format": "12\"/CDS"},
+      {"year": 1992, "title": "My Baby Can...", "label": "Contempo Records", "format": "12\""},
+      {"year": 1997, "title": "Brenne Europa Brenne", "label": "Iptarro/Sodom Division", "format": "12\""},
+      {"year": 2004, "title": "I Never Thought of the Consequences", "label": "Minus Habens Records", "format": "12\""},
+      {"year": 2004, "title": "Fuckart (A Symphony for Wankers)", "label": "Minus Habens Records", "format": "12\""},
+      {"year": 2012, "title": "Hogre", "label": "Out of Line", "format": "EP"},
+      {"year": 2017, "title": "Times", "label": "Artoffact Records", "format": "EP"},
+      {"year": 2020, "title": "Der Doctor Schnabel von Rom", "label": "Contempo Records", "format": "EP"}
+    ],
+    "participations": [
+      {"year": 1983, "title": "Wither on FREE8212", "label": "Industrie Discografiche Lacerba", "format": "7\""},
+      {"year": 2018, "title": "Cosa Succederá Alla Ragazza on LB/R La Bellezza Riunita", "label": "Industrie Discografiche Lacerba", "format": "LP+12\"-CD"}
+    ]
+  },
+  "labels": [
+    {"name": "Electric Eye", "country": "Italy", "years": "1983"},
+    {"name": "Industrie Discografiche Lacerba", "country": "Italy", "years": "1982-2018"},
+    {"name": "Kindergarten Records / Polygram", "country": "Italy", "years": "1984"},
+    {"name": "Contempo Records", "country": "Italy", "years": "1987-2020"},
+    {"name": "Zyx Records", "country": "Germany", "years": "1987-1988"},
+    {"name": "Wax Trax!", "country": "USA", "years": "1989-1990"},
+    {"name": "Play It Again Sam", "country": "Belgium", "years": "1989"},
+    {"name": "Cashbeat", "country": "Germany", "years": "1989-1990"},
+    {"name": "KK Records", "country": "Belgium", "years": "1988"},
+    {"name": "ROIR", "country": "USA", "years": "1990"},
+    {"name": "Cargo Records", "country": "USA", "years": "1992"},
+    {"name": "Iptarro / BIM", "country": "Germany", "years": "1996-2010"},
+    {"name": "Minus Habens Records", "country": "Italy", "years": "1991-2004"},
+    {"name": "Wheesht", "country": "unknown", "years": "2007"},
+    {"name": "Out of Line", "country": "Germany", "years": "2013"},
+    {"name": "Artoffact Records", "country": "Canada", "years": "2016-2017"},
+    {"name": "Sodom Division", "country": "unknown", "years": "1997"},
+    {"name": "New Life Magazine", "country": "Switzerland", "years": "1988"}
+  ],
+  "notable_producers": [
+    {"name": "Adrian Sherwood", "works": ["Freiheit Fuer Die Sklaven (1987)", "Freedom for the Slaves (1989)"]},
+    {"name": "Rico Conning", "works": ["Gisela (1989)"]}
+  ],
+  "related_bands_and_collaborations": [
+    {"band": "RockGalileo", "connection": "scene_peer (Florence, Italy scene)", "connection_type": "scene_peer", "in_database": true},
+    {"band": "Diaframma", "connection": "Split 7\" 1982 (Circuito chiuso/Wither)", "connection_type": "collaboration", "in_database": false},
+    {"band": "Limbo", "connection": "Gianluca Becuzzi guest vocals on 1996 album", "connection_type": "shared_member", "in_database": false},
+    {"band": "Florence Dance Company", "connection": "Walpurgis Nacht (1990), Trasmissione notturna (2002), Excalibur Stories (2004)", "connection_type": "collaboration", "in_database": false},
+    {"band": "Karole Armitage", "connection": "Contemporary dance collaboration", "connection_type": "collaboration", "in_database": false},
+    {"band": "Litfiba", "connection": "Florence scene peer", "connection_type": "scene_peer", "in_database": false}
+  ],
+  "youtube_videos": [
+    {"title": "Das Wodkalied", "url": "https://www.youtube.com/watch?v=eigIb4UghXk", "description": "From Throw Out Rite (2016 reissue)"},
+    {"title": "Pankow - Me And My Ding Dong", "url": "https://www.youtube.com/watch?v=0FPt0AWIgto"},
+    {"title": "Pankow - Remember Me (ZONE Cut)", "url": "https://www.youtube.com/watch?v=p0PaJo3BYgA"},
+    {"title": "Rummelsnuff - Salutare (Pankow XII-G-XXII FM Remix)", "url": "https://www.youtube.com/watch?v=GapioR7kUUI"},
+    {"title": "Pankow - God's Deneuve", "url": "https://www.youtube.com/watch?v=rT2JMHeqgQ"},
+    {"title": "Pankow - Taking Over The Asylum (official video)", "url": "https://www.youtube.com/@Pankowband/videos"},
+    {"title": "Pankow live 1991", "url": "https://www.youtube.com/results?search_query=pankow+live+1991"},
+    {"title": "Pankow - Pankow (Full Album 1996)", "url": "https://www.youtube.com/watch?v=XNQpQDX1WHQ"}
+  ],
+  "forum_and_web_mentions": [
+    {"source": "Darkitalia (Italian dark music portal)", "url": "https://www.darkitalia.com/style/bands/pankow/", "type": "review/profile"},
+    {"source": "Side-Line Magazine", "url": "https://www.side-line.com/tag/maurizio-fasolo/", "type": "article"},
+    {"source": "DeBaser (Italian music reviews)", "url": "https://www.debaser.it/", "type": "review platform"},
+    {"source": "Setlist.fm", "url": "https://www.setlist.fm/setlists/pankow-6bd712e6.html", "type": "concert documentation"},
+    {"source": "RadioChitarra forums", "url": "https://www.radiochitarra.it/", "type": "forum"},
+    {"source": "RuTracker forum", "url": "https://rutracker.org/forum/viewtopic.php?t=6907462", "type": "forum mention"},
+    {"source": "Bandcamp", "url": "https://pankowir.bandcamp.com/", "type": "music platform"},
+    {"source": "Discogs community", "url": "https://www.discogs.com/artist/21893-Pankow", "type": "community"}
+  ],
+  "official_links": {
+    "official_website": "https://pankow.co.uk/",
+    "bandcamp": "https://pankowir.bandcamp.com/",
+    "youtube_channel": "https://www.youtube.com/@Pankowband",
+    "discogs": "https://www.discogs.com/artist/21893-Pankow",
+    "rateyourmusic": "https://rateyourmusic.com/artist/pankow",
+    "facebook": "https://www.facebook.com/pankowband/"
+  },
+  "discogs_id": "21893",
+  "historical_significance": [
+    "First Italian electronic/industrial act to gain wide success in Europe and USA",
+    "First 30-date US tour in early 1990s by an Italian industrial band",
+    "Early darkwave phase (Joy Division influence) in 1982 before evolving to EBM",
+    "Collaborated with Adrian Sherwood (Depeche Mode, Einstürzende Neubauten, Skinny Puppy, Cabaret Voltaire)",
+    "Wax Trax! Records stable artist (rare for Italian band)",
+    "Only Italian band from early industrial era to remain active into 2020s"
+  ],
+  "florence_scene_context": "Pankow emerged from Florence's early 1980s underground scene alongside other notable Italian post-punk/darkwave acts like Diaframma and Litfiba. Initially part of the darkwave movement influenced by Joy Division, they pioneered the transition to electronic/industrial sounds in Italy.",
+  "current_activity": "The band is currently active with members based in Italy, Australia, and Belgium. They released their most recent EP 'Der Doctor Schnabel von Rom' on Contempo Records in 2020.",
+  "research_sources": [
+    "Italian Wikipedia: https://it.wikipedia.org/wiki/Pankow_(gruppo_musicale_italiano)",
+    "Discogs: https://www.discogs.com/artist/21893-Pankow",
+    "Official website: https://pankow.co.uk/",
+    "Artoffact Records: https://artoffact.com/releases/throw-out-rite/",
+    "Darkitalia: https://www.darkitalia.com/style/bands/pankow/"
+  ],
+  "database_id": 99,
+  "database_fields_to_update": {
+    "city": "Florence",
+    "active_years": "1979-present",
+    "discogs_id": "21893",
+    "bio": "Pioneering Italian post-industrial/EBM band formed in Florence in 1979. First Italian electronic band to achieve wide success in Europe and the USA. Part of Wax Trax! Records stable. Known for early darkwave sounds evolving into rhythmic EBM. Still active as of 2020.",
+    "website": "https://pankow.co.uk/",
+    "status": "published"
+  },
+  "links_to_add": [
+    {"link_type": "website", "title": "Official Website", "url": "https://pankow.co.uk/", "is_primary": true},
+    {"link_type": "video", "title": "Das Wodkalied (YouTube)", "url": "https://www.youtube.com/watch?v=eigIb4UghXk"},
+    {"link_type": "video", "title": "God's Deneuve (YouTube)", "url": "https://www.youtube.com/watch?v=rT2JMHeqgQ"},
+    {"link_type": "video", "title": "Taking Over The Asylum (Official Video)", "url": "https://www.youtube.com/@Pankowband/videos"},
+    {"link_type": "streaming", "title": "Bandcamp", "url": "https://pankowir.bankcamp.com/"},
+    {"link_type": "archive", "title": "Discogs Artist Page", "url": "https://www.discogs.com/artist/21893-Pankow"},
+    {"link_type": "social", "title": "Facebook", "url": "https://www.facebook.com/pankowband/"},
+    {"link_type": "social", "title": "YouTube Channel", "url": "https://www.youtube.com/@Pankowband"}
+  ],
+  "connections_to_add": [
+    {"to_band": "RockGalileo", "connection_type": "scene_peer", "source": "Italian Wikipedia", "notes": "Both from Florence scene"},
+    {"to_band": "Diaframma", "connection_type": "collaboration", "source": "Italian Wikipedia / Discogs", "notes": "Split 7\" 1982 (Circuito chiuso/Wither) on Industrie Discografiche Lacerba"},
+    {"to_band": "Limbo", "connection_type": "shared_member", "source": "Italian Wikipedia", "notes": "Gianluca Becuzzi of Limbo provided vocals on 1996 album"}
+  ],
+  "research_date": "2026-09-16",
+  "researcher": "hermes-agent subagent",
+  "notes": "This research data is ready to be applied to the Django database via the apply_findings.py management command or direct ORM updates."
+}

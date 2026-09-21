@@ -1,0 +1,222 @@
+{
+  "band_name": "Piero Pelù",
+  "alt_names": ["Pierotten", "Pietro Pelù"],
+  "formation_year": 1980,
+  "formation_location": "Firenze (Florence), Tuscany, Italy",
+  "status": "active (as of 2022, though with hearing damage from 2022 incident)",
+  "genres": [
+    "New wave (early)",
+    "Post-punk / Dark wave (early)",
+    "Hard rock",
+    "Latin rock / Worldbeat",
+    "Alternative rock",
+    "Medit-rock / Rock & roll (solo)"
+  ],
+  "description": "Piero Pelù (born Pietro Pelù, 10 February 1962, Florence) is an Italian singer-songwriter, best known as the charismatic lead vocalist and co-founder of Litfiba, one of Italy's most influential rock bands. He co-founded Litfiba in 1980 in Florence, championing the concept of 'Italian rock sung in Italian.' His theatrical stage presence and politically charged lyrics (Trilogia del Potere trilogy rejecting totalitarianism) defined the band's identity. Litfiba evolved from new wave/post-punk into hard rock with Mediterranean/Latin influences, achieving massive commercial success (El Diablo, Terremoto, Infinito). After leaving Litfiba in July 1999, Pelù launched a successful solo career, releasing albums like 'Né buoni né cattivi' (2000), 'U.D.S. – L'uomo della strada' (2002), and 'In faccia' (2006). He reunited with Litfiba for tours in 2010 and 2013. In October 2022, he suffered permanent acoustic nerve damage from a collapse during a recording session.",
+  "key_members": {
+    "current": [
+      {"name": "Piero Pelù", "role": "lead vocals, primary lyricist", "years": "1980–1999 (Litfiba), 1999–present (solo)"}
+    ],
+    "associated": [
+      {"name": "Ghigo Renzulli", "role": "guitar (Litfiba co-founder)", "years": "1980–1999"},
+      {"name": "Antonio Aiazzi", "role": "keyboards", "years": "1980–1989"},
+      {"name": "Gianni Maroccolo", "role": "bass", "years": "1980–1989, later with CCCP Fedeli alla linea"},
+      {"name": "Francesco Calamai", "role": "drums", "years": "1980–1984"},
+      {"name": "Ringo de Palma", "role": "drums", "years": "1984–1988, later with CCCP Fedeli alla linea"},
+      {"name": "Federico Renzulli", "role": "guitar (later Litfiba)", "years": "1989–1999"},
+      {"name": "Franco Li Causi", "role": "bass (later Litfiba)", "years": "1989–1999"},
+      {"name": "Daniele Bagni", "role": "drums (later Litfiba)", "years": "1988–1999"}
+    ]
+  },
+  "discography": {
+    "with_litfiba": [
+      {"year": 1981, "title": "Demo-Tape 1981", "format": "Cassette (bootleg/promo)", "label": "Unofficial", "notes": "First recording. Contains 'Guerra', 'Luna', 'After Death', 'In My Head', 'Dea del Fuji-Yama'."},
+      {"year": 1982, "title": "Guerra", "format": "12\" Vinyl EP", "label": "Urgent (UL 001)", "notes": "5 tracks. Won 2nd Italian Rock Festival. Unauthorized gray envelope reprint exists."},
+      {"year": 1983, "title": "Luna/La Preda", "format": "7\" Single", "label": "Suono Records", "notes": "First official single."},
+      {"year": 1983, "title": "Eneide di Krypton", "format": "LP", "label": "Suono Records (SR 33122)", "notes": "First LP. Music for theatrical adaptation of Virgil's Aeneid. Stark post-punk/new wave. 1000 copies first pressing."},
+      {"year": 1984, "title": "Yassassin", "format": "12\" Vinyl EP", "label": "Contempo Records (C01002EP)", "notes": "David Bowie 'Yassassin' cover + original 'Elettrica Danza'."},
+      {"year": 1984, "title": "Live in Berlin", "format": "Cassette", "label": "League of the Gloomers (unofficial)", "notes": "Bootleg recorded 23 June 1984."},
+      {"year": 1985, "title": "Desaparecido", "format": "LP", "label": "I.R.A. Records", "notes": "Debut full-length. Opens Trilogia del Potere."},
+      {"year": 1986, "title": "17 Re", "format": "Double LP", "label": "I.R.A. Records", "notes": "Power ballads. Considered masterpiece by many."},
+      {"year": 1986, "title": "Transea", "format": "12\" Vinyl EP", "label": "I.R.A. Records"},
+      {"year": 1987, "title": "12/5/87 (Aprite i Vostri Occhi)", "format": "Live album", "label": "I.R.A. Records", "notes": "First live album."},
+      {"year": 1988, "title": "Litfiba 3", "format": "LP", "label": "I.R.A. Records", "notes": "Closes Trilogia del Potere."},
+      {"year": 1989, "title": "Pirata", "format": "Live", "label": "I.R.A. Records", "notes": "End of Trilogy years."},
+      {"year": 1990, "title": "El Diablo", "format": "CD/LP", "label": "CGD/Warner", "notes": "Commercial breakthrough, Platinum."},
+      {"year": 1992, "title": "Sogno ribelle", "format": "Compilation", "label": "CGD/Warner"},
+      {"year": 1993, "title": "Terremoto", "format": "CD/LP", "label": "CGD/Warner"},
+      {"year": 1994, "title": "Colpo di coda", "format": "Live", "label": "CGD/Warner"},
+      {"year": 1994, "title": "Spirito", "format": "CD/LP", "label": "CGD/Warner", "notes": "Produced by Rick Parashar."},
+      {"year": 1996, "title": "Lacio drom", "format": "Live", "label": "CGD/Warner"},
+      {"year": 1997, "title": "Mondi Sommersi", "format": "CD/LP", "label": "CGD/Warner"},
+      {"year": 1998, "title": "Croce e delizia", "format": "Live", "label": "CGD/Warner"},
+      {"year": 1999, "title": "Infinito", "format": "CD/LP", "label": "CGD/Warner", "notes": "Best-selling album (1M+ copies). Final album with Pelù (first era)."},
+      {"year": 2010, "title": "Stato libero di Litfiba", "format": "Live CD", "label": "CGD/Warner", "notes": "2010 reunion tour live album + 2 unreleased songs. Recorded in Florence."}
+    ],
+    "solo_albums": [
+      {"year": 2000, "title": "Né buoni né cattivi", "label": "Sony Music Italy", "format": "CD", "notes": "Debut solo. #4 FIMI. Singles: 'Toro Loco', 'Bomba Boomerang', 'Io ci sarà'. 100,000+ copies sold."},
+      {"year": 2002, "title": "U.D.S. – L'uomo della strada", "label": "Sony Music Italy", "format": "CD", "notes": "Single 'L'amore immaginato' (feat. Anggun) — #1 Italy."},
+      {"year": 2004, "title": "Soggetti smarriti", "label": "Sony Music Italy", "format": "CD", "notes": "Introspective, alternative."},
+      {"year": 2006, "title": "In faccia", "label": "Sony BMG", "format": "CD", "notes": "Return to raw rock. Lead single 'Tribù' presented at 1st May Concert in Rome."},
+      {"year": 2006, "title": "Fenomeni", "label": "Sony BMG", "format": "Compilation CD", "notes": "Re-recorded solo + Litfiba material. Recording process documented on MySpace."},
+      {"year": 2007, "title": "Storytellers", "label": "Sony BMG", "format": "Live CD/DVD", "notes": "MTV Storytellers live album."},
+      {"year": 2013, "title": "Identikit", "label": "Sony BMG", "format": "CD"},
+      {"year": 2020, "title": "Pili fragili", "label": "Sony BMG", "format": "CD"},
+      {"year": 2021, "title": "Spacca l'infinito (Il romanzo di una vita)", "label": "Sony BMG", "format": "CD", "notes": "Autobiographical concept album."}
+    ],
+    "collaborations_and_singles": [
+      {"year": 1985, "title": "Amsterdam EP", "with": "Diaframma", "label": "I.R.A. Records / Contempo Records (2018 reissue)", "notes": "Shared vocals with Miro Sassolini."},
+      {"year": 1999, "title": "Il mio nome è mai più", "with": "Ligabue & Jovanotti", "label": "Sony Music", "notes": "Anti-war single. Proceeds to Emergency. 400,000+ copies sold."},
+      {"year": 2000, "title": "Stay with me", "with": "Mina feat. Piero Pelù", "label": "Sony Music", "notes": "Cover of Shakespears Sister on album 'Olio'."},
+      {"year": 2002, "title": "L'amore immaginato", "with": "Anggun", "label": "Sony Music", "notes": "Reached #1 Italian Singles Chart."},
+      {"year": 2004, "title": "Picnic all'inferno", "with": "Modena City Ramblers", "label": "Sony Music"},
+      {"year": 2013, "title": "Sopra i tetti di Firenze", "with": "Gianna Nannini, Nada, Carlo Monni, Daniele Sepe, Davide Riondino", "label": "Sony Music"}
+    ],
+    "compilation_appearances": [
+      {"year": 1983, "title": "Italia Wiva Complication 1", "label": "Suono Records (SR 33121)", "notes": "Litfiba contributes 'Guerra' (original demo-tape version)"},
+      {"year": 1984, "title": "Catalogue Issue", "label": "I.R.A. Records", "notes": "Litfiba contributes 'Onda Araba' and 'Versante Est' alongside Diaframma, Moda, Underground Life"},
+      {"year": 1983, "title": "Body Section", "label": "Electric Eye", "notes": "'Transea' included in magazine compilation"},
+      {"year": 2003, "title": "The Best of Demo", "label": "Various", "notes": "Demo version of 'Larasong'"}
+    ]
+  },
+  "labels": [
+    {"name": "Urgent", "country": "Italy", "years": "1982", "role": "Early EP"},
+    {"name": "Suono Records", "country": "Italy (Mestre)", "years": "1983", "role": "First LP, compilations"},
+    {"name": "I.R.A. Records", "country": "Italy (Florence)", "years": "1984-1988", "role": "Trilogia del Potere albums"},
+    {"name": "Contempo Records", "country": "Italy", "years": "1984-2018", "role": "EPs, reissues"},
+    {"name": "Electric Eye", "country": "Italy", "years": "1983", "role": "Compilation"},
+    {"name": "League of the Gloomers", "country": "Italy", "years": "1984", "role": "Bootleg cassette"},
+    {"name": "CGD / Warner", "country": "Italy", "years": "1990-1999", "role": "Commercial peak albums"},
+    {"name": "Sony Music Italy", "country": "Italy", "years": "2000-2004", "role": "Solo career start"},
+    {"name": "Sony BMG", "country": "Italy", "years": "2006-present", "role": "Later solo career"}
+  ],
+  "related_bands_and_collaborations": [
+    {
+      "band": "Litfiba",
+      "connection": "Co-founder and lead vocalist (1980–1999)",
+      "connection_type": "core_member",
+      "notes": "Band name acronym: Località Italia Firenze via dei Bardi. Pelù co-founded with Ghigo Renzulli, Antonio Aiazzi, Gianni Maroccolo, Francesco Calamai."
+    },
+    {
+      "band": "Diaframma",
+      "connection": "Shared Florentine new wave scene; recorded Amsterdam EP (1985) together; close friendship between Pelù and Federico Fiumani",
+      "connection_type": "collaboration",
+      "notes": "Both bands founded almost simultaneously in Florence. Fiumani (Diaframma) collaborated with Pankow too."
+    },
+    {
+      "band": "CCCP Fedeli alla linea",
+      "connection": "Shared members: Gianni Maroccolo (Litfiba bassist) played on CCCP's final album 'Epica Etica Etnica Pathos' (1990); Ringo de Palma (Litfiba drummer) also played with CCCP",
+      "connection_type": "shared_member",
+      "notes": "CCCP and Litfiba shared the Florentine/Emilian punk underground origins."
+    },
+    {
+      "band": "RockGalileo",
+      "connection": "Saverio Lanza (RockGalileo vocalist/guitarist) collaborated/sessioned for Piero Pelù; Gianmarco Colzi (RockGalileo drummer, later Litfiba 2001–2006)",
+      "connection_type": "collaboration",
+      "notes": "Both Florentine bands. Colzi joined Litfiba as drummer after RockGalileo disbanded."
+    },
+    {
+      "band": "Pankow",
+      "connection": "Shared Florentine underground scene in 1980s",
+      "connection_type": "scene_peer",
+      "notes": "Federico Fiumani (Diaframma) collaborated with Pankow. All part of same Florentine dark wave / new wave network."
+    },
+    {
+      "band": "Neon",
+      "connection": "Shared Florentine dark wave/electronic scene, 1980s",
+      "connection_type": "scene_peer",
+      "notes": "Formed 1979 in Florence. Part of same dark wave/electronic scene. Marcello Michelotti's project."
+    },
+    {
+      "band": "Ligabue",
+      "connection": "Collaboration on anti-war single 'Il mio nome è mai più' (1999)",
+      "connection_type": "collaboration",
+      "notes": "With Jovanotti. Proceeds donated to Emergency."
+    },
+    {
+      "band": "Jovanotti",
+      "connection": "Collaboration on anti-war single 'Il mio nome è mai più' (1999)",
+      "connection_type": "collaboration",
+      "notes": "With Ligabue. Proceeds donated to Emergency."
+    }
+  ],
+  "youtube_videos": [
+    {"title": "DEMO-TAPE CASSETTE 1981 (First Litfiba album)", "url": "https://www.youtube.com/watch?v=ieYROv7yH-A"},
+    {"title": "Litfiba - Desaparecido (Full Album) 1985", "url": "https://www.youtube.com/watch?v=S57S3dNWaho"},
+    {"title": "Litfiba - Guerra (1985)", "url": "https://www.youtube.com/watch?v=ps2cY-AFWI0"},
+    {"title": "Litfiba - Guerra (alternative mix 1985)", "url": "https://www.youtube.com/watch?v=inVP8pgzmYc"},
+    {"title": "Litfiba – Eneide Di Krypton (1983) Full Album", "url": "https://www.youtube.com/watch?v=HfLn6b3W-hE"},
+    {"title": "Litfiba 1984 Yassassin EP", "url": "https://www.youtube.com/watch?v=FUQewQef1ek"},
+    {"title": "Litfiba Live in Berlin 1984", "url": "https://www.youtube.com/watch?v=ZKlLiR9QySI"},
+    {"title": "Litfiba Rarities Playlist", "url": "https://www.youtube.com/playlist?list=PLzI2aWQX8QwA4gUCu37fAowJDi2J87nPy"},
+    {"title": "DIAFRAMMA & LITFIBA - Amsterdam", "url": "https://www.youtube.com/watch?v=Dz-l6RBTq0Q"},
+    {"title": "Fiumani Pelù (Sky Arte interview)", "url": "https://www.youtube.com/watch?v=MQBgCIFP3F0"},
+    {"title": "Litfiba - Trilogia Del Potere tour 2013 (FULL)", "url": "https://www.youtube.com/watch?v=S1vo_rXNmY4"},
+    {"title": "Piero Pelù - Io Ci Sarò", "url": "https://www.youtube.com/watch?v=pw3daqiF4l8"}
+  ],
+  "forum_and_web_mentions": [
+    {"source": "DeBaser", "url": "https://en.debaser.it/litfiba/", "type": "Reviews and discography"},
+    {"source": "RadioChitarra", "url": "https://www.radiochitarra.it/", "type": "Italian rock community forum"},
+    {"source": "Litfiba Unofficial", "url": "https://www.litfibaunofficial.it/", "type": "Unofficial fan site"},
+    {"source": "Discogs", "url": "https://www.discogs.com/artist/662395-Piero-Pel%C3%B9", "type": "Discography database"},
+    {"source": "Bandcamp (In Faccia)", "url": "https://piero-pelu.bandcamp.com/", "type": "Music purchase"},
+    {"source": "Wikipedia (EN)", "url": "https://en.wikipedia.org/wiki/Piero_Pel%C3%B9", "type": "Biography"},
+    {"source": "Wikipedia (IT)", "url": "https://it.wikipedia.org/wiki/Piero_Pel%C3%B9", "type": "Biography (Italian)"},
+    {"source": "Rolling Stone Italia", "url": "https://www.rollingstone.it/", "type": "Reviews and articles"},
+    {"source": "Contempo Records", "url": "https://contemporecords.it/", "type": "Label site"}
+  ],
+  "official_links": {
+    "discogs": "https://www.discogs.com/artist/662395-Piero-Pel%C3%B9",
+    "bandcamp": "https://piero-pelu.bandcamp.com/"
+  },
+  "discogs_id": "662395",
+  "historical_significance": [
+    "Co-founded Litfiba (1980), one of Italy's most influential rock bands",
+    "Championed 'rock italiano cantato in italiano' — Italian rock sung in Italian",
+    "Defined the Florentine new wave / post-punk scene of the early 1980s alongside Diaframma and Pankow",
+    "Litfiba was one of the first Italian rock bands to achieve international recognition",
+    "Trilogia del Potere trilogy (Desaparecido, 17 Re, Litfiba 3) is a landmark in Italian rock for political themes",
+    "Transitioned successfully from underground punk/new wave to mainstream rock without losing underground credibility",
+    "Infinito (1999) sold over 1 million copies in Italy",
+    "Continued solo career while maintaining connection to underground roots",
+    "Close ties to Diaframma — their 1985 Amsterdam EP is a key document of Florentine new wave",
+    "Shared members with CCCP Fedeli alla linea (Maroccolo, Ringo de Palma), linking to the Emilian punk scene"
+  ],
+  "florence_scene_context": "Piero Pelù, through Litfiba, was at the epicenter of the Florentine new wave / post-punk / dark wave scene of the early-to-mid 1980s. This scene also produced Diaframma (founded by Federico Fiumani, who attended Litfiba's first concert on 6 Dec 1980 at Rockoteca Brighton in Settignano), Pankow (pioneering EBM/industrial), Neon, Moda, Underground Life, and Polyactive. The scene was centered around venues like Rockoteca Brighton (casa del popolo), Manila (Florence), and left-wing cultural events like Festa dell'Unità. Labels like Suono Records (Mestre) and I.R.A. Records (Florence, founded by Alberto Pirelli) documented this scene. The 1983 compilation 'Italia Wiva Complication 1' and 1984's 'Catalogue Issue' (featuring Litfiba, Diaframma, Moda, Underground Life) are crucial documents of this period.",
+  "current_activity": "As of October 2022, Piero Pelù suffered a collapse during a recording session resulting in permanent acoustic nerve damage. This was documented in the 2025 film 'Piero Pelù. Rumore dentro' (premiered at Venice Film Festival). His status for future musical activity is uncertain.",
+  "database_id": 97,
+  "database_fields_to_update": {
+    "city": "Florence",
+    "active_years": "1980-present",
+    "discogs_id": "662395",
+    "bio": "Piero Pelù (born Pietro Pelù, 10 February 1962, Florence) is an Italian singer-songwriter, co-founder and lead vocalist of Litfiba (1980–1999, 2010 reunion). Champion of Italian-language rock. Key figure in the Florentine new wave/post-punk scene alongside Diaframma and Pankow. Launched successful solo career in 1999 with albums including 'Né buoni né cattivi' (2000) and 'In faccia' (2006). Collaborated with Ligabue, Jovanotti, Anggun, Gianna Nannini. Suffered permanent acoustic nerve damage in October 2022.",
+    "status": "published"
+  },
+  "links_to_add": [
+    {"link_type": "archive", "title": "Discogs Artist Page", "url": "https://www.discogs.com/artist/662395-Piero-Pel%C3%B9", "is_primary": true},
+    {"link_type": "archive", "title": "Wikipedia (EN)", "url": "https://en.wikipedia.org/wiki/Piero_Pel%C3%B9"},
+    {"link_type": "archive", "title": "Wikipedia (IT)", "url": "https://it.wikipedia.org/wiki/Piero_Pel%C3%B9"},
+    {"link_type": "streaming", "title": "Bandcamp", "url": "https://piero-pelu.bandcamp.com/"},
+    {"link_type": "video", "title": "DEMO-TAPE CASSETTE 1981 (First Litfiba album)", "url": "https://www.youtube.com/watch?v=ieYROv7yH-A"},
+    {"link_type": "video", "title": "Litfiba - Desaparecido (Full Album) 1985", "url": "https://www.youtube.com/watch?v=S57S3dNWaho"},
+    {"link_type": "video", "title": "Litfiba - Guerra (1985)", "url": "https://www.youtube.com/watch?v=ps2cY-AFWI0"},
+    {"link_type": "video", "title": "Litfiba - Eneide Di Krypton (1983) Full Album", "url": "https://www.youtube.com/watch?v=HfLn6b3W-hE"},
+    {"link_type": "video", "title": "DIAFRAMMA & LITFIBA - Amsterdam", "url": "https://www.youtube.com/watch?v=Dz-l6RBTq0Q"},
+    {"link_type": "video", "title": "Litfiba - Trilogia Del Potere tour 2013 (FULL)", "url": "https://www.youtube.com/watch?v=S1vo_rXNmY4"},
+    {"link_type": "video", "title": "Piero Pelù - Io Ci Sarò", "url": "https://www.youtube.com/watch?v=pw3daqiF4l8"},
+    {"link_type": "archive", "title": "DeBaser (Reviews)", "url": "https://en.debaser.it/litfiba/"},
+    {"link_type": "website", "title": "Litfiba Unofficial", "url": "https://www.litfibaunofficial.it/"},
+    {"link_type": "streaming", "title": "Spotify", "url": "https://open.spotify.com/artist/2QkfYl6b0M9RhqVzNfD6jw"},
+    {"link_type": "archive", "title": "Rolling Stone Italia", "url": "https://www.rollingstone.it/musica/classifiche-liste-musica/tutti-gli-album-dei-litfiba-dal-peggiore-al-migliore/542539/"}
+  ],
+  "connections_to_add": [
+    {"to_band": "Litfiba", "connection_type": "core_member", "source": "Wikipedia", "notes": "Co-founder and lead vocalist (1980–1999, 2010 reunion). Litfiba is the primary band."},
+    {"to_band": "Diaframma", "connection_type": "collaboration", "source": "Wikipedia / Discogs", "notes": "Recorded Amsterdam EP (1985) together. Close friendship between Pelù and Fiumani. Both foundational Florentine new wave bands."},
+    {"to_band": "CCCP Fedeli alla linea", "connection_type": "shared_member", "source": "Wikipedia", "notes": "Gianni Maroccolo (Litfiba bassist) played on CCCP's 'Epica Etica Etnica Pathos' (1990). Ringo de Palma (Litfiba drummer) also played with CCCP. Shared Florentine/Emilian punk underground origins."},
+    {"to_band": "Pankow", "connection_type": "scene_peer", "source": "Italian Wikipedia", "notes": "Shared Florentine underground scene in the 1980s. Federico Fiumani (Diaframma) collaborated with Pankow."},
+    {"to_band": "RockGalileo", "connection_type": "collaboration", "source": "CarloCasale.it / Ideasuono.it", "notes": "Saverio Lanza (RockGalileo vocalist/guitarist) collaborated/sessioned for Piero Pelù. Gianmarco Colzi (RockGalileo drummer, later Litfiba 2001–2006)."}
+  ],
+  "research_date": "2026-09-16",
+  "researcher": "hermes-agent subagent",
+  "notes": "Piero Pelù is primarily known as the frontman of Litfiba. He has very close ties to Diaframma (Amsterdam EP, friendship), CCCP Fedeli alla linea (shared members), and RockGalileo (collaborators). His solo career is well-documented but he remains an underground/alternative figure despite massive commercial success. The Florentine scene (1980-1985) is the key underground period — demo tapes, EPs on Suono Records and I.R.A. Records, and compilations like 'Italia Wiva Complication 1' and 'Catalogue Issue' are crucial archival targets."
+}

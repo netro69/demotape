@@ -1,0 +1,206 @@
+{
+  "band_name": "KEL",
+  "alt_names": ["Kelly Rose Moncado", "Kel Moncado", "Kel", "KELOPHONE", "Kelly Rose", "Kelly Moncado"],
+  "formation_year": null,
+  "formation_location": "Agrigento, Sicily, Italy / Malta",
+  "status": "active (solo artist/performer)",
+  "genres": [
+    "EDM",
+    "Electronic",
+    "Dance",
+    "Deep House",
+    "Afro House",
+    "Mediterranean Fusion",
+    "Electro-pop"
+  ],
+  "description": "KEL (Kelly Rose Moncado) is an Italian-Maltese vocalist, songwriter, and performer born in Agrigento, Sicily on August 8, 1994. Raised between Sicily and Malta with additional German cultural influences, she began singing at age four and started formal vocal training at eight. Her artistic philosophy is defined by the motto 'Music is fluid,' reflecting her genre-blending approach that fuses Mediterranean traditions, Eastern influences, and contemporary electronic production. KEL has built an international career as a featured vocalist and solo artist, collaborating with major DJs/producers across Europe.",
+  "biographical_details": {
+    "birth_name": "Kelly Moncado Rizzo",
+    "birth_date": "1994-08-08",
+    "birth_place": "Agrigento, Sicily, Italy",
+    "nationality": "Italian, Maltese",
+    "background": "Half Italian (Sicilian), half Maltese. Raised between Sicily and Malta. Also has German cultural influences. Her musical identity bridges Mediterranean roots with contemporary electronic/dance sounds.",
+    "training": "Began singing at age 4. Started formal vocal/study training at age 8.",
+    "motto": "Music is fluid"
+  },
+  "key_members": {
+    "current": [
+      {
+        "name": "Kelly Rose Moncado",
+        "role": "vocals, songwriting",
+        "alias": "KEL",
+        "years": "2015-present"
+      }
+    ],
+    "former": [],
+    "collaborators": [
+      {"name": "Gabry Ponte", "role": "producer, DJ", "works": "Tarantella Napoletana (Remix), He's A Pirate (Save Me)"},
+      {"name": "Steve Aoki", "role": "producer, DJ", "works": "He's A Pirate (Save Me)"},
+      {"name": "SRNDE", "role": "producer", "works": "Rinnina (2025)"},
+      {"name": "ONESOLO", "role": "producer", "works": "Carol of the Lies (2025)"},
+      {"name": "X-Pander", "role": "producer", "works": "Rise & Fight"},
+      {"name": "Bassko", "role": "producer", "works": "Save Me"},
+      {"name": "Daniel Meister", "role": "producer", "works": "Slow (Extended Mix)"},
+      {"name": "Zymba", "role": "producer", "works": "Champagne (feat. Kelly Rose Moncado)"},
+      {"name": "Marco Monti DJ", "role": "producer", "works": "Sciuri Sciuri"},
+      {"name": "Twinstrings", "role": "producer", "works": "Valentine's Medley 2020"},
+      {"name": "Nanny Boyz", "role": "producer", "works": "On & On"}
+    ]
+  },
+  "discography": {
+    "singles_and_releases": [
+      {"year": 2020, "title": "Valentine's Medley 2020", "feat": "Twinstrings ft. KEL", "format": "digital"},
+      {"year": 2023, "title": "Meet Me Halfway", "format": "single"},
+      {"year": 2023, "title": "This Summer (feat. Kel & Kelly Rose Moncado)", "format": "single"},
+      {"year": 2023, "title": "Stronger Than Ever", "format": "single"},
+      {"year": 2024, "title": "Tarantella Napoletana (Gabry Ponte Remix)", "format": "single"},
+      {"year": 2024, "title": "He's A Pirate (Save Me)", "feat": "Gabry Ponte, Steve Aoki, KEL", "format": "single"},
+      {"year": 2024, "title": "Danke Für Nichts", "format": "single", "label": "GEKAI"},
+      {"year": 2025, "title": "Rinnina (Extended Mix)", "feat": "SRNDE, KEL", "label": "GEKAI", "format": "digital"},
+      {"year": 2025, "title": "Rinnina (Radio Edit)", "feat": "SRNDE, KEL", "label": "GEKAI", "format": "digital"},
+      {"year": 2025, "title": "Carol of the Lies", "feat": "ONESOLO, KEL", "label": "GEKAI", "format": "digital"},
+      {"year": 2026, "title": "On & On", "feat": "Nanny Boyz, KEL", "label": "GEKAI", "format": "digital"},
+      {"title": "Save Me", "feat": "Bassko, Kelly Rose Moncado", "format": "single"},
+      {"title": "Slow (Extended Mix)", "feat": "Daniel Meister, Rose Moncado", "format": "single"},
+      {"title": "Champagne", "feat": "Zymba, Kelly Rose Moncado", "format": "single"},
+      {"title": "Sciuri Sciuri (Vicerian Remix)", "feat": "Marco Monti DJ, Kelly Rose Moncado", "format": "single"}
+    ]
+  },
+  "labels": [
+    {"name": "GEKAI", "country": "Italy", "years": "2024-present"},
+    {"name": "DANCEANDLOVE SRL", "country": "Italy", "years": "2025", "note": "Publisher for Rinnina"}
+  ],
+  "notable_performers": [
+    "Gabry Ponte (Italian DJ/producer, Eiffel 65 founding member)",
+    "Steve Aoki (American DJ/producer)",
+    "SRNDE (Italian electronic producer)"
+  ],
+  "streaming_presence": {
+    "spotify": {
+      "url": "https://open.spotify.com/artist/7tYjk2vuV96DmlpEHLlw05",
+      "monthly_listeners": "1M",
+      "alt_artist_id": "4XHFDNhO3MnrcUcvVNi3rk (30 monthly listeners)"
+    },
+    "apple_music": {
+      "artist_id": "1244251973 (Kel)",
+      "alt_artist_id": "1621343263 (Kelly Rose Moncado)"
+    },
+    "deezer": {
+      "artist_id": "264109851",
+      "alt_artist_id": "124566052 (Kel Moncado)",
+      "alt_artist_id_2": "9700352 (Kelly Moncado)"
+    },
+    "youtube": {
+      "channel": "https://www.youtube.com/@kellyrosemoncado",
+      "channel_id": "UCB9AOHgZY7IdCJ7tYi2BRKA",
+      "official_channel_url": "https://www.youtube.com/channel/UCB9AOHgZY7IdCJ7tYi2BRKA"
+    },
+    "instagram": {
+      "handle": "@kellyrosemoncado",
+      "url": "https://www.instagram.com/kellyrosemoncado/",
+      "followers": "178K-181.8K",
+      "following": "~1,832-1,995",
+      "posts": "~129-159",
+      "bio": "\"Music is fluid\""
+    },
+    "facebook": {
+      "url": "https://www.facebook.com/kelophone/",
+      "page_name": "KEL - Kelly Rose Moncado (KELOPHONE)"
+    },
+    "soundcloud": {
+      "url": "https://soundcloud.com/kelartist",
+      "alt_url": "https://soundcloud.com/kelophone/sets"
+    },
+    "tiktok": "https://www.tiktok.com/discover/kelly-rose-moncado",
+    "last_fm": "https://www.last.fm/music/Kelly+Rose+Moncado",
+    "genius": "https://genius.com/artists/Kelly-rose-moncado",
+    "shazam": "https://www.shazam.com/artist/kel/1244251973"
+  },
+  "official_links": {
+    "official_website": "https://kelmusic.info/",
+    "spotify": "https://open.spotify.com/artist/7tYjk2vuV96DmlpEHLlw05",
+    "apple_music": "https://music.apple.com/us/artist/kel/1244251973",
+    "youtube_channel": "https://www.youtube.com/@kellyrosemoncado",
+    "instagram": "https://www.instagram.com/kellyrosemoncado/",
+    "discogs": "https://www.discogs.com/artist/14942312-Kelly-Rose-Moncado",
+    "facebook": "https://www.facebook.com/kelophone/"
+  },
+  "discogs_id": "14942312",
+  "historical_significance": [
+    "Successful cross-genre vocalist bridging Mediterranean folk traditions with contemporary EDM",
+    "Collaborated with major international DJs (Steve Aoki, Gabry Ponte) while maintaining Italian/Maltese cultural identity",
+    "Tarantella Napoletana remix brought traditional Italian folk to global EDM audiences",
+    "Named by RadioMonster.FM as 'up-and-coming singer' in international EDM scene with Italian-Maltese-German roots",
+    "Performed 'He's A Pirate (Save Me)' with Steve Aoki at Untold Festival mainstage"
+  ],
+  "media_mentions": [
+    {"source": "RadioMonster.FM", "url": "https://www.radiomonster.fm/interpret/kel/", "type": "artist profile/biography"},
+    {"source": "Malta Daily", "url": "https://maltadaily.mt/maltese-singer-performs-with-steve-aoki-in-front-of-thousands/", "type": "article"},
+    {"source": "M3P Malta", "url": "http://www.m3p.com.mt/wiki/Kelly_Moncado_Rizzo", "type": "encyclopedia entry"},
+    {"source": "Amazing Radio USA", "url": "https://amazingradio.us/profile/kellymoncado/about", "type": "artist bio"},
+    {"source": "MEI Web", "url": "https://meiweb.it/audiocoop/srnde-kel-pubblicano-rinnina-poesia-elettronica-tra-afro-house-e-dialetti-del-sud/", "type": "article on Rinnina collaboration"},
+    {"source": "Setlist.fm", "url": "https://www.setlist.fm/setlists/kel-63e5724f.html", "type": "concert documentation"}
+  ],
+  "current_activity": "Active as of 2026. Recent releases include 'On & On' (with Nanny Boyz, April 2026) and 'Carol of the Lies' (with ONESOLO, 2025). Preparing new collaboration with Gabry Ponte titled 'On & On' as of 2025 teasers. Maintains presence on major streaming platforms and performs at international events.",
+  "research_sources": [
+    "Official website: https://kelmusic.info/",
+    "Discogs: https://www.discogs.com/artist/14942312-Kelly-Rose-Moncado",
+    "Apple Music: https://music.apple.com/us/artist/kel/1244251973",
+    "RadioMonster.FM: https://www.radiomonster.fm/interpret/kel/",
+    "Malta Daily: https://maltadaily.mt/maltese-singer-performs-with-steve-aoki-in-front-of-thousands/",
+    "M3P Malta: http://www.m3p.com.mt/wiki/Kelly_Moncado_Rizzo",
+    "Amazing Radio USA: https://amazingradio.us/profile/kellymoncado/about",
+    "Instagram: https://www.instagram.com/kellyrosemoncado/",
+    "YouTube: https://www.youtube.com/@kellyrosemoncado",
+    "Shazam: https://www.shazam.com/song/1808940862/rinnina",
+    "SRNDE Rinnina YouTube: https://www.youtube.com/watch?v=-oxQ89kXTTw",
+    "SRNDE Rinnina Apple Music: https://music.apple.com/ng/album/rinnina/1846154815"
+  ],
+  "database_id": 136,
+  "database_fields_to_update": {
+    "city": "Agrigento, Sicily",
+    "active_years": "2015-present",
+    "discogs_id": "14942312",
+    "bio": "KEL (Kelly Rose Moncado) is an Italian-Maltese vocalist and songwriter born in Agrigento, Sicily in 1994. Known for her ethereal vocals and genre-fluid approach ('Music is fluid'), she fuses Mediterranean traditions with contemporary electronic music. She has collaborated with major DJs including Gabry Ponte, Steve Aoki, SRNDE, and ONESOLO. Active since ~2015, she has 1M+ monthly listeners on Spotify and 178K Instagram followers.",
+    "website": "https://kelmusic.info/",
+    "status": "published"
+  },
+  "links_to_add": [
+    {"link_type": "website", "title": "Official Website", "url": "https://kelmusic.info/", "is_primary": true},
+    {"link_type": "streaming", "title": "Spotify", "url": "https://open.spotify.com/artist/7tYjk2vuV96DmlpEHLlw05", "is_primary": true},
+    {"link_type": "streaming", "title": "Apple Music", "url": "https://music.apple.com/us/artist/kel/1244251973"},
+    {"link_type": "social", "title": "Instagram", "url": "https://www.instagram.com/kellyrosemoncado/"},
+    {"link_type": "social", "title": "YouTube Channel", "url": "https://www.youtube.com/@kellyrosemoncado"},
+    {"link_type": "social", "title": "Facebook", "url": "https://www.facebook.com/kelophone/"},
+    {"link_type": "streaming", "title": "SoundCloud", "url": "https://soundcloud.com/kelartist"},
+    {"link_type": "archive", "title": "Discogs (Kelly Rose Moncado)", "url": "https://www.discogs.com/artist/14942312-Kelly-Rose-Moncado"},
+    {"link_type": "archive", "title": "Last.fm", "url": "https://www.last.fm/music/Kelly+Rose+Moncado"},
+    {"link_type": "archive", "title": "Genius", "url": "https://genius.com/artists/Kelly-rose-moncado"},
+    {"link_type": "video", "title": "He's A Pirate (Save Me) - Official Visualizer", "url": "https://www.youtube.com/watch?v=FwnuKsIWy7Y"},
+    {"link_type": "video", "title": "Rinnina - Official Video", "url": "https://www.youtube.com/watch?v=-oxQ89kXTTw"},
+    {"link_type": "video", "title": "On & On (Official Visualizer)", "url": "https://www.youtube.com/@kellyrosemoncado"},
+    {"link_type": "streaming", "title": "Deezer", "url": "https://www.deezer.com/artist/264109851"},
+    {"link_type": "archive", "title": "Shazam", "url": "https://www.shazam.com/artist/kel/1244251973"}
+  ],
+  "connections_to_add": [
+    {
+      "to_band": "SRNDE",
+      "connection_type": "collaboration",
+      "source": "YouTube / Apple Music / Discogs",
+      "notes": "Collaboration on 'Rinnina' single (May 9, 2025) — track and album released on GEKAI. Rinnina named after the swallow in Calabrian dialect. Kelly Rose Moncado credited as vocalist/composer."
+    }
+  ],
+  "genre_tags_to_add": [
+    "EDM",
+    "Electronic",
+    "Dance",
+    "Deep House",
+    "Afro House",
+    "Mediterranean Fusion",
+    "Electro-pop",
+    "Eurodance"
+  ],
+  "research_date": "2026-09-17",
+  "researcher": "hermes-agent subagent",
+  "notes": "KEL is a solo artist/band project, not a traditional group. She functions as a featured vocalist and solo performer. Her primary identity is as a vocalist/songwriter for hire and solo artist in the EDM/dance space. The project uses a Django database. This research data is ready to be applied via the apply_findings management command or direct ORM updates. Note: Apple Music has TWO artist IDs (1244251973 for 'Kel' and 1621343263 for 'Kelly Rose Moncado'). Discogs has 14942312 (Kelly Rose Moncado). No MusicBrainz artist ID was found. RateYourMusic listing not confirmed but likely exists under variant spellings."
+}
