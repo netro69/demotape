@@ -1,4 +1,6 @@
-#!/usr/bin/env python3
+# Created-by: agent | Date: 2026-09-16
+# Session: automated
+1|#!/usr/bin/env python3
 """
 Apply all remaining verified URLs and connections from the deep research pass
 (band-research-pass-2026-09-16.md) that were not already in the database.

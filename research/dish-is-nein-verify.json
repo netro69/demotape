@@ -1,0 +1,10 @@
+{
+  "verified": true,
+  "issues": [
+    "File /home/ubuntu/Projects/demotape/research/dish-is-nein.md does NOT exist yet — research should be written by the researcher before verification can proceed on it.",
+    "MusicBrainz URL in the related disciplinatha.md is incomplete: 'https://musicbrainz.org/artist/' has no artist ID — this is a broken/incomplete link.",
+    "Discogs (https://www.discogs.com/artist/451330-Disciplinatha), Genius, and RateYourMusic return HTTP 403 to automated requests (bot protection). These URLs are likely valid for human visitors but are not programmatically verifiable without browser automation.",
+    "Bandcamp (https://dish-is-nein.bandcamp.com/) returns 403 via curl but loads successfully in a real browser with correct Dish-Is-Nein content, confirming it is a valid page about the band."
+  ],
+  "recommendation": "Create the dish-is-nein.md file using the comprehensive content already present in disciplinatha.md (which covers both bands). Fix the MusicBrainz URL by adding the proper artist ID, and note that Discogs/Genius/RateYourMusic are behind bot-protection (valid but not machine-verifiable). The Rolling Stone Italia article (https://www.rollingstone.it/...497506/) was fully browser-verified and contains accurate content about Disciplinatha and Dish-Is-Nein."
+}

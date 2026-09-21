@@ -1,0 +1,324 @@
+{
+  "band_name": "Disciplinatha",
+  "band_id": 84,
+  "city": "Bentivoglio (Bologna), Emilia-Romagna, Italy",
+  "active_years": "1987–1997; reformed as Dish-Is-Nein (2017–present)",
+  "genres": [
+    "Industrial Rock",
+    "Punk Rock",
+    "Post-Hardcore",
+    "Alternative Rock",
+    "Post-Punk",
+    "Electronic"
+  ],
+  "members": [
+    {
+      "name": "Dario Parisini",
+      "role": "Guitar",
+      "years": "1987–1997",
+      "notes": "Founding member, 'soul' of the band; later Dish-Is-Nein; died June 9, 2022, aged 56"
+    },
+    {
+      "name": "Cristiano Santini",
+      "role": "Vocals, guitar",
+      "years": "1987–1997",
+      "notes": "Founding member; later Dish-Is-Nein"
+    },
+    {
+      "name": "Daniele Albertazzi",
+      "role": "Drums",
+      "years": "1987–1993",
+      "notes": "Founding member"
+    },
+    {
+      "name": "Marco Maiani",
+      "role": "Bass",
+      "years": "1987–1991",
+      "notes": "Founding member"
+    },
+    {
+      "name": "Daria Zipoli",
+      "role": "Vocals",
+      "years": "1991–1992",
+      "notes": "Early member"
+    },
+    {
+      "name": "Valeria Cevolani",
+      "role": "Vocals",
+      "years": "1991–1997",
+      "notes": "Later Dish-Is-Nein"
+    },
+    {
+      "name": "Roberta Vicinelli",
+      "role": "Bass, keyboards",
+      "years": "1991–1997",
+      "notes": "Later Dish-Is-Nein"
+    },
+    {
+      "name": "Simone Bellotti",
+      "role": "Drums",
+      "years": "1993–1997",
+      "notes": "Replaced Albertazzi"
+    },
+    {
+      "name": "Karin Tingay",
+      "role": "Choir",
+      "years": null,
+      "notes": "Collaborator"
+    },
+    {
+      "name": "Marco Bolognini",
+      "role": "Performer",
+      "years": null,
+      "notes": "Live performer"
+    }
+  ],
+  "discography": {
+    "studio_albums": [
+      {
+        "title": "Un Mondo Nuovo",
+        "year": 1994,
+        "label": "CPI / I dischi del mulo",
+        "format": "CD",
+        "notes": "First studio album; first use of samples, electronic drums, programming"
+      },
+      {
+        "title": "Primigenia",
+        "year": 1996,
+        "label": "CPI / I dischi del mulo",
+        "format": "CD",
+        "notes": "Final studio album; released July 11, 1996"
+      }
+    ],
+    "eps_singles": [
+      {
+        "title": "Abbiamo Pazientato 40 Anni: Ora Basta!",
+        "year": 1988,
+        "label": "Attack Punk Records",
+        "format": "Mini-LP / EP",
+        "notes": "Debut; produced by Jumpy Velena"
+      },
+      {
+        "title": "Crisi di Valori",
+        "year": 1991,
+        "label": "CPI / I dischi del mulo",
+        "format": "12\" vinyl (pink)",
+        "notes": "Samples Pope John Paul II"
+      },
+      {
+        "title": "Dish-Is-Nein",
+        "year": 2018,
+        "label": "Contempo Records",
+        "format": "CD / EP",
+        "notes": "Reformed as Dish-Is-Nein; Justin Bennett on drums"
+      },
+      {
+        "title": "The Metal Machine",
+        "year": 2023,
+        "label": "Black Fading Records",
+        "format": "7\" single",
+        "notes": "Dish-Is-Nein; features remixed 'Eva'"
+      },
+      {
+        "title": "Occidente (A Funeral Party)",
+        "year": 2025,
+        "label": "Black Fading Records",
+        "format": "LP",
+        "notes": "Dish-Is-Nein; hailed as one of 2025's best albums"
+      }
+    ],
+    "compilations_live": [
+      {
+        "title": "Maciste contro tutti",
+        "year": 1993,
+        "label": "I dischi del mulo / CPI",
+        "format": "CD",
+        "notes": "Live compilation with C.S.I. and Üstmamò (Prato, Sep 1992)"
+      },
+      {
+        "title": "A Raccolta",
+        "year": 1995,
+        "label": "CPI",
+        "format": "CD (limited)",
+        "notes": "Compilation integrating debut EP with rarities and unreleased live versions"
+      },
+      {
+        "title": "Tesori della Patria",
+        "year": 2012,
+        "label": "Black Fading / Contempo",
+        "format": "3xLP + 12\" + 12\" + DVD box set",
+        "notes": "Monumental anthology of entire studio discography on vinyl"
+      }
+    ]
+  },
+  "notable_tracks": [
+    "Addis Abeba",
+    "Disciplinatha Canto del Potere",
+    "Crisi di Valori",
+    "East & Side",
+    "Up Patriots to Arms",
+    "Sei Stato Tu a Decidere",
+    "Vi Ricordate quel 18 Aprile",
+    "Otto Minuti",
+    "Mi Sveglio",
+    "I Valori della Crisi"
+  ],
+  "connections": [
+    {
+      "band": "Blood",
+      "type": "predecessor",
+      "notes": "Santini, Parisini, Maiani's previous band"
+    },
+    {
+      "band": "Dish-Is-Nein",
+      "type": "successor",
+      "notes": "Santini, Vicinelli, Cevolani reformed under new name"
+    },
+    {
+      "band": "C.S.I.",
+      "type": "collaboration / label mate",
+      "notes": "Shared Maciste contro tutti; shared CPI label"
+    },
+    {
+      "band": "Üstmamò",
+      "type": "collaboration / label mate",
+      "notes": "Shared Maciste contro tutti"
+    },
+    {
+      "band": "CCCP Fedeli alla linea",
+      "type": "scene peer / label mate",
+      "notes": "Same Attack Punk Records; CPI co-founded by CCCP alumni"
+    },
+    {
+      "band": "Jumpy Velena",
+      "type": "producer",
+      "notes": "Produced debut EP; founded Attack Punk Records"
+    },
+    {
+      "band": "Justin Bennett",
+      "type": "collaborator",
+      "notes": "Drummer on Dish-Is-Nein releases (Skinny Puppy, Peter Murphy)"
+    }
+  ],
+  "labels": [
+    {
+      "name": "Attack Punk Records",
+      "period": "1988",
+      "notes": "Debut EP; founded by Jumpy Velena"
+    },
+    {
+      "name": "Consorzio Produttori Indipendenti (CPI)",
+      "period": "1991–1997",
+      "notes": "Primary label"
+    },
+    {
+      "name": "I dischi del mulo",
+      "period": "1993–1997",
+      "notes": "Distribution partner"
+    },
+    {
+      "name": "Black Fading Records",
+      "period": "2012–present",
+      "notes": "Tesori della Patria box set; Dish-Is-Nein releases"
+    },
+    {
+      "name": "Contempo Records",
+      "period": "2012–present",
+      "notes": "Partner on box set; Dish-Is-Nein EP"
+    }
+  ],
+  "online_traces": [
+    {
+      "url": "https://it.wikipedia.org/wiki/Disciplinatha",
+      "content": "Wikipedia IT (primary source)"
+    },
+    {
+      "url": "https://www.discogs.com/artist/451330-Disciplinatha",
+      "content": "Discogs — full discography"
+    },
+    {
+      "url": "https://genius.com/artists/Disciplinatha",
+      "content": "Genius — lyrics and tracklists"
+    },
+    {
+      "url": "https://www.last.fm/music/Disciplinatha/+wiki",
+      "content": "Last.fm biography"
+    },
+    {
+      "url": "https://rateyourmusic.com/artist/disciplinatha",
+      "content": "RateYourMusic"
+    },
+    {
+      "url": "https://www.ondarock.it/monografie/disciplinatha/",
+      "content": "OndaRock — monograph"
+    },
+    {
+      "url": "https://dish-is-nein.bandcamp.com/",
+      "content": "Dish-Is-Nein Bandcamp"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=4rmCV849oVs",
+      "content": "Live at Prato 1992 (with C.S.I. and Üstmamò)"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=sIS_Ft3_BAY",
+      "content": "Abbiamo Pazientato 40 Anni full album"
+    },
+    {
+      "url": "https://www.rollingstone.it/musica/interviste-musica/i-disciplinatha-erano-largine-rock-allemilia-rossa/497506/",
+      "content": "Rolling Stone Italia interview"
+    },
+    {
+      "url": "https://www.ilgiornale.it/news/oggi-si-scrive-dish-nein-si-legge-disciplinatha-torna-lala-1470011.html",
+      "content": "Il Giornale article on Dish-Is-Nein"
+    },
+    {
+      "url": "https://www.undergroundexperiment.it/archivio/banz-cult/105-disciplinatha.html",
+      "content": "Underground X monograph"
+    },
+    {
+      "url": "https://contemporecords.it/en/prodotto/disciplinatha-un-mondo-nuovo-2/",
+      "content": "Contempo Records (Un Mondo Nuovo reissue)"
+    }
+  ],
+  "interesting_facts": [
+    "The 1988 EP title 'Abbiamo Pazientato 40 Anni: Ora Basta!' quotes a Mussolini speech, and the cover depicts Balilla (fascist youth). Yet it was released by the most radically anarchist hardcore label in Italy — a deliberate, intelligent political provocation.",
+    "The 1991 EP 'Crisi di Valori' sampled the voice of Pope John Paul II in its title track — a bold act of cultural subversion in a predominantly Catholic country.",
+    "Rolling Stone Italia described them as 'l'argine rock all'Emilia rossa' — the rock dam holding back the dominance of left-wing cultural hegemony in Emilia-Romagna.",
+    "Their live shows featured extraordinary guest performers: the Alpine Choir of Monte Calisio, Mondine (female rice paddy workers from Bentivoglio), and a choir of Alpini (Italian Alpine troops).",
+    "Founding guitarist Dario Parisini died June 9, 2022, aged 56, after a long illness. The Dish-Is-Nein 12\" single 'The Metal Machine' was dedicated to him.",
+    "The successor band name 'Dish-Is-Nein' is a triple pun: German-sounding 'This is no,' English 'This is none,' and phonetically evokes 'Disciplinatha' in Italian.",
+    "While their debut EP was raw and technically unrefined, Parisini himself noted it 'has aged much better than Primigenia' (their final, more polished album).",
+    "Dish-Is-Nein's 2025 album 'Occidente (A Funeral Party)' was hailed by critics as one of the best albums of that year, proving the project's enduring creative vitality 38+ years after Disciplinatha's formation."
+  ],
+  "demotape_archive_notes": {
+    "assessment": "Disciplinatha is a crucial band for understanding the Italian underground punk/industrial scene of the late 1980s and 1990s. Their deliberate provocations, fusion of genres, and connection to the Emilian punk lineage make them highly relevant to the Demotape archive.",
+    "has_demotape_material": false,
+    "all_releases_official": true,
+    "recommended_actions": [
+      "Add detailed biography to database (band bio field)",
+      "Add Discogs ID: 451330",
+      "Add genre tags: industrial-rock, punk-rock, post-hardcore, alternative-rock, post-punk, electronic",
+      "Add connections to: C.S.I., CCCP Fedeli alla linea, Üstmamò, Dish-Is-Nein, Blood, Marlene Kuntz, Attack Punk Records",
+      "Add links: Wikipedia IT, Discogs, Genius, Last.fm, OndaRock, Rolling Stone Italia interview, YouTube live recordings"
+    ]
+  },
+  "sources": [
+    "Italian Wikipedia — Disciplinatha",
+    "Discogs.com — Artist/451330",
+    "Rolling Stone Italia — 'I Disciplinatha erano l'argine rock all'Emilia rossa' (2017)",
+    "Il Giornale — 'Oggi si scrive Dish-Is-Nein ma si legge Disciplinatha' (2017)",
+    "Genius.com — lyrics, tracklists, discography",
+    "Last.fm — biography and member list",
+    "OndaRock.it — monograph",
+    "RateYourMusic — genres, ratings",
+    "EverybodyWiki — Dario Parisini biography and obituary",
+    "YouTube — live recordings (Prato 1992, full albums)",
+    "Bandcamp (dish-is-nein.bandcamp.com) — Dish-Is-Nein releases",
+    "Underground X — 'Banz Cult' monograph by Marco Falchi",
+    "Contempo Records — discography pages",
+    "EBM.gr — Dish-Is-Nein coverage and Dario Parisini obituary",
+    "Exhimusic / Metal News — Dish-Is-Nein reformation coverage",
+    "Studio23Bologna.com — Justin Bennett discography (Dish-Is-Nein credits)"
+  ]
+}

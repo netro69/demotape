@@ -1,0 +1,107 @@
+{
+  "findings": [
+    {
+      "band_name": "Mao e la Rivoluzione",
+      "bio_additions": "Mao e la Rivoluzione was an Italian alternative rock band from Turin, formed in 1993. The band consisted of Mauro \"Mao\" Gurlino (vocals, guitar), Matteo Salvadori (guitar), Gianluca \"Mago\" Medina (bass), and Paolo \"Gep\" Cucco (drums). They released two albums on Virgin Records (Sale in 1996 and Casa in 1997) and participated in the Sanremo Giovani festival with \"Romantico.\" The band opened for Oasis in 1997. After disbanding in 1998, Mauro Gurlino continued as a solo artist under the name Mao, releasing multiple albums and hosting the long-running live music event \"Il Salotto di Mao\" at LAB Torino since 1997.",
+      "website": "https://www.mao.it",
+      "discogs_id": "1407615",
+      "genre_tags": [
+        "alternative-rock",
+        "electronic-rock",
+        "pop-rock",
+        "psychedelic-rock",
+        "funk"
+      ],
+      "links": [
+        {
+          "url": "https://www.mao.it",
+          "link_type": "website",
+          "title": "Mao Official Website",
+          "description": "Official website with news, discography, tour dates"
+        },
+        {
+          "url": "https://maoelarivoluzione.bandcamp.com/",
+          "link_type": "music",
+          "title": "Mao e la Rivoluzione Bandcamp",
+          "description": "Full digital discography (74 releases)"
+        },
+        {
+          "url": "https://www.discogs.com/artist/1407615-Maoelarivoluzione",
+          "link_type": "archive",
+          "title": "Discogs — Maoelarivoluzione",
+          "description": "Full discography and release details"
+        },
+        {
+          "url": "https://musicbrainz.org/artist/0bdf8293-967d-4a3e-a5e0-bd830201f0c1",
+          "link_type": "archive",
+          "title": "MusicBrainz — Mao e la Rivoluzione",
+          "description": "Open music encyclopedia"
+        },
+        {
+          "url": "https://genius.com/artists/Mao",
+          "link_type": "archive",
+          "title": "Genius — Mao",
+          "description": "Lyrics and tracklists"
+        },
+        {
+          "url": "https://www.allmusic.com/artist/mao-mn0004548987",
+          "link_type": "archive",
+          "title": "AllMusic — Mao",
+          "description": "Reviews and biography"
+        },
+        {
+          "url": "https://www.debaser.it/mao",
+          "link_type": "article",
+          "title": "DeBaser — Mao",
+          "description": "Italian music community reviews"
+        },
+        {
+          "url": "https://www.facebook.com/maoelarivoluzione.it2/",
+          "link_type": "social",
+          "title": "Facebook — Mao e la Rivoluzione",
+          "description": "Official Facebook page"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=8l3d-cRQt8k",
+          "link_type": "video",
+          "title": "Pop gravitazionale (Official Audio)",
+          "description": "YouTube official audio"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=uJmj3I3L9ZQ",
+          "link_type": "video",
+          "title": "Il ritmo (Official Audio)",
+          "description": "YouTube official audio"
+        }
+      ],
+      "releases": [
+        {
+          "title": "Sale",
+          "year": 1996,
+          "format": "cd",
+          "label": "Virgin Records",
+          "description": "Debut album; 10 tracks including Febbre, Pop gravitazionale, My psychedelic lady"
+        },
+        {
+          "title": "Casa",
+          "year": 1997,
+          "format": "cd",
+          "label": "Virgin Records",
+          "description": "Second album; 13 tracks; Sanremo Giovani entry with Romantico"
+        }
+      ],
+      "connections": [
+        {
+          "to_band": "Subsonica",
+          "connection_type": "scene_peer",
+          "notes": "Turin underground scene peers; same post-industrial cultural ecosystem; Piazza Vittorio connection"
+        },
+        {
+          "to_band": "Linea 77",
+          "connection_type": "scene_peer",
+          "notes": "Turin scene peers; shared underground-to-mainstream trajectory"
+        }
+      ]
+    }
+  ]
+}

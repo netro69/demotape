@@ -1,0 +1,38 @@
+{
+  "findings": [
+    {
+      "band_name": "Waxlife",
+      "website": "https://www.waxlifemusic.com/",
+      "discogs_id": "2384514",
+      "bio_additions": "Waxlife (Simone Lanza) is an Italian electronic music producer and DJ from Malnate/Varese, active since ~2004. His music spans deep house, nu-disco, downtempo, and dance-punk. Released two albums on Ghost Records: Cecilia (2014) and Patterns (2018). Also runs Waxlife Disco Service alias on Trend Records, and archival lo-fi beat releases via Museek Records. Sound designer for fashion brands including Moschino, Max Mara, Valentino, and Diesel. Breakthrough track 'Clocks' (Strictly Groove Recordings) entered Juno Download top 50 nu-disco within a week and was selected by Beatport & iTunes Canada.",
+      "genre_tags": ["deep house", "nu-disco", "downtempo", "electronic", "dance-punk"],
+      "links": [
+        {"url": "https://waxlifemusic.bandcamp.com/", "link_type": "music", "title": "Bandcamp", "description": "Official Bandcamp page for releases and purchases"},
+        {"url": "https://soundcloud.com/waxlifemusic", "link_type": "music", "title": "SoundCloud", "description": "Official SoundCloud profile"},
+        {"url": "https://www.youtube.com/@waxlifemusic", "link_type": "video", "title": "YouTube", "description": "Official YouTube channel"},
+        {"url": "https://www.discogs.com/artist/2384514-Waxlife", "link_type": "article", "title": "Discogs", "description": "Discography and release credits"},
+        {"url": "https://open.spotify.com/artist/0Ji1QhJsAx8yLVirHYkgqG", "link_type": "music", "title": "Spotify", "description": "Streaming profile (~5K monthly listeners)"},
+        {"url": "https://music.apple.com/us/artist/waxlife/505674433", "link_type": "music", "title": "Apple Music", "description": "Apple Music artist page"},
+        {"url": "https://www.beatport.com/artist/waxlife/278983", "link_type": "music", "title": "Beatport", "description": "Beatport artist page for DJ bookings and releases"},
+        {"url": "https://ra.co/dj/waxlife-it", "link_type": "article", "title": "Resident Advisor", "description": "RA artist profile and event listings"},
+        {"url": "https://www.facebook.com/waxlifemusic/", "link_type": "social", "title": "Facebook", "description": "Official Facebook page"},
+        {"url": "https://genius.com/artists/Waxlife", "link_type": "article", "title": "Genius", "description": "Lyrics and annotations"},
+        {"url": "https://www.junodownload.com/artists/Waxlife/RELEASES/", "link_type": "music", "title": "Juno Download", "description": "Digital downloads catalog"},
+        {"url": "https://www.qobuz.com/gb-en/interpreter/waxlife/1784239", "link_type": "music", "title": "Qobuz", "description": "Hi-res streaming and downloads"},
+        {"url": "https://www.deezer.com/en/artist/4592278", "link_type": "music", "title": "Deezer", "description": "Deezer artist page"},
+        {"url": "https://www.viberate.com/artist/waxlife/", "link_type": "article", "title": "Viberate", "description": "Music analytics and booking info"},
+        {"url": "https://www.jambase.com/band/waxlife", "link_type": "article", "title": "JamBase", "description": "Concert and festival listings"},
+        {"url": "https://www.bandsintown.com/de/a/1607317-waxlife", "link_type": "article", "title": "Bandsintown", "description": "Tour dates and concert tracker"}
+      ],
+      "releases": [
+        {"title": "Patterns", "year": 2018, "format": "digital", "label": "Ghost Records", "catalog_number": "GHST 065", "description": "Second full-length album. Deep house, bass, downtempo."},
+        {"title": "Cecilia", "year": 2014, "format": "digital", "label": "Ghost Records", "description": "Earlier full-length album."},
+        {"title": "Jazzy Jams EP", "year": 2024, "format": "digital", "label": "Self-released", "description": "Waxlife & Friends. Jazz-house fusion. All proceeds donated to charity."},
+        {"title": "New Adventures In Lo-Fi EP II", "year": 2025, "format": "digital", "label": "Museek Records", "description": "Archival beats produced 2009-2015. DIY cassette tape also available."},
+        {"title": "New Adventures In Lo-Fi EP I", "year": 2025, "format": "digital", "label": "Museek Records", "description": "First batch of archival lo-fi beats."},
+        {"title": "Waxlife Disco Service – You Know EP", "year": 2020, "format": "digital", "label": "Trend Records", "catalog_number": "TR045", "description": "Dance-punk EP featuring Meg Remy of U.S. Girls."},
+        {"title": "Clocks (Original Mix)", "year": 2013, "format": "digital", "label": "Strictly Groove Recordings", "description": "Breakthrough nu-disco/deep house track. Top 50 Juno Download. Beatport & iTunes Canada featured release."}
+      ]
+    }
+  ]
+}

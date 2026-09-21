@@ -1,4 +1,6 @@
-#!/usr/bin/env python3
+# Created-by: agent | Date: 2026-09-16
+# Session: automated
+1|#!/usr/bin/env python3
 """
 Apply verified links from the band research pass to the Demotape database.
 Reads the research document and adds verified URLs for bands with < 3 links.
