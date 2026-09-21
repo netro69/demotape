@@ -1,0 +1,54 @@
+{% extends "admin/base_site.html" %}
+{% load static %}
+
+{% block title %}Link Review Queue{% endblock %}
+
+{% block content %}
+<h1>Link Review Queue</h1>
+<p>Links at Level 3 (auto-verified) pending admin confirmation.</p>
+
+<table id="review-table">
+    <thead>
+        <tr>
+            <th>Band</th>
+            <th>Type</th>
+            <th>Title</th>
+            <th>URL</th>
+            <th>Sources</th>
+            <th>Checker Notes</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for link in links %}
+        <tr id="link-{{ link.id }}">
+            <td>{{ link.band.name }}</td>
+            <td>{{ link.get_link_type_display }}</td>
+            <td>{{ link.title }}</td>
+            <td><a href="{{ link.url }}" target="_blank">{{ link.url|truncatechars:50 }}</a></td>
+            <td>
+                {% if link.discovery_source %}<a href="{{ link.discovery_source }}" target="_blank">L1</a>{% endif %}
+                {% if link.crossref_source %}<a href="{{ link.crossref_source }}" target="_blank">L2</a>{% endif %}
+            </td>
+            <td>{{ link.verification_notes|truncatechars:100 }}</td>
+            <td>
+                <button hx-post="{% url 'review_queue' %}"
+                        hx-vals='{"link_id": "{{ link.id }}", "action": "confirm"}'
+                        hx-target="#link-{{ link.id }}"
+                        class="button confirm-btn">Confirm</button>
+                <button hx-post="{% url 'review_queue' %}"
+                        hx-vals='{"link_id": "{{ link.id }}", "action": "reject"}'
+                        hx-target="#link-{{ link.id }}"
+                        class="button reject-btn">Reject</button>
+                <button hx-post="{% url 'review_queue' %}"
+                        hx-vals='{"link_id": "{{ link.id }}", "action": "flag"}'
+                        hx-target="#link-{{ link.id }}"
+                        class="button flag-btn">Flag</button>
+            </td>
+        </tr>
+        {% empty %}
+        <tr><td colspan="7">No links pending review.</td></tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

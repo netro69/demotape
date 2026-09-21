@@ -1,4 +1,6 @@
+# Created-by: forge | Date: 2026-09-21
 from django.contrib import admin
+from django.utils import timezone
 from .models import (
     Band, GenreTag, Release, Track, Image,
     Playlist, PlaylistTrack, Flag, UserProfile, PlayLog,
@@ -29,7 +31,39 @@ class ImageInline(admin.TabularInline):
 
 @admin.register(Link)
 class LinkAdmin(admin.ModelAdmin):
-    list_display = ['band', 'link_type', 'title', 'url', 'is_primary']
+    list_display = ['band', 'link_type', 'title', 'url', 'is_primary', 'verification_level', 'verified_by', 'verified_at']
+    list_filter = ['verification_level', 'link_type', 'verified_by']
+    search_fields = ['band__name', 'title', 'url', 'verification_notes']
+    readonly_fields = ['verified_at', 'verified_by', 'verification_level']
+    actions = ['confirm_links', 'reject_links', 'flag_links']
+
+    def confirm_links(self, request, queryset):
+        """Bulk confirm selected links \u2192 Level 4."""
+        count = queryset.update(
+            verification_level=4,
+            verified_by='admin',
+            verified_at=timezone.now(),
+            verification_notes='Bulk confirmed by admin',
+        )
+        self.message_user(request, f'{count} links confirmed at Level 4.')
+    confirm_links.short_description = "Confirm selected links (Level 4)"
+
+    def reject_links(self, request, queryset):
+        """Bulk reject selected links \u2192 demote to Level 1."""
+        count = queryset.update(
+            verification_level=1,
+            verified_by='',
+            verified_at=None,
+            verification_notes='Rejected by admin \u2014 demoted to Level 1',
+        )
+        self.message_user(request, f'{count} links rejected and demoted to Level 1.')
+    reject_links.short_description = "Reject selected links (demote to Level 1)"
+
+    def flag_links(self, request, queryset):
+        """Flag selected links for manual review."""
+        count = queryset.update(verification_notes='Flagged for manual review by admin')
+        self.message_user(request, f'{count} links flagged for review.')
+    flag_links.short_description = "Flag selected links for review"
 
 
 @admin.register(Label)

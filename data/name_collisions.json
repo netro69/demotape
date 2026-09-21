@@ -1,0 +1,39 @@
+{
+  "created-by": "forge",
+  "date": "2026-09-21",
+  "description": "Known same-name foreign bands that could cause false-positive verification. Used by the Level-3 checker to flag ambiguous links for human review.",
+  "collisions": [
+    {
+      "name": "Asphodel",
+      "local_band_id": null,
+      "local_city": "Varese",
+      "local_labels": ["Face Records", "Chaos Village", "Ghost Records"],
+      "local_members": ["Roberto Binda", "Tommaso Canal"],
+      "foreign_bands": [
+        {
+          "name": "Asphodel",
+          "origin": "United States",
+          "genre": "Metal",
+          "urls": ["https://www.facebook.com/AsphodelMetal/"]
+        }
+      ],
+      "notes": "Italian hardcore punk band from Varese ≠ US metal band"
+    },
+    {
+      "name": "Clark Nova",
+      "local_band_id": null,
+      "local_city": "",
+      "local_labels": [],
+      "local_members": [],
+      "foreign_bands": [
+        {
+          "name": "Clark Nova",
+          "origin": "Canada",
+          "genre": "Indie/Electronic",
+          "urls": []
+        }
+      ],
+      "notes": "Italian band — Canadian band with same name exists"
+    }
+  ]
+}

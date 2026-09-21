@@ -1,7 +1,11 @@
 from django.shortcuts import render, get_object_or_404
 from django.core.paginator import Paginator
 from django.contrib.postgres.search import SearchVector, SearchQuery, SearchRank
-from .models import Band, GenreTag, Release, Track, Label, BandConnection, Link
+from django.contrib.admin.views.decorators import staff_member_required
+from django.http import JsonResponse
+from django.views.decorators.http import require_POST
+from django.utils import timezone
+from .models import Band, GenreTag, Release, Track, Label, BandConnection, Link, Fanzine
 
 
 def home(request):
@@ -69,7 +73,6 @@ def band_detail(request, slug):
     releases = band.releases.filter(status='published').prefetch_related('tracks')
     images = band.images.filter(status='published')
     links = band.links.all()
-    audio_tracks = band.releases.filter(status='published').prefetch_related('tracks').values_list('tracks', flat=True)
     # Get tracks that have audio files
     from .models import Track
     audio_tracks = Track.objects.filter(release__band=band, status='published', audio_file__isnull=False).exclude(audio_file='')
@@ -88,14 +91,59 @@ def band_detail(request, slug):
             link.youtube_id = _extract_youtube_id(link.url)
         link_sections.append((display, type_links))
     
+    # Annotate links with matching audio tracks (by title similarity)
+    for display, type_links in link_sections:
+        for link in type_links:
+            link.local_audio = None
+            if link.title:
+                for track in audio_tracks:
+                    if track.title and (
+                        track.title.lower() in link.title.lower()
+                        or link.title.lower() in track.title.lower()
+                    ):
+                        link.local_audio = track
+                        break
+    
+    # Prefetch fanzine reviews with fanzine data
+    fanzine_reviews = band.fanzine_reviews.select_related('fanzine')
+    
+    # Prefetch connections (both directions)
+    connections_from = band.connections_from.select_related('to_band')
+    connections_to = band.connections_to.select_related('from_band')
+    
+    # Get labels from releases (matching Label objects by name)
+    label_names = band.releases.filter(status='published').exclude(label='').values_list('label', flat=True).distinct()
+    labels = Label.objects.filter(name__in=label_names)
+    
     context = {
         'band': band,
         'releases': releases,
         'images': images,
         'link_sections': link_sections,
         'audio_tracks': audio_tracks,
+        'fanzine_reviews': fanzine_reviews,
+        'connections_from': connections_from,
+        'connections_to': connections_to,
+        'labels': labels,
     }
     return render(request, 'core/band_detail.html', context)
+
+
+def fanzine_detail(request, slug):
+    fanzine = get_object_or_404(Fanzine, slug=slug)
+    reviews = fanzine.reviews.select_related('band')
+    context = {'fanzine': fanzine, 'reviews': reviews}
+    return render(request, 'core/fanzine_detail.html', context)
+
+
+def label_detail(request, slug):
+    label = get_object_or_404(Label, slug=slug)
+    # Get bands whose releases mention this label name
+    release_ids = Release.objects.filter(label=label.name, status='published').select_related('band').values_list('band', flat=True).distinct()
+    bands = Band.objects.filter(pk__in=release_ids, status='published')
+    releases = Release.objects.filter(label=label.name, status='published').select_related('band')
+    context = {'label': label, 'releases': releases, 'bands': bands}
+    return render(request, 'core/label_detail.html', context)
 
 
 def _extract_youtube_id(url):
@@ -164,3 +212,37 @@ def search(request):
         'results': results,
     }
     return render(request, 'core/search.html', context)
+
+
+@staff_member_required
+def review_queue(request):
+    """Admin review queue for Level-3 links pending confirmation."""
+    from .models import Link
+    from django.utils import timezone
+
+    if request.method == 'POST':
+        link_id = request.POST.get('link_id')
+        action = request.POST.get('action')
+        link = get_object_or_404(Link, id=link_id)
+
+        if action == 'confirm':
+            link.verification_level = 4
+            link.verified_by = 'admin'
+            link.verified_at = timezone.now()
+            link.verification_notes = 'Confirmed by admin'
+            link.save()
+            return JsonResponse({'status': 'ok', 'level': 4})
+        elif action == 'reject':
+            link.verification_level = 1
+            link.verified_by = ''
+            link.verified_at = None
+            link.verification_notes = 'Rejected by admin'
+            link.save()
+            return JsonResponse({'status': 'ok', 'level': 1})
+        elif action == 'flag':
+            link.verification_notes = 'Flagged for manual review'
+            link.save()
+            return JsonResponse({'status': 'ok', 'flagged': True})
+
+    links = Link.objects.filter(verification_level=3).select_related('band').order_by('band__name', 'title')
+    return render(request, 'admin/review.html', {'links': links})

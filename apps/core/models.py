@@ -234,10 +234,41 @@ class Link(models.Model):
     url = models.URLField()
     description = models.TextField(blank=True)
     is_primary = models.BooleanField(default=False, help_text='Main/official link')
+    # Verification system — 4-level source verification (added 2026-09-21)
+    verification_level = models.IntegerField(
+        default=1,
+        choices=[
+            (1, 'Level 1 — Discovered'),
+            (2, 'Level 2 — Cross-Referenced'),
+            (3, 'Level 3 — Auto-Verified'),
+            (4, 'Level 4 — Admin Confirmed'),
+        ],
+        help_text='Verification level: 1=discovered, 2=cross-ref, 3=auto-checked, 4=admin-confirmed'
+    )
+    discovery_source = models.URLField(
+        blank=True,
+        help_text='URL where this link was first found (Level 1 evidence)'
+    )
+    crossref_source = models.URLField(
+        blank=True,
+        help_text='Second independent source confirming this link (Level 2 evidence)'
+    )
+    verified_at = models.DateTimeField(
+        null=True, blank=True,
+        help_text='When this link was last verified'
+    )
+    verified_by = models.CharField(
+        max_length=50, blank=True,
+        help_text='Who verified: "auto-checker" or "admin"'
+    )
+    verification_notes = models.TextField(
+        blank=True,
+        help_text='Failure reasons, ambiguity notes, evidence summary'
+    )
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
-        ordering=['link_type', '-is_primary', 'title']
+        ordering = ['-verification_level', 'link_type', '-is_primary', 'title']
 
     def __str__(self):
         return f'{self.get_link_type_display()}: {self.title or self.url}'

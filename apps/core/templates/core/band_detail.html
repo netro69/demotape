@@ -56,6 +56,143 @@
     {% endif %}
   </section>
 
+  {% if link_sections %}
+  <section class="band-links">
+    <h2>Links & Audio</h2>
+    {% for display, type_links in link_sections %}
+    <div class="link-group">
+      <h3>{{ display }}</h3>
+      {% for link in type_links %}
+      <div class="link-item">
+        <!-- Original source link -->
+        <div class="source-link">
+          <a href="{{ link.url }}" target="_blank" rel="noopener">
+            {{ link.title|default:link.url }}
+          </a>
+          {% if link.description %}<p class="link-desc">{{ link.description }}</p>{% endif %}
+        </div>
+        
+        <!-- Local audio player (if available) -->
+        {% if link.local_audio %}
+        <div class="local-audio">
+          <audio controls preload="none">
+            <source src="{{ link.local_audio.audio_file.url }}" type="audio/mpeg">
+            Your browser does not support audio playback.
+          </audio>
+          <span class="local-badge">Local copy available</span>
+        </div>
+        {% endif %}
+        
+        <!-- YouTube embed (if video) -->
+        {% if link.youtube_id %}
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/{{ link.youtube_id }}" 
+                  frameborder="0" allowfullscreen></iframe>
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  {% if audio_tracks %}
+  <section class="band-audio">
+    <h2>Local Audio</h2>
+    <div class="audio-track-list">
+      {% for track in audio_tracks %}
+      <div class="audio-track">
+        <span class="track-number">{{ track.track_number }}.</span>
+        <span class="track-title">{{ track.title }}</span>
+        <audio controls preload="none">
+          <source src="{{ track.audio_file.url }}" type="audio/mpeg">
+        </audio>
+        {% if track.release %}
+        <span class="track-release">from <a href="{% url 'release_detail' track.release.slug %}">{{ track.release.title }}</a></span>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if fanzine_reviews %}
+  <section class="band-fanzines">
+    <h2>Fanzine Reviews</h2>
+    <div class="fanzine-list">
+      {% for review in fanzine_reviews %}
+      <div class="fanzine-review">
+        <a href="{% url 'fanzine_detail' review.fanzine.slug %}" class="fanzine-name">
+          {{ review.fanzine.name }}
+        </a>
+        <span class="fanzine-issue">
+          {% if review.issue_number %}#{{ review.issue_number }}{% endif %}
+          {% if review.year %}&middot; {{ review.year }}{% endif %}
+          {% if review.page_number %}&middot; p.{{ review.page_number }}{% endif %}
+        </span>
+        {% if review.review_text %}
+        <p class="review-excerpt">{{ review.review_text|truncatewords:50 }}</p>
+        {% endif %}
+        {% if review.digitized_url %}
+        <a href="{{ review.digitized_url }}" target="_blank" class="digitized-link">Read online</a>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if connections_from or connections_to %}
+  <section class="band-connections">
+    <h2>Connections</h2>
+    
+    {% if connections_from %}
+    <div class="connection-group">
+      <h3>Related Bands</h3>
+      <div class="connection-cards">
+        {% for conn in connections_from %}
+        <a href="{% url 'band_detail' conn.to_band.slug %}" class="connection-card">
+          <span class="connection-type">{{ conn.get_connection_type_display }}</span>
+          <span class="connection-band">{{ conn.to_band.name }}</span>
+          {% if conn.to_band.city %}<span class="connection-city">{{ conn.to_band.city }}</span>{% endif %}
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+    
+    {% if connections_to %}
+    <div class="connection-group">
+      <h3>Connected From</h3>
+      <div class="connection-cards">
+        {% for conn in connections_to %}
+        <a href="{% url 'band_detail' conn.from_band.slug %}" class="connection-card">
+          <span class="connection-type">{{ conn.get_connection_type_display }}</span>
+          <span class="connection-band">{{ conn.from_band.name }}</span>
+          {% if conn.from_band.city %}<span class="connection-city">{{ conn.from_band.city }}</span>{% endif %}
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </section>
+  {% endif %}
+
+  {% if labels %}
+  <section class="band-labels">
+    <h2>Labels</h2>
+    <div class="label-list">
+      {% for label in labels %}
+      <a href="{% url 'label_detail' label.slug %}" class="label-item">
+        {{ label.name }}
+        {% if label.city %}<span class="label-city">{{ label.city }}</span>{% endif %}
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
   {% if images %}
   <section class="band-images">
     <h2>Photos</h2>

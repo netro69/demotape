@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %}Demotape - {{ label.name }}{% endblock %}
+{% block content %}
+<div class="label-detail-page">
+  <div class="label-header">
+    <div class="label-header-info">
+      <h1>{{ label.name }}</h1>
+      {% if label.city %}<p class="label-city">{{ label.city }}</p>{% endif %}
+      {% if label.founded_year %}<p class="label-founded">Founded {{ label.founded_year }}</p>{% endif %}
+      <span class="label-status status-{{ label.status }}">{{ label.get_status_display }}</span>
+    </div>
+  </div>
+
+  {% if label.description %}
+  <section class="label-description">
+    <h2>About</h2>
+    <p>{{ label.description|linebreaks }}</p>
+  </section>
+  {% endif %}
+
+  {% if label.website %}
+  <p><a href="{{ label.website }}" target="_blank" rel="noopener">Website</a></p>
+  {% endif %}
+
+  {% if bands %}
+  <section class="label-bands">
+    <h2>Bands</h2>
+    <div class="card-grid">
+      {% for band in bands %}
+      <a href="{% url 'band_detail' band.slug %}" class="card band-card">
+        <div class="card-body">
+          <h3>{{ band.name }}</h3>
+          {% if band.city %}<p class="card-meta">{{ band.city }}</p>{% endif %}
+          {% if band.active_years %}<p class="card-meta">{{ band.active_years }}</p>{% endif %}
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if releases %}
+  <section class="label-releases">
+    <h2>Releases</h2>
+    <div class="release-list">
+      {% for release in releases %}
+      <a href="{% url 'release_detail' release.slug %}" class="release-card">
+        {% if release.cover_image %}
+        <img src="{{ release.cover_image.url }}" alt="{{ release.title }}" class="release-cover">
+        {% else %}
+        <div class="placeholder-cover">{{ release.title|first }}</div>
+        {% endif %}
+        <div class="release-info">
+          <h3>{{ release.title }}</h3>
+          <p class="release-band"><a href="{% url 'band_detail' release.band.slug %}">{{ release.band.name }}</a></p>
+          <p class="release-meta">{{ release.year }} &middot; {{ release.get_format_display }}</p>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+</div>
+{% endblock %}

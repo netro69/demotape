@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}Demotape - {{ fanzine.name }}{% endblock %}
+{% block content %}
+<div class="fanzine-detail-page">
+  <div class="fanzine-header">
+    <div class="fanzine-header-info">
+      <h1>{{ fanzine.name }}</h1>
+      {% if fanzine.city %}<p class="fanzine-city">{{ fanzine.city }}</p>{% endif %}
+      {% if fanzine.active_years %}<p class="fanzine-years">{{ fanzine.active_years }}</p>{% endif %}
+      <span class="fanzine-status status-{{ fanzine.status }}">{{ fanzine.get_status_display }}</span>
+    </div>
+    {% if fanzine.cover_image %}
+    <div class="fanzine-header-image">
+      <img src="{{ fanzine.cover_image.url }}" alt="{{ fanzine.name }}">
+    </div>
+    {% endif %}
+  </div>
+
+  {% if fanzine.description %}
+  <section class="fanzine-description">
+    <h2>About</h2>
+    <p>{{ fanzine.description|linebreaks }}</p>
+  </section>
+  {% endif %}
+
+  {% if fanzine.website %}
+  <p><a href="{{ fanzine.website }}" target="_blank" rel="noopener">Website</a></p>
+  {% endif %}
+
+  <section class="fanzine-reviews">
+    <h2>Reviews</h2>
+    {% if reviews %}
+    <div class="review-list">
+      {% for review in reviews %}
+      <div class="review-item">
+        <a href="{% url 'band_detail' review.band.slug %}" class="review-band">{{ review.band.name }}</a>
+        <span class="review-issue">
+          {% if review.issue_number %}#{{ review.issue_number }}{% endif %}
+          {% if review.year %}&middot; {{ review.year }}{% endif %}
+          {% if review.page_number %}&middot; p.{{ review.page_number }}{% endif %}
+        </span>
+        {% if review.review_text %}
+        <p class="review-excerpt">{{ review.review_text|truncatewords:50 }}</p>
+        {% endif %}
+        {% if review.digitized_url %}
+        <a href="{{ review.digitized_url }}" target="_blank" class="digitized-link">Read online</a>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p>No reviews yet.</p>
+    {% endif %}
+  </section>
+</div>
+{% endblock %}
