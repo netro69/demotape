@@ -46,8 +46,8 @@ from django.db.models import Count, Q
 from apps.core.models import Band, Link, BandConnection
 
 bands = Band.objects.annotate(
-    link_count=Count('links'),
-    conn_count=Count('connections_from') + Count('connections_to')
+    link_count=Count('links', distinct=True),
+    conn_count=Count('connections_from', distinct=True) + Count('connections_to', distinct=True),
 ).order_by('link_count', 'conn_count', '-id')
 
 priority = bands.filter(
@@ -133,7 +133,13 @@ cd ~/Projects/demotape && source .venv/bin/activate && python manage.py shell -c
 Append findings to ~/Documents/Obsidian/Vault/projects/demotape-research-log.md
 """
     
-    payload = json.dumps({"title": title, "body": body, "assignee": "fisherman"})
+    payload = json.dumps({
+        "title": title,
+        "description": body,
+        "status": "todo",
+        "priority": "medium",
+        "assigneeAgentId": "28788729-94d9-4d1c-a0d2-fdd1ea48ac72"  # The Fisherman
+    })
     cmd = (
         f'BT=$(cat ~/.paperclip/adapter-token) && '
         f'curl -s -X POST "http://localhost:3100/api/companies/{COMPANY_ID}/issues" '
@@ -142,7 +148,14 @@ Append findings to ~/Documents/Obsidian/Vault/projects/demotape-research-log.md
         f'-d {json.dumps(payload)}'
     )
     out, err, rc = run_shell(cmd)
-    return rc == 0
+    # curl exit 0 does NOT mean the API accepted it — verify the response body
+    if rc != 0:
+        print(f"Dispatch curl failed: {err}", file=sys.stderr)
+        return False
+    if '"error"' in out or '"id"' not in out:
+        print(f"Dispatch rejected by API: {out[:200]}", file=sys.stderr)
+        return False
+    return True
 
 
 def main():
