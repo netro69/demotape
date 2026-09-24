@@ -14,9 +14,13 @@ import subprocess
 import sys
 import json
 import os
+import re
+import urllib.request
 
 DEMOTAPE_DIR = os.path.expanduser("~/Projects/demotape")
 COMPANY_ID = "9b1bb8a3-192f-4c4e-a406-9449c442a8e9"
+FISHERMAN_AGENT_ID = "28788729-94d9-4d1c-a0d2-fdd1ea48ac72"
+PAPERCLIP_API = "http://43.157.13.93:3100/api"
 
 
 def run_shell(cmd, timeout=30):
@@ -34,15 +38,73 @@ def run_shell(cmd, timeout=30):
     return result.stdout.strip(), result.stderr.strip(), result.returncode
 
 
-def find_next_band():
-    """Query DB for the most under-researched band."""
-    script = """
+def get_open_research_bands():
+    """Fetch all open [AUTO] Research band issues for The Fisherman and return a set of band names."""
+    try:
+        token = os.environ.get("PAPERCLIP_API_KEY", "")
+        if not token:
+            # Try reading from file
+            token_path = os.path.expanduser("~/.paperclip/api_key.txt")
+            if os.path.exists(token_path):
+                with open(token_path) as f:
+                    token = f.read().strip()
+            else:
+                # Fallback: read from adapter token
+                adapter_path = os.path.expanduser("~/.paperclip/adapter-token")
+                if os.path.exists(adapter_path):
+                    with open(adapter_path) as f:
+                        token = f.read().strip()
+
+        if not token:
+            print("WARNING: No Paperclip token found — cannot check for open issues", file=sys.stderr)
+            return set()
+
+        url = f"{PAPERCLIP_API}/companies/{COMPANY_ID}/issues?status=todo&limit=100"
+        req = urllib.request.Request(url, headers={"Authorization": f"Bearer {token}"})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            todo_issues = json.loads(resp.read().decode())
+
+        url2 = f"{PAPERCLIP_API}/companies/{COMPANY_ID}/issues?status=in_progress&limit=100"
+        req2 = urllib.request.Request(url2, headers={"Authorization": f"Bearer {token}"})
+        with urllib.request.urlopen(req2, timeout=15) as resp:
+            in_progress_issues = json.loads(resp.read().decode())
+
+        all_open = todo_issues + in_progress_issues
+
+        # Filter to only The Fisherman's [AUTO] Research band issues
+        band_names = set()
+        pattern = re.compile(r'^\[AUTO\] Research band:\s*(.+)$')
+        for issue in all_open:
+            if issue.get("assigneeAgentId") != FISHERMAN_AGENT_ID:
+                continue
+            match = pattern.match(issue.get("title", ""))
+            if match:
+                band_names.add(match.group(1).strip().lower())
+
+        print(f"Open Fisherman research issues for: {band_names}")
+        return band_names
+
+    except Exception as e:
+        print(f"WARNING: Failed to fetch open issues: {e}", file=sys.stderr)
+        return set()  # If we can't check, proceed (don't block the loop)
+
+
+def find_next_band(exclude_names=None):
+    """Query DB for the most under-researched band, excluding names in exclude_names (case-insensitive)."""
+    exclude_clause = ""
+    if exclude_names:
+        # Case-insensitive exclude using Lower() annotation
+        safe_list = ", ".join(f"'{n.replace(chr(39), chr(39)*2)}'" for n in exclude_names)
+        exclude_clause = f".annotate(_lname=Lower('name')).exclude(_lname__in=[{safe_list}])"
+
+    template = """
 import django, os, sys, json
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'demotape.settings')
 sys.path.insert(0, '/home/ubuntu/Projects/demotape')
 django.setup()
 
 from django.db.models import Count, Q
+from django.db.models.functions import Lower
 from apps.core.models import Band, Link, BandConnection
 
 bands = Band.objects.annotate(
@@ -52,7 +114,7 @@ bands = Band.objects.annotate(
 
 priority = bands.filter(
     Q(link_count__lt=8) | Q(conn_count__lt=8)
-).exclude(slug__in=['ghost-records']).exclude(status='flagged')
+).exclude(slug__in=['ghost-records']).exclude(status='flagged')__EXCLUDE_CLAUSE__
 
 if not priority.exists():
     print('NO_BANDS')
@@ -67,6 +129,7 @@ else:
         'conn_count': band.conn_count
     }))
 """
+    script = template.replace("__EXCLUDE_CLAUSE__", exclude_clause)
     script_path = "/tmp/find_band.py"
     with open(script_path, 'w') as f:
         f.write(script)
@@ -161,14 +224,19 @@ Append findings to ~/Documents/Obsidian/Vault/projects/demotape-research-log.md
 def main():
     print("=" * 50)
     print("FISHERMAN LOOP — checking for un researched bands...")
-    
-    band = find_next_band()
+
+    # Fetch open Fisherman research issues to skip bands already in the queue
+    open_bands = get_open_research_bands()
+    if open_bands:
+        print(f"⏸ Skipping bands already in research queue: {open_bands}")
+
+    band = find_next_band(exclude_names=open_bands)
     if band is None:
         print("✅ No bands need research. Queue is dry.")
         sys.exit(1)
-    
+
     print(f"🎯 Next target: {band['name']} (id={band['id']}, links={band['link_count']}, conns={band['conn_count']})")
-    
+
     if spawn_fisherman(band):
         print(f"✅ Fisherman dispatched for {band['name']}")
         print("⏰ Cron will re-run to pick up the next band")
